@@ -1,0 +1,2961 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noai,noimageai">
+<meta name="GPTBot" content="noindex,nofollow">
+<meta name="ChatGPT-User" content="noindex,nofollow">
+<meta name="CCBot" content="noindex,nofollow">
+<meta name="anthropic-ai" content="noindex,nofollow">
+<meta name="Claude-Web" content="noindex,nofollow">
+<title>大智度論 · 卷七十六 · 釋學空不證品＋夢中不證品 彙整</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#f7f3ec;--text:#2c2416;--text2:#5a4e3a;--text-muted:#6B5B4B;
+  --accent:#8b5e3c;--accentL:#c4956a;--accent-red:#8B2500;
+  --gold:#b8860b;--goldL:#d4a84b;--gold-light:#C9A84C;
+  --border:#d4c4a8;--border-light:#EDE8E0;--card:#fffdf7;
+  --verseBg:#f0e8d8;--verseBd:#c4956a;
+  --sbW:76px;--sbBg:#1e1a14;--sbText:#d4c4a8;
+  --headGrad:linear-gradient(135deg,#2a2218 0%,#3d3225 50%,#2a2218 100%);
+  --r:8px;
+  --primary:#2C1810;--primary-light:#5B3A29;--shadow:rgba(91,58,41,0.08);
+}
+html,body{
+  scrollbar-width:none;-ms-overflow-style:none;
+}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0;}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  font-size:17px;line-height:1.8;
+  -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+}
+a{color:var(--accent);text-decoration:none;transition:color .2s;}
+a:hover{color:var(--gold);}
+img{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none;}
+
+/* === Sidebar ============================================================ */
+#sb{
+  position:fixed;left:0;top:0;width:var(--sbW);height:100vh;
+  background:var(--sbBg);color:var(--sbText);z-index:100;
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 0 16px;overflow-y:auto;scrollbar-width:none;
+}
+#sb::-webkit-scrollbar{display:none;}
+.sb-brand{
+  position:sticky;top:0;width:100%;
+  font-family:"Noto Sans TC",sans-serif;font-size:11px;letter-spacing:2px;
+  color:var(--gold);writing-mode:horizontal-tb;text-orientation:mixed;
+  text-align:center;line-height:1.5;
+  background:linear-gradient(to bottom,var(--sbBg) 78%,rgba(30,26,20,0));
+  padding:14px 4px 12px;margin-bottom:6px;z-index:5;
+  text-decoration:none;cursor:pointer;
+  transition:color .25s,background .25s;display:block;
+  border-bottom:1px solid rgba(184,134,11,.25);
+}
+.sb-brand:hover{color:var(--goldL);}
+.sb-brand .sb-brand-line1{display:block;font-size:11px;letter-spacing:1.5px;opacity:.78;}
+.sb-brand .sb-brand-line2{display:block;font-size:13px;font-weight:700;letter-spacing:2.2px;color:var(--goldL);margin-top:2px;}
+.sb-brand .sb-brand-arrow{display:block;font-size:10px;opacity:.55;margin-top:2px;}
+.sb-nav{display:flex;flex-direction:column;gap:8px;padding-top:6px;width:100%;align-items:center;}
+.sb-item{
+  display:flex;flex-direction:column;align-items:center;
+  padding:4px 4px;cursor:pointer;text-decoration:none;color:var(--sbText);
+  width:100%;transition:background .25s,color .25s;border-radius:6px;
+}
+.sb-item:hover{background:rgba(184,134,11,.12);color:var(--goldL);}
+.sb-item.active{background:rgba(184,134,11,.22);color:var(--goldL);box-shadow:inset 0 0 12px rgba(184,134,11,.45);}
+.sb-circle{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,#3d3225,#2a2218);
+  border:1.5px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Noto Sans TC",sans-serif;font-size:14px;font-weight:600;
+  color:var(--gold);margin-bottom:3px;
+  transition:all .25s;
+}
+.sb-item.active .sb-circle{background:var(--gold);color:#fff;box-shadow:0 0 10px rgba(184,134,11,.6);}
+.sb-label{font-family:"Noto Sans TC",sans-serif;font-size:11px;letter-spacing:.8px;text-align:center;line-height:1.25;opacity:.85;}
+
+#sbToggle{
+  display:none;position:fixed;top:14px;left:14px;z-index:120;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--border);
+  background:rgba(30,26,20,.92);color:var(--gold);font-size:20px;cursor:pointer;
+}
+
+/* === Main ============================================================== */
+.main{margin-left:var(--sbW);min-height:100vh;}
+
+.site-hero{
+  background:radial-gradient(ellipse at top,#2a2218,#1a140e 70%);
+  padding:90px 32px 70px;text-align:center;position:relative;overflow:hidden;
+  border-bottom:1px solid #3a2f22;
+}
+.site-hero::before{
+  content:"般若 · 卷七六";position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);font-size:240px;color:#fff;opacity:.04;
+  font-weight:900;letter-spacing:30px;white-space:nowrap;pointer-events:none;
+}
+.site-hero .hero-content{position:relative;z-index:2;max-width:980px;margin:0 auto;}
+.hero-title{font-size:52px;font-weight:900;color:#fff;letter-spacing:10px;
+  margin-bottom:20px;text-shadow:0 3px 14px rgba(0,0,0,.45);}
+.hero-subtitle{font-size:19px;color:var(--goldL);letter-spacing:3px;margin-bottom:14px;font-weight:400;}
+.hero-sub{font-size:17px;color:#cdb98a;letter-spacing:2px;margin-bottom:20px;font-weight:300;}
+.hero-range{display:inline-block;font-size:15px;color:#bda678;letter-spacing:3px;
+  border-top:1px solid rgba(184,134,11,.4);border-bottom:1px solid rgba(184,134,11,.4);
+  padding:10px 28px;margin-top:12px;font-weight:400;}
+
+/* === Preface ============================================================ */
+.preface{max-width:920px;margin:48px auto 0;padding:0 32px;color:var(--text);}
+.preface-title{
+  font-family:"Noto Serif TC",serif;font-size:28px;font-weight:700;
+  color:var(--accent);text-align:center;letter-spacing:6px;
+  margin-bottom:20px;position:relative;padding-bottom:14px;
+}
+.preface-title::after{
+  content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:60px;height:2px;background:var(--gold);
+}
+.preface p{font-size:17px;line-height:2.05;margin-bottom:14px;
+  text-align:justify;text-indent:2em;color:var(--text2);}
+.preface p b{color:var(--accent-red);font-weight:600;}
+
+/* === TOC ================================================================ */
+.toc-section{
+  max-width:1100px;margin:60px auto 50px;padding:0 32px;
+}
+.toc-title{
+  font-family:"Noto Serif TC",serif;font-size:32px;font-weight:700;
+  color:var(--accent);text-align:center;letter-spacing:8px;
+  margin-bottom:14px;position:relative;padding-bottom:14px;
+}
+.toc-title::after{
+  content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:80px;height:2px;background:var(--gold);
+}
+.toc-desc{font-size:14px;color:var(--text-muted);text-align:center;
+  letter-spacing:2px;margin-bottom:32px;}
+.toc-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+  gap:18px;
+}
+.toc-card{
+  display:flex;align-items:center;gap:18px;
+  padding:20px 22px;background:var(--card);border:1px solid var(--border);
+  border-radius:12px;cursor:pointer;transition:all .25s;
+  box-shadow:0 1px 4px var(--shadow);
+}
+.toc-card:hover{
+  background:linear-gradient(135deg,#fffdf5,#f5ecd8);
+  border-color:var(--gold);transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(184,134,11,.18);
+}
+.toc-num{
+  flex:0 0 auto;width:46px;height:46px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Noto Sans TC",sans-serif;font-size:20px;font-weight:700;
+  background:linear-gradient(135deg,#3d3225,#2a2218);color:var(--gold);
+  border:1.5px solid var(--gold);
+}
+.toc-name{flex:1;font-size:18px;line-height:1.65;color:var(--text);font-weight:500;}
+.toc-name small{display:block;font-size:13px;color:var(--text-muted);font-weight:400;margin-top:6px;letter-spacing:1px;}
+
+/* === Chapter section (品層級) =========================================== */
+.chapter{margin:60px 0 0;}
+.ch-head{
+  background:var(--headGrad);color:#fff;padding:54px 32px 46px;text-align:center;
+  border-top:1px solid #3a2f22;border-bottom:1px solid #3a2f22;
+  position:relative;
+}
+.ch-head::after{
+  content:"";position:absolute;left:50%;bottom:18px;transform:translateX(-50%);
+  width:90px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.ch-num{
+  display:inline-block;font-family:"Noto Sans TC",sans-serif;font-size:13px;
+  letter-spacing:5px;color:var(--gold);
+  border:1px solid rgba(184,134,11,.5);padding:6px 18px;border-radius:20px;
+  margin-bottom:18px;
+}
+.ch-name{
+  font-family:"Noto Serif TC",serif;font-size:38px;font-weight:900;
+  letter-spacing:10px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.4);
+  margin-bottom:14px;
+}
+.ch-sub{font-size:16px;color:#d4c4a8;letter-spacing:3px;font-weight:300;}
+
+.ch-body{
+  max-width:980px;margin:0 auto;padding:36px 24px 48px;
+  background:transparent;
+}
+
+/* === Bridge ============================================================= */
+.bridge{
+  background:linear-gradient(135deg,#fffdf5,#f5ecd8);
+  border:1px solid var(--border);
+  border-left:5px solid var(--gold);
+  border-radius:10px;
+  padding:18px 24px; margin:0 0 26px;
+  box-shadow:0 2px 10px rgba(91,58,41,.06);
+}
+.bridge-outro{
+  border-left-color:var(--accentL);
+  background:linear-gradient(135deg,#fdf8e8,#f2e6c8);
+  margin-top:30px; margin-bottom:14px;
+}
+.bridge-label{
+  display:inline-block;
+  font-family:"Noto Sans TC",sans-serif; font-size:11px;
+  background:var(--gold); color:#fff;
+  padding:3px 12px; border-radius:12px;
+  letter-spacing:2px; margin-bottom:10px;
+}
+.bridge-outro .bridge-label{background:var(--accent);}
+.bridge p{margin:0; color:var(--text2); line-height:2; font-size:15.5px;}
+.bridge p b{color:var(--accent-red);}
+
+/* === iframe ============================================================= */
+.ch-frame{
+  display:block; width:100%; border:0;
+  background:#fffdf7;
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(91,58,41,.1);
+  margin:0 0 8px;
+  min-height:180px;
+}
+.next-link{
+  display:inline-block;margin-top:24px;padding:10px 22px;
+  border:1px solid var(--gold);color:var(--accent);background:#fffdf5;
+  border-radius:24px;font-size:15px;letter-spacing:2px;font-weight:500;
+  transition:all .2s;
+}
+.next-link:hover{background:var(--gold);color:#fff;}
+
+/* === Bottom progress capsule =========================================== */
+.read-progress{
+  position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
+  z-index:120; background:rgba(30,26,20,.92); color:var(--gold);
+  padding:8px 22px; border-radius:30px;
+  border:1px solid rgba(184,134,11,.5);
+  box-shadow:0 4px 18px rgba(0,0,0,.25);
+  font-family:"Noto Sans TC",sans-serif;
+  font-size:13px; letter-spacing:2px;
+  display:flex; align-items:center; gap:12px;
+  pointer-events:none; user-select:none;
+  backdrop-filter:blur(6px);
+}
+.read-progress .rp-bar{width:140px;height:3px;background:rgba(212,196,168,.18);
+  border-radius:2px;overflow:hidden;position:relative;}
+.read-progress .rp-fill{position:absolute;top:0;left:0;bottom:0;
+  background:linear-gradient(90deg,var(--gold),var(--goldL));
+  width:0%;transition:width .3s;}
+.read-progress .rp-pct{font-weight:600;min-width:38px;text-align:right;}
+.read-progress .rp-label{font-size:11px;opacity:.75;letter-spacing:3px;}
+
+/* === Footer ============================================================ */
+.site-footer{
+  margin-top:80px;padding:46px 32px;
+  background:linear-gradient(135deg,#2a2218,#1a140e);
+  color:#cdb98a;text-align:center;font-size:14px;letter-spacing:2px;line-height:2;
+  border-top:1px solid #3a2f22;
+}
+.site-footer p{margin:0;}
+
+/* === Back to top ======================================================= */
+#backTop{
+  position:fixed;right:24px;bottom:80px;width:44px;height:44px;
+  border-radius:50%;background:rgba(30,26,20,.85);color:var(--gold);
+  border:1px solid var(--gold);font-size:20px;cursor:pointer;z-index:90;
+  opacity:0;transition:opacity .25s;
+}
+#backTop.show{opacity:1;}
+
+@media (max-width:900px){
+  #sb{display:none;}
+  #sbToggle{display:block;}
+  .main{margin-left:0;}
+  .site-hero{padding:60px 20px 40px;}
+  .hero-title{font-size:36px;letter-spacing:4px;}
+  .ch-head{padding:32px 16px 26px;}
+  .ch-name{font-size:24px;letter-spacing:4px;}
+  .toc-grid{grid-template-columns:1fr;}
+}
+@media (max-width:600px){
+  body{font-size:15.5px;}
+  .hero-title{font-size:28px;}
+  .preface{padding:0 16px;}
+  .toc-section{padding:0 16px;}
+  .ch-body{padding:24px 12px 32px;}
+}
+
+/* ============ 1.2x 字級放大（buddhist-text-html 新卷預設）============ */
+body{font-size:20px!important;}
+.hero-title,.site-hero h1{font-size:56px!important;}
+.hero-subtitle,.site-hero .hero-subtitle{font-size:20px!important;}
+.hero-sub,.site-hero .hero-sub,.hero-meta{font-size:18px!important;}
+.hero-range{font-size:17px!important;}
+.preface p,.preface-text p{font-size:19px!important;line-height:2.1!important;}
+.preface h2,.preface-title{font-size:30px!important;}
+.toc-title{font-size:34px!important;}
+.toc-desc{font-size:17px!important;}
+.toc-name{font-size:19.5px!important;line-height:1.7!important;}
+.toc-num{font-size:17px!important;}
+.bridge p{font-size:18.5px!important;line-height:2.1!important;}
+.bridge-label{font-size:12.5px!important;letter-spacing:2.2px!important;}
+.ch-num{font-size:18px!important;}
+.ch-name{font-size:34px!important;}
+.ch-sub,.ch-desc,.ch-subtitle{font-size:17px!important;}
+.next-link{font-size:17px!important;}
+.read-progress{font-size:14px!important;padding:9px 24px!important;}
+.read-progress .rp-bar{width:148px!important;height:4px!important;}
+.read-progress .rp-pct{font-size:13px!important;}
+.read-progress .rp-label{font-size:12px!important;}
+.sb-circle{font-size:15px!important;}
+.sb-label{font-size:11.5px!important;}
+.site-footer,.site-footer p{font-size:15px!important;}
+</style>
+<meta name="wy-protection" content="l1l8-v1">
+<meta name="robots" content="noai,noimageai,noarchive,nositelinkssearchbox,noindex,nofollow">
+<meta name="googlebot" content="noai,noimageai,noindex,nofollow">
+<meta name="bingbot" content="noai,noimageai,noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<style id="wy-preguard">
+html.wy-locked,html.wy-locked body,html.wy-locked .main,
+html.wy-locked iframe.ch-frame{visibility:hidden!important;opacity:0!important;}
+.wy-c{display:inline;}
+@media print{
+  html,body,body *{visibility:hidden!important;opacity:0!important;
+    background:#fff!important;color:#fff!important;}
+  @page{margin:0;size:auto;}
+}
+</style>
+<style id="wy-loading">
+.wy-loading{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:32px;height:32px;border-radius:50%;
+  border:3px solid rgba(184,134,11,.18);border-top-color:#b8860b;
+  animation:wy-spin .9s linear infinite;z-index:9999;
+  visibility:visible!important;opacity:1!important;}
+html:not(.wy-locked) .wy-loading{display:none;}
+@keyframes wy-spin{to{transform:translate(-50%,-50%) rotate(360deg);}}
+</style>
+</head>
+<body>
+<div class="wy-loading" id="wyLoading" aria-hidden="true"></div>
+<script id="wy-protection-js">
+(function(){
+  var __HOST="weiwen0925.github.io",__PATH="/dazhidulun-76/",__KEY="wy-2026-vol76-zhilun";
+  var __locked=false;
+  document.documentElement.classList.add('wy-locked');
+
+  // ---------- B · webdriver / headless 偵測 ----------
+  function _isAutomated(){
+    try{
+      if(navigator.webdriver===true) return 'webdriver';
+      var ua=navigator.userAgent||'';
+      if(/HeadlessChrome|PhantomJS|Selenium|puppeteer|playwright|cypress/i.test(ua)) return 'ua';
+      if(window.callPhantom||window._phantom) return 'phantom';
+      if(window.__nightmare) return 'nightmare';
+    }catch(e){}
+    return null;
+  }
+
+  function _lockdown(reason){
+    if(__locked) return;
+    __locked=true;
+    // 靜默：不顯示警告文字，僅保持鎖定狀態（無警告頁面）
+    try{
+      var el=document.getElementById('wyLoading');
+      if(el) el.style.display='none';
+    }catch(e){}
+    // 不解鎖 wy-locked，永遠保持隱藏
+  }
+
+  var auto=_isAutomated();
+  if(auto){ _lockdown('automated:'+auto); return; }
+
+  // ---------- L4 · 同步 origin 檢查 ----------
+  try{
+    var hn=location.hostname||'';
+    var pn=location.pathname||'';
+    var protocol=location.protocol||'';
+    if(protocol!=='https:'&&protocol!=='http:'){ _lockdown('proto'); return; }
+    if(hn!==__HOST){ _lockdown('host'); return; }
+    if(pn.indexOf(__PATH)!==0){ _lockdown('path'); return; }
+  }catch(e){ _lockdown('origin-ex'); return; }
+
+  // ---------- L6 · 線上活性驗證 ----------
+  var __pingURL=location.protocol+'//'+__HOST+__PATH+'?_wyping='+Date.now()+'.'+Math.floor(Math.random()*1e9);
+  var __readyResolve;
+  window.__wyReady=new Promise(function(resolve,reject){ __readyResolve=resolve; });
+
+  var fetchTO=new Promise(function(_,rej){ setTimeout(function(){ rej('timeout'); },6000); });
+  var fetchHEAD=fetch(__pingURL,{method:'HEAD',cache:'no-store',mode:'cors',redirect:'manual'})
+    .then(function(r){ if(!r||(!r.ok&&r.type!=='opaqueredirect')) throw 'http:'+(r&&r.status); return true; });
+
+  Promise.race([fetchHEAD,fetchTO]).then(function(){
+    document.documentElement.classList.remove('wy-locked');
+    var el=document.getElementById('wyLoading');
+    if(el&&el.parentNode) el.parentNode.removeChild(el);
+    window.__wyOriginOK=true;
+    if(__readyResolve) __readyResolve(true);
+  }).catch(function(err){ _lockdown('freshness:'+err); });
+
+  // ---------- L2 · window.print + ⌘P 攔截 ----------
+  try{ window.print=function(){ /* swallowed */ }; }catch(e){}
+  document.addEventListener('keydown',function(e){
+    var k=e.key||'';
+    if((e.metaKey||e.ctrlKey)&&(k==='p'||k==='P')){
+      e.preventDefault(); e.stopPropagation(); return false;
+    }
+    if((e.metaKey||e.ctrlKey)&&e.shiftKey&&(k==='p'||k==='P')){
+      e.preventDefault(); e.stopPropagation(); return false;
+    }
+  },true);
+
+  // ---------- L1 / L5 · 解碼器 ----------
+  function _decode(b64){
+    try{
+      var bin=atob(b64);
+      var bytes=new Uint8Array(bin.length);
+      for(var i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i)^__KEY.charCodeAt(i%__KEY.length);
+      return new TextDecoder('utf-8').decode(bytes);
+    }catch(e){ return ''; }
+  }
+  window.__wyReady.then(function(){
+    document.querySelectorAll('.wy-c[data-c]').forEach(function(el){
+      var d=_decode(el.getAttribute('data-c'));
+      if(d){
+        // 用 outerHTML 插入：保留結構（含 <br>、<a>、<b> 等）
+        var temp=document.createElement('span');
+        temp.innerHTML=d;
+        // 把 temp 子節點移到 el 父節點，再移除 el
+        var frag=document.createDocumentFragment();
+        while(temp.firstChild) frag.appendChild(temp.firstChild);
+        el.parentNode.replaceChild(frag,el);
+      }
+    });
+    // 通知 iframe 也解碼（iframes 是 same-origin srcdoc）
+    document.querySelectorAll('iframe.ch-frame').forEach(function(f){
+      try{
+        var d=f.contentDocument||(f.contentWindow&&f.contentWindow.document);
+        if(d&&d.dispatchEvent) d.dispatchEvent(new Event('wy-ready'));
+      }catch(e){}
+    });
+  });
+
+  // ---------- 額外：context menu / dragstart / selectstart 預擋 ----------
+  ['contextmenu','copy','cut','dragstart','selectstart'].forEach(function(ev){
+    document.addEventListener(ev,function(e){ e.preventDefault(); return false; },true);
+  });
+})();
+</script>
+
+<a id="top" style="position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;"></a>
+<button id="sbToggle" aria-label="Menu">☰</button>
+<div class="read-progress" id="readProgress">
+  <span class="rp-label">PROGRESS</span>
+  <div class="rp-bar"><div class="rp-fill" id="rpFill"></div></div>
+  <span class="rp-pct" id="rpPct">0%</span>
+</div>
+<aside id="sb">
+  <a class="sb-brand" href="#top" id="sbBrand" title="回到頂部">
+    <span class="sb-brand-line1"><span class="wy-c" data-c="kt2K1KmI05fQh8eh">…</span></span>
+    <span class="sb-brand-line2"><span class="wy-c" data-c="kvSa1oix06D3iuma">…</span></span>
+    <span class="sb-brand-arrow">↑ TOP</span>
+  </a>
+  <nav class="sb-nav">
+    <a class="sb-item" href="#chapter-1" data-ch="1"><span class="sb-circle"><span class="wy-c" data-c="k8Gt">…</span></span><span class="sb-label"><span class="wy-c" data-c="ktSV1ZmI0pX7h8G+">…</span></span></a>
+    <a class="sb-item" href="#chapter-2" data-ch="2"><span class="sb-circle"><span class="wy-c" data-c="k8Oh">…</span></span><span class="sb-label"><span class="wy-c" data-c="kt2P1oif0pX7h8G+">…</span></span></a>
+  </nav>
+</aside>
+<main class="main">
+  <div class="site-hero">
+    <div class="hero-content">
+      <h1 class="hero-title"><span class="wy-c" data-c="ktSVEtebjA2S1+EX3oDzSKvbVYvT2w3WiJ8Wyc7iTN+bpA==">…</span></h1>
+      <div class="hero-subtitle"><span class="wy-c" data-c="lPmn15SV0LTMitaR3obsi+nnVYv6zsmKs9e7rJPqwQ==">…</span></div>
+      <div class="hero-sub"><span class="wy-c" data-c="nv6m152K0YTMi9S63oDzjfrtksLbnKif1b+3DbTYTN6xpp/My4jNw5PBoNqdu9O+94jAm9Oo143k7ZHW9w==">…</span></div>
+      <div class="hero-range"><span class="wy-c" data-c="kvyF172FFu/BT4iNusjp6Umuwk6S/JzXvbPSlfWIx5cW781Ij/XPiPXLxKmp27emVq3bF9OAwo3NzpD+/5yisQ==">…</span></div>
+    <div data-wy-notice-hero="v3" style="margin:28px auto 0;padding:18px 24px;max-width:760px;
+      background:rgba(30,26,20,.55);border:1px solid rgba(184,134,11,.45);
+      border-radius:12px;backdrop-filter:blur(4px);
+      text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+      font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;"><span class="wy-c" data-c="fVkNEhASFsvqw4qhscr40ozs/orNw8qSpNqYrZPS9dGjmZXU5YrYz5/Go9qNu9G0yojZp9Ga2YfV953T/p60jtiZvcnJ8ouir8T6y47Z5Yb//smPrNq2qJ/P1963vnBISUxVTldFTBJYQFNLS00EQ0JdCVJGQwIZAFdUXUVGQ08TQQ9YWwI6KwEJGwkAHERFVVwZXRkcGEQUDQ4JGwsQGkpbclBcU1hGVE8eUloQWAYGAwULGRxfEDoSFg1WT0wXFg0JHBAAEFNVGkJeX0AMDhJbDQ8CT0EcDBQBQxMcTl1CU0JEGQFWWVlDH1MLAwcKEgsAUF9GQkIbVV1HTg0eBx0YEApXWk8KCAQGT00CDUVRRBRSWUxBHg9CDww6EhYNVk9MFxZFDhwZH09BWA5aRR5LWVgCGg5SGE4VBUYsNgYSF0pFVVtBSBhAHFhFWQlURg1Ljff7EVBCDDwNVk9MFxYRCRgIAlUdAwBBVw0QVUIaAB4NFRUYXw1aQ1VVR8mKvdWispLVytOOoJzT7IPJ4pPBoNeIitKX0IvUutC7zYfV90kMBUfJir3Wjq2S1crTjqCd/dmDyeKTwaDWjrTSl9CL1LrTqsCL6e5JDAVHxbGN2pyHkPfD0q2Nnd/Kg8niku+p1Iu33obOieSF3obsh9X3SQwFR8u6odWekJ/J+tCQg57V8oPJ4p/SldqamNKV24jAm9KV+ovp7klBBAlMXA44Fg1WTw==">…</span></div>
+
+    </div>
+  </div>
+
+  <div class="preface">
+    <h2 class="preface-title"><span class="wy-c" data-c="kM6FEtiysw2T5uEX3oX6">…</span></h2>
+    <p><span class="wy-c" data-c="lPmn15SV0LTMitaR3obsi+nnkOPAnZWx1b+3yPPCi6OHxMTlj8TMhvjQxaSZ27Gmle/m0aeEksDfhP3Cn/KI1IOQ0ZPzh/Cr0Zvpi+nnkdbanraK2bKVyuzribKfyOnpi/j1jOP5zrK415uVkcbW046gksXgiebvkNWB17Wf06D3jOy+3qX9i+nkkMrVnZWf1Iq7xdvmiaS3ytbEjOnYi/r4yYqw0bakle/u0rOEn/voi+nlk8WR1b2a0Yb9gNC704LcjeDrkuzNnImV1IuuxfnGhKGfxPv7jdT/is/5y5Ct15ihkPrY04mDksXghfrmkOOpDlIM0IDViuO6073yjNHlk8DCRQJQDt2Kt5Pm4d+2qJz98FAXUJT5odeditGEzIfsu9KV94DE5Zbu+kUCUA7Qoq2U++zSkK+e1fyJ6caRzpzal7LRhMyJ7JDRt/6N+eCT9/Wdlb/VvaDK39WLtYzI1c6BwfyN9/jJir3XlIOS1eDTj7Wc3uyK0u2YxbbXjr7erfOJ+a4KT0SL6eCQytWdlZ/UirvF2+aPt7sRVQpXjuHule2t15aw0pDjiPif04nYj/LUlu72kICm1Ii9zvbuiaGyyuXNgcHtis/wyJaX2o2Vkdj23p+6ksXghPLEks6c1aq20pX7huy33pDzjNThlu71">…</span></p>
+    <p><span class="wy-c" data-c="kvyE16Oz06jHivy707bkj8T4kvTzn42K1Y21yOPghZa6y+LHhtDvUhVHxb2Z2qCEk/PE0oa3nPTDi/rQkvCg146l3oXujOy2053gjvXGkOvAkZuB1beby8XNi4mzxeb0j/X3gcv1yJSy1ou4kc3W35ygku/DicLfks6f1Kid37XJhvKp3prxgO7YmtLoRQJQDtqdu5LX19CDi5/v04vv6pDUudSRutOl8IrpntOc3ofV9pL3ypyJm9Oyusjb14uejMnC5YHB/I339Muqnw5UE5DCz96rj5z75IjI8ktWTwzSprbP4u+IjJPL5sSAze2G//7IlpfUtJ+Q5OXRv4KdwdOK7NSYxaHbsY3TqPuJ46fTpPeO3+mTyfSWkanVlqrF1c6Pt7rI3sqN1NiKz/TFn7nRtqCQ98MLVBOf5+SF6Mye0LranbsKAhRRjqO2z+7ojMjXie39yL291LGkkevN0YW4n+nUhNbzmMWh2ruX0bTLisie0pLUj8DWkvLonJqA1Iq9y8Tmg4u6yN7KjdTYhvDTyraG1o6gnt3G04yhntHxiM3nkOyh0bCz3ov9i9Gs3qzkjtr5lu72nqyP2amVyc7ii6K5zvrpgcbmiMz8yK6A1buple/t04iwnNv8iM3jk8ew1oqI1a30">…</span></p>
+    <p><span class="wy-c" data-c="keWB142r0LjCifCb0pPni+ngSQxJnKCFENCwv1aK/7YWz/z6SYvezlebq6AQ1ZmtSkAOCdWt943y95La7ZCGpteBjcrBx4q5pMLG5I/m/4nb1cmKsNelrJLX79CdjZno6IvZwpPDodejs9Og94jHl9Ooy43k7ZHW9J6GktW8qcvezIiIq8rv8Yz88Yvk+Mi3l9u1hZHa/NGRppXU5YjNyJHvkdeUpNOc0orml9KV8FQLUpLWyp62nNm+shFZDVLfvqqcx+aJ5u+TwKbbpqHRt/JTDgnQhPGO58mQ49aepLUMHVQTmdPk0aqBn/vohNPvke6F0bCz0KTJium/07jljdfgmtL+mq2w2Jy2xfbqibiZyMTCjvfbh/v9yYqw14eJk97I046mnNrgg8nik8OL17+d3prFhvqG07vUj8LMmtLsnKia1b+BxdjviZm6yMTkhtD5i/jWyImK1Z2mk8Hg0aOZnfLtUBdQnuGS266s3pr9h+uD3of3gMTlkPLHnLGkDB1UE5T77NWirZ/W94rm45PEsdePsdCe40+OsaQNntDEitvbntC62p272ZH6hsyn0a/AjNHnkOPAkICm1Ii9xcjHhJquycf0jMnIiM3vyLCp0bav">…</span></p>
+  </div>
+
+  <div class="toc-section">
+    <h2 class="toc-title"><span class="wy-c" data-c="kMGQEtepmA2f4+g=">…</span></h2>
+    <div class="toc-desc"><span class="wy-c" data-c="kvSa1oix06D3iumaFu/NSIzp3YrN9cihsRL0mlaK6YbToPuM0e+SxddZ74UQ15uVkcbW046gksXgTJfo5VnIlpLWjoCS1+Hfm6Q=">…</span></div>
+    <div class="toc-grid">
+      <a class="toc-card" href="#chapter-1"><div class="toc-num"><span class="wy-c" data-c="k8Gt">…</span></div><div class="toc-name"><span class="wy-c" data-c="kNWB1oiy0773T66AFsT944zBzYnew8mKvdqbpJP87dCagZ/txIn470sKQFNcXgjI29eLnozF+uSN1PiG2vAN8IcS0LTMie6F37bjgejnkvTzkaKb2KSfyMnsioSjEVUbBA0ZAkk=">…</span></div></a>
+      <a class="toc-card" href="#chapter-2"><div class="toc-num"><span class="wy-c" data-c="k8Oh">…</span></div><div class="toc-name"><span class="wy-c" data-c="kNWB1oq+0773T66AFsT944zI14rP1MmKvdqbpJP87dCagZ/txIn475PBrQ5DX1dBGlGJk5TJwsWAxeKG2vAN8IcS37XJhvKp3prxgO7YkvTznZWf2JW2y9zNio+aytHxVUMGAxYVQQw=">…</span></div></a>
+    </div>
+  </div>
+
+
+  <section class="chapter" id="chapter-1">
+    <div class="ch-head">
+      <div class="ch-num"><span class="wy-c" data-c="kvSa1oix06D3iumaFu/NSI7A2YrP+cihsQ==">…</span></div>
+      <h2 class="ch-name"><span class="wy-c" data-c="nv6m152K0YTMi9S63oDzjfrtksLbnKif1b+3">…</span></h2>
+      <div class="ch-sub"><span class="wy-c" data-c="ktSV1ZmI3q36i9S63oDzSKvbVYjuw8uwgtuttJ/u59CsqZLnwITjx5LGrtSDpw==">…</span></div>
+    </div>
+    <div class="ch-body">
+      <div class="bridge bridge-intro">
+        <div class="bridge-label"><span class="wy-c" data-c="keWB16Oz3ov3ifuf">…</span></div>
+        <p><span class="wy-c" data-c="keWB16Oz0LXZjOy904ndjvDWkNTRkYak07K9yPvYiI+1yPfpjOnYie39xKS717uaktbn3pC7ldTlivzRkfeI17m/0LvxjOy/37XFgffyndn8kaqG1aG3zvbmiYyVxdDCgcfNis/0xLKw2oukktbn0K2VldTlitjNnuSP14uI0Yb9jOy7Ck9EjcTUksfNnZW/2J+/EVkNUtS2oJPo8IrX85LditaJqt6i34f6nt+s6Y/z6JPOz5ySsdWNtcvF+o6jts/u6IHj3Ibh0MSpptSBnJPqydCfl5zx04PJ4pL0lterktCx2obNr9OJ3Y7r3pP78p2Vv9W9oMrf1Yu1jMjVzoHB/IHL9cukjNWfl5LXwd+XoZLo5YjN45Lbg9WZiNmR+on6i9Cx84zRwZDU0ZGtvtSKu8jp2Iqrv8766ozp3Yvk+MqmgdaOrpHEzNGRppzg+YPJ9EsbE9WIj9Gbx1NDVQjI1PKN0fiI18HIjbPXp5CfzuDUtqxGCleJ+/GS/JUOH1AIxcrAiIqtxOPogeTyh9fxxb2Z1Lm9kfXo0qOincX9j/XvSxsT17un0Kj9itWJ0pDvVEYOS4bQ2susoNeblZHG1t++qp/tzIvc1JDjqde1m9+q+4n/utKQ5ovp7UkMSZ2Vu9WWkcXbw4mhjRFVCleDyeaS2oLXlJnVrfeGz6zfnt+L6e2Q+POcnbbfjr/E8eKJjIzL8fuPxM2JwunLlbvRtqxKDVLRqoGTyfGF7dyf1JoOH1AIxdzFiq+4yN7Pj+7Hi/j0yKKh1L2kkObD0Kypn+LyidjWlPmsDlIM37XJhvKp3prxgO7YndDfkYCqDB1UE5HaytKxl5zm4YTd9pHKuNe5tdWt91MOCdO8x4HI4Jzp+p+KuQwdVBOQ+9rRq7Kc/tWP9eKf2KHVmYjerfqL1LregPOPwNaW7vqet7bViKPIx8uKqYDL3eOK7Pc=">…</span></p>
+      </div>
+      <iframe class="ch-frame" srcdoc="<!DOCTYPE html><html lang='zh-Hant'><head><meta charset='UTF-8'><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&amp;family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap'><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#f7f3ec;--text:#2c2416;--text2:#5a4e3a;--text-muted:#6B5B4B;
+  --accent:#8b5e3c;--accentL:#c4956a;--accent-red:#8B2500;
+  --gold:#b8860b;--goldL:#d4a84b;--gold-light:#C9A84C;
+  --border:#d4c4a8;--border-light:#EDE8E0;--card:#fffdf7;
+  --verseBg:#f0e8d8;--verseBd:#c4956a;
+  --sbW:76px;--sbBg:#1e1a14;--sbText:#d4c4a8;
+  --headGrad:linear-gradient(135deg,#2a2218 0%,#3d3225 50%,#2a2218 100%);
+  --r:8px;
+  --primary:#2C1810;--primary-light:#5B3A29;--shadow:rgba(91,58,41,0.08);
+}
+html,body{
+  scrollbar-width:none;-ms-overflow-style:none;
+}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0;}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:&quot;Noto Serif TC&quot;,&quot;Source Han Serif TC&quot;,&quot;Songti TC&quot;,Georgia,serif;
+  font-size:17px;line-height:1.8;
+  -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+}
+a{color:var(--accent);text-decoration:none;transition:color .2s;}
+a:hover{color:var(--gold);}
+img{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none;}
+
+/* === Sidebar ============================================================ */
+#sb{
+  position:fixed;left:0;top:0;width:var(--sbW);height:100vh;
+  background:var(--sbBg);color:var(--sbText);z-index:100;
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 0 16px;overflow-y:auto;scrollbar-width:none;
+}
+#sb::-webkit-scrollbar{display:none;}
+.sb-brand{
+  position:sticky;top:0;width:100%;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:11px;letter-spacing:2px;
+  color:var(--gold);writing-mode:horizontal-tb;text-orientation:mixed;
+  text-align:center;line-height:1.5;
+  background:linear-gradient(to bottom,var(--sbBg) 78%,rgba(30,26,20,0));
+  padding:14px 4px 12px;margin-bottom:6px;z-index:5;
+  text-decoration:none;cursor:pointer;
+  transition:color .25s,background .25s;display:block;
+  border-bottom:1px solid rgba(184,134,11,.25);
+}
+.sb-brand:hover{color:var(--goldL);}
+.sb-brand .sb-brand-line1{display:block;font-size:11px;letter-spacing:1.5px;opacity:.78;}
+.sb-brand .sb-brand-line2{display:block;font-size:13px;font-weight:700;letter-spacing:2.2px;color:var(--goldL);margin-top:2px;}
+.sb-brand .sb-brand-arrow{display:block;font-size:10px;opacity:.55;margin-top:2px;}
+.sb-nav{display:flex;flex-direction:column;gap:6px;padding-top:6px;width:100%;align-items:center;}
+.sb-item{
+  display:flex;flex-direction:column;align-items:center;
+  padding:3px 4px;cursor:pointer;text-decoration:none;color:var(--sbText);
+  width:100%;transition:background .25s,color .25s;border-radius:6px;
+}
+.sb-item:hover{background:rgba(184,134,11,.12);color:var(--goldL);}
+.sb-item.active{background:rgba(184,134,11,.22);color:var(--goldL);box-shadow:inset 0 0 12px rgba(184,134,11,.45);}
+.sb-circle{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,#3d3225,#2a2218);
+  border:1.5px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:14px;font-weight:600;
+  color:var(--gold);margin-bottom:3px;
+  transition:all .25s;
+}
+.sb-item.active .sb-circle{background:linear-gradient(135deg,var(--gold),var(--goldL));color:#1e1a14;box-shadow:0 0 12px rgba(212,168,75,.65);}
+.sb-label{font-size:10.5px;letter-spacing:1px;color:var(--sbText);opacity:.85;text-align:center;line-height:1.3;}
+#sbToggle{
+  display:none;position:fixed;top:12px;left:12px;z-index:200;
+  width:42px;height:42px;border:none;border-radius:8px;
+  background:rgba(30,26,20,.92);color:var(--gold);
+  font-size:22px;cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.3);
+}
+
+/* === Read-progress capsule ============================================== */
+.read-progress{
+  position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+  z-index:120;background:rgba(30,26,20,.92);color:var(--gold);
+  padding:8px 22px;border-radius:30px;
+  border:1px solid rgba(184,134,11,.5);
+  box-shadow:0 4px 18px rgba(0,0,0,.25);
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:13px;letter-spacing:2px;
+  display:flex;align-items:center;gap:12px;
+  pointer-events:none;user-select:none;backdrop-filter:blur(6px);
+}
+.read-progress .rp-bar{width:140px;height:3px;background:rgba(212,196,168,.18);border-radius:2px;overflow:hidden;position:relative;}
+.read-progress .rp-fill{position:absolute;top:0;left:0;bottom:0;background:linear-gradient(90deg,var(--gold),var(--goldL));width:0%;transition:width .3s;}
+.read-progress .rp-pct{font-weight:600;min-width:38px;text-align:right;}
+.read-progress .rp-label{font-size:11px;opacity:.75;letter-spacing:3px;}
+
+/* === Main layout ======================================================== */
+.main{margin-left:var(--sbW);padding:0;}
+
+/* === Hero =============================================================== */
+.site-hero{
+  position:relative;background:var(--headGrad);color:#fff;
+  padding:90px 30px 80px;text-align:center;overflow:hidden;
+}
+.site-hero::before{
+  content:'空';position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);font-size:480px;font-weight:900;
+  opacity:.04;color:var(--gold);font-family:&quot;Noto Serif TC&quot;,serif;
+  pointer-events:none;
+}
+.site-hero .hero-content{position:relative;z-index:2;max-width:980px;margin:0 auto;}
+.hero-meta{font-family:&quot;Noto Sans TC&quot;,sans-serif;letter-spacing:6px;font-size:14px;color:var(--goldL);margin-bottom:14px;opacity:.9;}
+.hero-title{font-size:48px;font-weight:900;color:#fff;letter-spacing:8px;margin-bottom:16px;text-shadow:0 3px 14px rgba(0,0,0,.45);}
+.hero-subtitle{font-size:18px;color:var(--goldL);letter-spacing:3px;margin-bottom:18px;font-weight:300;}
+.hero-sub{font-size:15px;color:#e8d8b5;line-height:2;margin-top:18px;opacity:.92;}
+.hero-range{
+  display:inline-block;margin-top:24px;padding:8px 22px;
+  border:1px solid var(--gold);border-radius:30px;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:14px;letter-spacing:3px;
+  color:var(--goldL);
+}
+
+/* === Preface ============================================================ */
+.preface{
+  background:linear-gradient(180deg,#fffdf5,var(--bg));
+  padding:50px 30px 30px;
+}
+.preface-inner{max-width:880px;margin:0 auto;}
+.preface-title{
+  text-align:center;font-size:26px;color:var(--accent);letter-spacing:4px;
+  margin-bottom:20px;font-weight:700;
+}
+.preface-title::before,.preface-title::after{content:'❖';margin:0 16px;font-size:18px;color:var(--gold);}
+.preface p{margin-bottom:14px;font-size:16.5px;line-height:2;color:var(--text2);}
+.preface .pf-quote{
+  background:var(--verseBg);border-left:5px solid var(--gold);
+  padding:14px 22px;margin:18px 0;border-radius:6px;
+  font-size:16.5px;color:var(--text);font-weight:500;
+}
+
+/* === TOC ================================================================ */
+.toc-section{
+  background:var(--card);padding:50px 30px 56px;
+  border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);
+}
+.toc-section .toc-inner{max-width:1100px;margin:0 auto;}
+.toc-title{text-align:center;font-size:30px;color:var(--accent);letter-spacing:5px;margin-bottom:8px;font-weight:700;}
+.toc-desc{text-align:center;font-size:15px;color:var(--text-muted);letter-spacing:2px;margin-bottom:32px;}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
+.toc-card{
+  background:#fffdf5;border:1px solid var(--border);border-radius:10px;
+  padding:16px 18px;display:flex;align-items:center;gap:14px;
+  cursor:pointer;text-decoration:none;color:var(--text);
+  transition:all .25s;box-shadow:0 1px 3px var(--shadow);
+}
+.toc-card:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 4px 14px rgba(184,134,11,.18);}
+.toc-num{
+  flex:0 0 36px;width:36px;height:36px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--goldL));color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:15px;font-weight:700;
+  box-shadow:0 2px 6px rgba(184,134,11,.35);
+}
+.toc-name{flex:1;font-size:16px;line-height:1.55;color:var(--text);font-weight:500;}
+.toc-name small{display:block;font-size:12.5px;color:var(--text-muted);font-weight:400;margin-top:4px;letter-spacing:1px;}
+
+/* === Chapters =========================================================== */
+.chapter{margin:36px 0 0;}
+.ch-head{
+  background:var(--headGrad);color:#fff;padding:50px 30px 46px;
+  text-align:center;position:relative;overflow:hidden;
+  border-bottom:3px solid var(--gold);
+}
+.ch-head::after{
+  content:'';position:absolute;left:50%;bottom:0;
+  transform:translateX(-50%);width:120px;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.ch-num{font-family:&quot;Noto Sans TC&quot;,sans-serif;letter-spacing:5px;font-size:15px;color:var(--goldL);margin-bottom:10px;opacity:.9;}
+.ch-name{font-size:28px;font-weight:700;color:#fff;letter-spacing:4px;margin-bottom:10px;}
+.ch-sub{font-size:14px;color:#e8d8b5;letter-spacing:2px;line-height:1.7;opacity:.85;font-family:&quot;Noto Sans TC&quot;,sans-serif;}
+.ch-body{
+  max-width:980px;margin:0 auto;padding:36px 32px 50px;
+  background:var(--bg);
+}
+
+/* === Bridge cards ======================================================= */
+.bridge{
+  background:linear-gradient(135deg,#fffdf5,#f5ecd8);
+  border:1px solid var(--border);border-left:5px solid var(--gold);
+  border-radius:10px;padding:18px 24px;margin:0 0 26px;
+  box-shadow:0 2px 10px rgba(91,58,41,.06);
+}
+.bridge-outro{
+  border-left-color:var(--accentL);
+  background:linear-gradient(135deg,#fdf8e8,#f2e6c8);
+  margin-top:30px;margin-bottom:14px;
+}
+.bridge-label{
+  display:inline-block;font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:11px;
+  background:var(--gold);color:#fff;
+  padding:3px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:10px;
+}
+.bridge-outro .bridge-label{background:var(--accent);}
+.bridge p{margin:0 0 8px;color:var(--text2);line-height:2;font-size:15.5px;}
+.bridge p:last-child{margin-bottom:0;}
+
+/* === Headings =========================================================== */
+.ch-body h2{
+  margin:32px 0 14px;padding:10px 0 10px 20px;
+  border-left:4px solid var(--gold);
+  background:linear-gradient(90deg,rgba(184,134,11,.10),transparent 80%);
+  font-size:23px;color:var(--accent);font-weight:700;letter-spacing:2px;
+}
+.ch-body h3{
+  margin:24px 0 10px;padding-bottom:6px;
+  border-bottom:1px solid var(--border-light);
+  font-size:19px;color:var(--text);font-weight:700;letter-spacing:1px;
+}
+.ch-body h4{
+  margin:18px 0 8px;font-size:17px;color:var(--text2);font-weight:700;
+}
+.ch-body h5{margin:14px 0 6px;font-size:16px;color:var(--gold);font-weight:700;}
+.ch-body p{margin-bottom:12px;font-size:17px;line-height:1.95;color:var(--text);}
+
+/* === Verse / classical =================================================== */
+.verse,.gatha,blockquote{
+  background:var(--verseBg);border-left:4px solid var(--verseBd);
+  padding:14px 22px;margin:16px 0;line-height:1.9;
+  white-space:normal;text-align:center;font-style:normal;border-radius:6px;
+  font-size:18px;
+}
+.classical-text{
+  background:#FFFDF5;border:1px solid #E8E0D0;border-radius:10px;
+  padding:18px 24px;line-height:1.95;margin:16px 0;font-size:17px;
+  color:var(--text);
+}
+.text-label{
+  display:inline-block;background:#3d3225;color:#fff;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:11.5px;letter-spacing:2.5px;
+  padding:3px 12px;border-radius:11px;margin-bottom:10px;
+}
+
+/* === Cards ============================================================== */
+.card,.insight,.commentary,.practice,.note{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:16px 22px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);
+}
+.card-title{font-size:18px;color:var(--accent);font-weight:700;margin-bottom:8px;}
+.card-content{font-size:17px;color:var(--text);line-height:1.9;}
+.insight{border-left:4px solid var(--gold);}
+.insight-title{font-size:18px;color:var(--gold);font-weight:700;margin-bottom:8px;}
+.commentary{border-left:4px solid var(--accentL);background:#fbf7eb;}
+.note{background:#f5ecd8;border-left:4px solid var(--accent);}
+
+/* === Q&amp;A ================================================================ */
+.qa{margin:18px 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.qa .q,.qa .a{
+  padding:14px 18px;border-radius:8px;font-size:17px;line-height:1.9;
+}
+.qa .q{background:#e8eef5;border-left:4px solid #3a6b9c;color:#1e3a5c;}
+.qa .a{background:#fdf6e8;border-left:4px solid var(--accent);color:#4a2f1c;}
+.qa .q::before{content:'問';display:inline-block;background:#3a6b9c;color:#fff;font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:11px;padding:2px 8px;border-radius:8px;margin-right:8px;}
+.qa .a::before{content:'答';display:inline-block;background:var(--accent);color:#fff;font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:11px;padding:2px 8px;border-radius:8px;margin-right:8px;}
+
+/* === Grid layouts ======================================================= */
+.four-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+.four-grid .cell{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:14px 18px;font-size:16.5px;line-height:1.85;
+}
+.four-grid .cell h5{margin-top:0;margin-bottom:8px;color:var(--accent);font-size:16.5px;}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0;}
+.three-col .col{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px;font-size:16.5px;line-height:1.85;}
+.three-col .col h5{color:var(--accent);font-size:16.5px;margin-top:0;margin-bottom:8px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+.two-col .col{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px;font-size:16.5px;line-height:1.85;}
+.two-col .col h5{color:var(--accent);font-size:16.5px;margin-top:0;margin-bottom:8px;}
+
+/* === Compare table ====================================================== */
+.compare-table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:8px;overflow:hidden;font-size:16px;}
+.compare-table th,.compare-table td{padding:12px 14px;border:1px solid var(--border);text-align:left;line-height:1.8;}
+.compare-table th{background:var(--headGrad);color:#fff;font-weight:700;letter-spacing:1.5px;font-size:15px;}
+.compare-table td:first-child{background:#f5ecd8;font-weight:600;color:var(--accent);}
+
+/* === Flow =============================================================== */
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:18px 0;}
+.flow.flow-v{flex-direction:column;}
+.flow-box,.flow-step{
+  background:var(--card);border:1.5px solid var(--gold);border-radius:10px;
+  padding:12px 18px;min-width:160px;max-width:520px;text-align:center;
+  font-size:16.5px;line-height:1.6;color:var(--text);
+  box-shadow:0 2px 6px rgba(184,134,11,.15);
+}
+.flow-box small,.flow-step small{display:block;color:var(--text-muted);font-size:13px;margin-top:4px;}
+.flow-arrow{color:var(--gold);font-size:24px;font-weight:700;}
+
+/* === Spectrum =========================================================== */
+.spectrum{
+  display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:0;margin:18px 0;
+  background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;
+}
+.sp-end,.sp-mid{padding:18px 16px;text-align:center;font-size:15px;line-height:1.6;}
+.sp-end{background:#f5ecd8;color:var(--text2);}
+.sp-end.left{border-right:1px dashed var(--border);}
+.sp-end.right{border-left:1px dashed var(--border);}
+.sp-mid{background:linear-gradient(135deg,var(--gold),var(--goldL));}
+.sp-mid h5{color:#fff;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.35);font-size:16.5px;margin-bottom:6px;}
+.sp-mid small{color:rgba(255,255,255,.92);}
+
+/* === Domino chain ======================================================= */
+.domino-chain{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:16px 0;}
+.domino{background:var(--card);border:1.5px solid var(--accentL);border-radius:6px;padding:8px 14px;font-size:15px;color:var(--text);box-shadow:0 1px 3px var(--shadow);}
+.chain-arrow{color:var(--accent);font-size:18px;}
+
+/* === Triangle diagram =================================================== */
+.triangle-diagram{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;
+}
+.tri-node{
+  background:#fdf6e8;border:1.5px solid var(--gold);border-radius:8px;
+  padding:14px 12px;text-align:center;font-size:15.5px;line-height:1.7;color:var(--text);
+}
+.tri-node h5{color:var(--accent);font-size:16px;margin:0 0 6px;}
+.tri-conclusion{
+  grid-column:1/-1;background:linear-gradient(135deg,#fbf3df,#f5ecd8);
+  border:1px dashed var(--gold);border-radius:8px;padding:14px 18px;
+  text-align:center;font-size:16px;color:var(--accent);font-weight:600;
+}
+
+/* === Refutation grid ==================================================== */
+.refutation-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+.ref-cell{
+  background:var(--card);border:1.5px solid #c4956a;border-radius:8px;
+  padding:14px 18px;font-size:16px;line-height:1.85;
+}
+.ref-cell h5{margin-bottom:6px;color:var(--accent-red);font-size:16.5px;}
+.ref-cell::before{content:'✘ ';color:var(--accent-red);font-weight:700;}
+
+/* === Strong / em ======================================================== */
+.ch-body strong,.ch-body b{color:var(--accent-red);font-weight:700;}
+
+/* === Footer ============================================================= */
+.site-footer{
+  background:var(--headGrad);color:var(--goldL);
+  padding:36px 30px;text-align:center;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:14px;letter-spacing:2px;line-height:2;
+}
+.site-footer hr{border:none;border-top:1px solid rgba(184,134,11,.3);margin:18px auto;max-width:300px;}
+
+/* === Back to top ======================================================== */
+#backTop{
+  position:fixed;right:24px;bottom:80px;width:44px;height:44px;
+  border:none;border-radius:50%;background:rgba(30,26,20,.9);color:var(--gold);
+  font-size:22px;cursor:pointer;display:none;z-index:110;
+  box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+#backTop.show{display:block;}
+
+/* === Responsive ========================================================= */
+@media(max-width:900px){
+  #sb{transform:translateX(-100%);transition:transform .3s;}
+  #sb.open{transform:translateX(0);}
+  #sbToggle{display:block;}
+  .main{margin-left:0;}
+  .four-grid,.two-col,.three-col,.qa,.refutation-grid{grid-template-columns:1fr;}
+  .triangle-diagram{grid-template-columns:1fr;}
+  .spectrum{grid-template-columns:1fr;}
+  .hero-title{font-size:34px;letter-spacing:4px;}
+  .ch-head{padding:36px 20px 32px;}
+  .ch-name{font-size:22px;letter-spacing:2px;}
+  .ch-body{padding:24px 18px 36px;}
+}
+@media(max-width:600px){
+  body{font-size:15.5px;}
+  .hero-title{font-size:28px;}
+  .toc-grid{grid-template-columns:1fr;}
+}
+
+/* ============ 1.2x 字級放大（buddhist-text-html 新卷預設）============ */
+body{font-size:20px!important;}
+.hero-title,.site-hero h1{font-size:56px!important;}
+.hero-subtitle,.site-hero .hero-subtitle{font-size:20px!important;}
+.hero-sub,.site-hero .hero-sub,.hero-meta{font-size:18px!important;}
+.hero-range{font-size:17px!important;}
+.preface p,.preface-text p{font-size:19px!important;line-height:2.1!important;}
+.preface h2,.preface-title{font-size:30px!important;}
+.toc-title{font-size:34px!important;}
+.toc-desc{font-size:17px!important;}
+.toc-name{font-size:19.5px!important;line-height:1.7!important;}
+.toc-num{font-size:17px!important;}
+.bridge p{font-size:18.5px!important;line-height:2.1!important;}
+.bridge-label{font-size:12.5px!important;letter-spacing:2.2px!important;}
+.ch-num{font-size:18px!important;}
+.ch-name{font-size:34px!important;}
+.ch-sub,.ch-desc,.ch-subtitle{font-size:17px!important;}
+.read-progress{font-size:14px!important;padding:9px 24px!important;}
+.read-progress .rp-bar{width:148px!important;height:4px!important;}
+.read-progress .rp-pct{font-size:13px!important;}
+.read-progress .rp-label{font-size:12px!important;}
+.sb-circle{font-size:15px!important;}
+.sb-label{font-size:11.5px!important;}
+.site-footer,.site-footer p{font-size:15px!important;}
+
+.ch-body,.chapter,.section,article,main{font-size:20px!important;line-height:1.9!important;}
+.ch-body p,p,li,td,th{font-size:20px!important;line-height:1.9!important;}
+.ch-body h2{font-size:28px!important;}
+.ch-body h3{font-size:23.5px!important;}
+.ch-body h4{font-size:20px!important;}
+.ch-body h5{font-size:18.5px!important;}
+.verse,.gatha,blockquote,.classical-text{font-size:21px!important;line-height:2.1!important;}
+.card-content,.col-content,.section-content,.card-desc,.insight-content,.commentary p{font-size:20px!important;line-height:1.9!important;}
+.card-title,.col-title,.section-title,.insight-title{font-size:21px!important;}
+.text-label{font-size:13.5px!important;}
+.flow-box,.flow-step{font-size:17.5px!important;}
+.qa .q,.qa .a{font-size:18.5px!important;line-height:1.9!important;}
+.four-grid .cell,.two-col .col,.three-col .col{font-size:18px!important;}
+.spectrum .sp-end{font-size:16px!important;}
+.spectrum .sp-mid{font-size:16px!important;}
+.spectrum .sp-mid h5{font-size:17.5px!important;}
+.tri-node{font-size:17px!important;}
+.tri-conclusion{font-size:17.5px!important;}
+.compare-table th,.compare-table td{font-size:17.5px!important;}
+.domino{font-size:16.5px!important;}
+.ref-cell{font-size:18px!important;}
+.ref-cell h5{font-size:18px!important;}
+
+/* === Anti-print =========================================================*/
+@media print{body{display:none!important;}}
+
+
+html,body{margin:0!important;padding:0!important;background:transparent!important;
+  min-height:0!important;height:auto!important;
+  overflow:hidden!important;
+  scrollbar-width:none!important;-ms-overflow-style:none!important;
+  -webkit-user-select:none!important;-moz-user-select:none!important;
+  -ms-user-select:none!important;user-select:none!important;
+  -webkit-touch-callout:none!important;}
+html::-webkit-scrollbar,body::-webkit-scrollbar,
+*::-webkit-scrollbar{display:none!important;width:0!important;height:0!important;}
+*{-webkit-user-select:none!important;-moz-user-select:none!important;
+  -ms-user-select:none!important;user-select:none!important;
+  -webkit-user-drag:none!important;
+  scrollbar-width:none!important;}
+body{padding:0 8px;}
+.main,main,#main{min-height:0!important;height:auto!important;
+  padding-bottom:0!important;margin-bottom:0!important;margin-left:0!important;}
+section:last-of-type,.chapter:last-of-type,.chapter:last-child,
+section.chapter:last-child,.ch-body:last-child{
+  margin-bottom:0!important;padding-bottom:0!important;}
+#sb,#sbToggle,#backTop,aside.sb,.read-progress{display:none!important;}
+img{-webkit-user-drag:none!important;pointer-events:none;}
+
+
+/* 1.2x inner boost · iframe srcdoc 內部 */
+.ch-body,.chapter,.section,article,main{font-size:20px!important;line-height:1.9!important;}
+.ch-body p,.chapter p,.section p,article p,p,li,td,th{font-size:20px!important;line-height:1.9!important;}
+h1{font-size:38px!important;}
+h2{font-size:30px!important;}
+h3{font-size:23.5px!important;}
+h4{font-size:20px!important;}
+h5{font-size:18.5px!important;}
+.verse,.gatha,blockquote,.classical-text{font-size:22px!important;line-height:2.2!important;}
+.toc-title{font-size:30px!important;}
+.toc-desc{font-size:17px!important;}
+.toc-num{font-size:18px!important;}
+.toc-name{font-size:20px!important;line-height:1.7!important;}
+.ch-num{font-size:18px!important;}
+.ch-name{font-size:32px!important;}
+.ch-sub{font-size:17px!important;}
+.card-content,.col-content,.section-content,.card-desc,.insight-content,.commentary p{font-size:20px!important;line-height:1.9!important;}
+.card-title,.col-title,.section-title,.insight-title{font-size:21.5px!important;}
+.text-label{font-size:13.5px!important;}
+.flow-box,.flow-step,.flow-chart .flow-step,.domino{font-size:17.5px!important;}
+.qa .q,.qa .a{font-size:20px!important;line-height:1.9!important;}
+.four-grid .cell,.two-col .col,.three-col .col{font-size:19px!important;}
+.grid-4 .cell{font-size:19px!important;}
+.debate .q-side,.debate .a-side{font-size:19px!important;}
+.spectrum .sp-node{font-size:15.5px!important;}
+.refutation-grid .ref-cell{font-size:17.5px!important;}
+.roadmap .rm-step{font-size:17px!important;}
+.triangle-diagram .tri-node{font-size:17px!important;}
+.checklist li{font-size:20px!important;}
+.phase-badge{font-size:14px!important;}
+
+/* 金底 h5 防疊色 */
+.sp-mid,.sp-mid *{color:#fff!important;}
+.sp-mid h5{color:#fff!important;font-weight:700!important;text-shadow:0 1px 3px rgba(0,0,0,.35);}
+.sp-mid small{color:rgba(255,255,255,.92)!important;}
+</style></head><body oncontextmenu='return false' oncopy='return false' oncut='return false' onselectstart='return false' ondragstart='return false'>
+<a id=&quot;top&quot; style=&quot;position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;&quot;></a>
+
+
+
+
+
+<div class=&quot;preface&quot;>
+<div class=&quot;preface-inner&quot;>
+<h2 class=&quot;preface-title&quot;>編者前言</h2>
+<p>本卷彙整大智度論〈釋學空不證品第六十〉之經文與論文兩段，並融入現代論文〈空性的認知幾何學〉(Cognitive Geometry of Emptiness) 的七層模塊解析，使古典經論與當代認知架構互相映照。</p>
+<p>本品所要解決的，是大乘菩薩道最艱難也最精微的弔詭：菩薩修習通往涅槃的標準道法（三十七道品 + 三解脫門），卻終不取證涅槃；走這條路、卻不抵達那一站。為什麼？因為若取證涅槃、即墮聲聞辟支佛地，無法完成「普度眾生」的本願。</p>
+<div class=&quot;pf-quote&quot;>
+        本卷展開的全部論理，可以濃縮為一句口訣 — 經文反覆強調的內語：「<strong>我今是學時，非是證時</strong>」。學位與證位之分、過程與終局之別、智慧與方便之合，盡在於此。
+      </div>
+<p>章節組織遵循「卷 → 品 → 章 → 節」四層體系：第一章為總綱，先把核心命題與系統對比擺出來；第二章為原典，提供完整的經文與論主問答之文字底本；第三至七章依現代論文的論理脈絡逐層展開——學入差別、譬喻力學、本願防護、阿鞞跋致辨識、最終命題重構。建議讀者依序通讀，亦可於熟悉原典後直接由第三章進入論理分析。</p>
+</div>
+</div>
+<div class=&quot;toc-section&quot;>
+<div class=&quot;toc-inner&quot;>
+<h2 class=&quot;toc-title&quot;>目 次</h2>
+<p class=&quot;toc-desc&quot;>卷七十六 · 釋學空不證品第六十 · 全七章</p>
+<div class=&quot;toc-grid&quot;>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-1&quot;><div class=&quot;toc-num&quot;>1</div><div class=&quot;toc-name&quot;>第一章 · 總綱：學空而不證的核心命題<small>Module 0 · 為什麼這題會出現？</small></div></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-2&quot;><div class=&quot;toc-num&quot;>2</div><div class=&quot;toc-name&quot;>第二章 · 大智度論卷七十六學空不證品第六十原典<small>經文與論主答問之原文</small></div></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-3&quot;><div class=&quot;toc-num&quot;>3</div><div class=&quot;toc-name&quot;>第三章 · 龍樹釋論：學空與入空的動態幾何<small>Module 1 · 學入差別、深入與不專心的兩重操作</small></div></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-4&quot;><div class=&quot;toc-num&quot;>4</div><div class=&quot;toc-name&quot;>第四章 · 三大譬喻的拓樸結構解析<small>Module 2 · 壯夫 · 飛鳥 · 善射 · 三層運作模型</small></div></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-5&quot;><div class=&quot;toc-num&quot;>5</div><div class=&quot;toc-name&quot;>第五章 · 本願防護與大悲反向拉扯<small>Module 3 · 自我宣告 · 防虛無 · 動態平衡 · 破四顛倒</small></div></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-6&quot;><div class=&quot;toc-num&quot;>6</div><div class=&quot;toc-name&quot;>第六章 · 阿鞞跋致的辨識邏輯與授記法則<small>Module 4 · 錯誤盲區 · 正確答相 · 諸佛懸記 · 慧與方便</small></div></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-7&quot;><div class=&quot;toc-num&quot;>7</div><div class=&quot;toc-name&quot;>第七章 · 核心命題重構：行空而不證空<small>Module 5 · 觀空（智）+ 不證（悲）= 大乘菩薩心法的底層架構</small></div></a>
+</div>
+</div>
+</div>
+<section class=&quot;chapter&quot; id=&quot;chapter-1&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第一章</div>
+<div class=&quot;ch-name&quot;>總綱：學空而不證的核心命題</div>
+<div class=&quot;ch-sub&quot;>Module 0 · 為什麼這題會出現？</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本品要旨</div>
+<p>《大智度論》卷七十六〈釋學空不證品第六十〉處理一個極艱難的弔詭——<strong>菩薩修習通向涅槃的道法（三十七道品、三解脫門），卻終不取證涅槃</strong>。為什麼？因為一旦取證，便墮落聲聞、辟支佛地，無法繼續度眾、成就無上菩提。</p>
+<p>本品借助須菩提之口層層追問、佛陀以三大譬喻（壯夫、飛鳥、善射）酬答，再由龍樹菩薩以「學空與入空之差別」為主軸展開系統解析；本卷現代論文〈Cognitive Geometry of Emptiness〉（空性的認知幾何學）則把這套邏輯重構為七層模塊，本 HTML 即依此七層搭建章節骨架。</p>
+</div>
+<h2>第一節　核心問題的提出</h2>
+<p>本品開卷即由須菩提向佛提出八重追問：</p>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經文</span>
+<p>「世尊！若菩薩摩訶薩欲行般若波羅蜜，云何學空三昧？云何入空三昧？云何學無相、無作三昧？云何入無相、無作三昧？云何學四念處？云何修四念處？乃至云何學八聖道分？云何修八聖道分？」</p>
+</div>
+<p>注意這裡藏著一組關鍵的雙詞對照——<strong>「學」與「入」、「學」與「修」</strong>。須菩提沒有把它們當作同義詞使用，而是刻意分立。龍樹在〈論〉部首先回答這一點：「初名學空，後是入空；因是學空，果是入空；方便名學空，得名入空。」這就為後續所有討論奠定了「階段－動態」的基本框架。</p>
+<h2>第二節　二乘取證與菩薩不證的系統對比</h2>
+<p>聲聞、辟支佛是修同一條三十七道品 + 三解脫門的修行人，他們<strong>修空 → 入空 → 證空（證涅槃）</strong>，三步走完，跳出三界。但菩薩走前兩步、卻刻意不走第三步。這便是本品要解析的「同道異果」之謎。</p>
+<table class=&quot;compare-table&quot;>
+<tr><th>對比軸</th><th>二乘（聲聞 / 辟支佛）</th><th>菩薩摩訶薩</th></tr>
+<tr><td>修習法門</td><td>三十七道品、三解脫門</td><td>同 — 三十七道品、三解脫門</td></tr>
+<tr><td>對「我」的處理</td><td>斷吾我、捨愛著</td><td>善學自相空，乃至微塵無餘</td></tr>
+<tr><td>證的態度</td><td>直趣涅槃，取證實際</td><td>不取漏盡證，不墮聲聞辟支佛地</td></tr>
+<tr><td>行持核心</td><td>自度</td><td>大悲本願 · 不捨眾生</td></tr>
+<tr><td>對「空」的見地</td><td>觀空、住空、證空</td><td>知空亦空、涅槃亦空、無所證</td></tr>
+<tr><td>結果</td><td>跳出三界，住涅槃</td><td>不退阿耨多羅三藐三菩提</td></tr>
+</table>
+<h2>第三節　修空證涅槃的弔詭</h2>
+<p>用一句最白話的話歸結這個弔詭：<strong>菩薩走通往涅槃的這條路，卻偏偏不抵達涅槃這一站</strong>。</p>
+<div class=&quot;domino-chain&quot;>
+<div class=&quot;domino&quot;>三解脫門</div><span class=&quot;chain-arrow&quot;>→</span>
+<div class=&quot;domino&quot;>空 / 無相 / 無作</div><span class=&quot;chain-arrow&quot;>→</span>
+<div class=&quot;domino&quot;>本應證涅槃</div><span class=&quot;chain-arrow&quot;>⊘</span>
+<div class=&quot;domino&quot;>菩薩不證</div>
+</div>
+<p>聽起來像悖論，但本品全文就是要證明：這不是矛盾，而是一套精細到極致的<strong>心識系統設計</strong>——<em>方便力 · 大悲願 · 善根成就</em>三條防護機制同時運作，使菩薩在最深的空觀中保持「不取證」的張力。後續六章就是一層層拆解這套機制。</p>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>第一章把問題的全景擺出來——同走一條路、同修一份法，二乘與菩薩在「證」這個關卡上分道揚鑣。第二章先給讀者完整的經文與龍樹釋論原典，作為後續各章解析的文字底本；不熟悉文言原典者也可先跳到第三章看現代論文邏輯。</p>
+</div>
+</div>
+</section><section class=&quot;chapter&quot; id=&quot;chapter-2&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第二章</div>
+<div class=&quot;ch-name&quot;>大智度論卷七十六學空不證品第六十原典</div>
+<div class=&quot;ch-sub&quot;>經文與論主答問之原文</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章定位</div>
+<p>本章為〈釋學空不證品第六十〉的完整文字底本，分「經」「論」兩段。經為佛與須菩提的問答，含三大譬喻；論為龍樹菩薩的逐段釋義。閱讀時可對照後續第三至七章的論文式解析。</p>
+</div>
+<h2>第一節　須菩提啟問六波羅蜜與三解脫門</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 須菩提問</span>
+<p>須菩提白佛言：「世尊！若菩薩摩訶薩欲行般若波羅蜜，云何學空三昧？云何入空三昧？云何學無相、無作三昧？云何入無相、無作三昧？云何學四念處？云何修四念處？乃至云何學八聖道分？云何修八聖道分？」</p>
+</div>
+<h2>第二節　佛答觀空不證義</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 佛初答</span>
+<p>佛告須菩提：「菩薩摩訶薩行般若波羅蜜時，應觀色空、受想行識空，十二入、十八界，乃至應觀欲、色、無色界空。作是觀時，不令心亂。是菩薩摩訶薩若心不亂，則不見是法；若不見是法，則不作證。何以故？是菩薩摩訶薩善學自相空故，不有餘、不有分，證法、證者皆不可見。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 須菩提再問</span>
+<p>須菩提白佛言：「世尊！如佛所說，菩薩摩訶薩不應空法作證。世尊！云何菩薩住空法中而不作證？」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 佛再答（具足觀空）</span>
+<p>佛告須菩提：「若菩薩摩訶薩具足觀空，先作是願：『我今不應空法作證；我今學時，非是證時。』菩薩摩訶薩不專攝心繫在緣中，是故菩薩摩訶薩於阿耨多羅三藐三菩提中不退，亦不取漏盡證。須菩提！菩薩摩訶薩如是大善妙法成就。何以故？住是空中作是念：『我今是學時，非是證時。』須菩提！菩薩摩訶薩應如是念：『我是學檀波羅蜜時，非是證時；學尸羅波羅蜜、羼提波羅蜜、毘梨耶波羅蜜、禪波羅蜜時，修四念處時乃至修八聖道分時，非是證時。』」</p>
+</div>
+<h2>第三節　三大譬喻：壯夫、飛鳥、善射</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 譬喻一 · 壯夫</span>
+<p>「須菩提！譬如壯夫，勁勇猛健，善於兵法、六十四能，堅持器仗，安立不動，巧諸伎術，端正淨潔，人所愛敬，少修事業，得報利多。以是因緣故，眾所恭敬、尊重、讚歎；見人敬重，倍復歡喜。少有因緣，當至他處，扶將老弱，過諸險難恐怖之處；安慰父母，曉喻妻子：『莫有恐懅！我能過此，必無所苦。』嶮難道中，多有怨賊潛伏劫害，其人智力具足故，能度惡道，還歸本處，不遇賊害，歡喜安樂。須菩提！菩薩摩訶薩亦如是，於一切眾生中，悲心愛念，欲度脫之，安立不動，於畢竟空中，以四無量心運致眾生，不於空中作證。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 譬喻二 · 飛鳥</span>
+<p>「須菩提！譬如有翼之鳥，飛騰虛空而不墮墜，雖在空中，亦不住空。須菩提！菩薩摩訶薩亦如是，學空解脫門，學無相、無作解脫門，亦不作證；以不作證故，不墮聲聞、辟支佛地；未具足佛十力、大慈大悲、無量諸佛法、一切種智，亦不證空、無相、無作解脫門。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 譬喻三 · 善射</span>
+<p>「須菩提！譬如健人，學諸射法，善於射術，仰射空中，復以後箭射於前箭，箭箭相拄，不令箭墮，隨意自在；若欲令墮，便止後箭爾乃墮地。須菩提！菩薩摩訶薩亦如是，行般若波羅蜜，以方便力故，為阿耨多羅三藐三菩提，諸善根未具足，不於實際作證；若善根成就，是時便於實際作證。以是故，須菩提！菩薩摩訶薩行般若波羅蜜時，應如是觀諸法法相！」</p>
+</div>
+<h2>第四節　本願不捨眾生</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 須菩提歎難希有</span>
+<p>須菩提白佛言：「世尊！菩薩摩訶薩所為甚難！何以故？雖學是諸法相、學實際、學如、學法性、學畢竟空，乃至學自相空及三解脫門，終不中道墮落。世尊！是甚希有！」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 佛答 · 本願力</span>
+<p>佛告須菩提：「是菩薩摩訶薩不捨一切眾生故，作如是願。須菩提！若菩薩摩訶薩作是念：『我不應捨一切眾生！眾生沒在無所有法中，我應當度！』爾時，即入空解脫門、無相解脫門、無作解脫門。須菩提！當知是菩薩摩訶薩成就方便力，未得一切種智，行是解脫門，亦不中道取實際證。」</p>
+</div>
+<h2>第五節　破四顛倒 · 得法 · 男女相</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 觀甚深法 · 度眾相</span>
+<p>「復次，須菩提！菩薩摩訶薩欲觀是諸甚深法，所謂內空乃至無法有法空，四念處乃至三解脫門，爾時菩薩摩訶薩應生如是心：『是諸眾生長夜行我相乃至知者、見者相，著於得法；為眾生斷是諸相故，得阿耨多羅三藐三菩提，當說法。』爾時，菩薩行空解脫門，無相、無作解脫門，亦不取實際證；以不證故，不墮須陀洹果，乃至辟支佛道。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 破四顛倒</span>
+<p>「復次，須菩提！若菩薩摩訶薩作是念：『眾生長夜著四顛倒：常想、樂想、我想、淨想；為是眾生故，求薩婆若。我得阿耨多羅三藐三菩提時，為說無常法、苦、不淨、無我法。』是菩薩成就是心，以方便力行般若波羅蜜，不得佛三昧，未具足佛十力、四無所畏、四無礙智、大慈大悲、十八不共法，亦不實際作證。爾時，菩薩修無作解脫門，雖未得阿耨多羅三藐三菩提，亦不實際作證。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 破得法 · 修空三昧</span>
+<p>「復次，須菩提！若菩薩摩訶薩作是念：『眾生長夜著得法，所謂我、眾生乃至知者、見者，是色、是受想行識、是入、是界，是四禪、四無量心、四無色定；我如是行，如我得阿耨多羅三藐三菩提時，令眾生無是得法。』菩薩是心成就，以方便力行般若波羅蜜，未具足佛十力、四無所畏、四無礙智、大慈大悲、十八不共法，不於實際作證。爾時，菩薩具足修空三昧。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 破男女諸相 · 修無相三昧</span>
+<p>「復次，須菩提！若菩薩摩訶薩作是念：『眾生長夜行諸相，所謂男相、女相、色相、無色相；我如是行，如我得阿耨多羅三藐三菩提時，令眾生無是諸相過失！』是心成就以方便力行般若波羅蜜，未具足佛十力乃至十八不共法，不於實際作證。爾時，菩薩摩訶薩具足修無相三昧。須菩提！若菩薩摩訶薩學六波羅蜜，學內空乃至無法有法空，學四念處乃至空、無相、無作解脫門，學佛十力、四無所畏、四無礙智、大慈大悲，學十八不共法。如是智慧成就，當知是菩薩已具足菩薩道。」</p>
+</div>
+<h2>第六節　阿鞞跋致辨識的試問</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 試問之法</span>
+<p>「須菩提！若諸菩薩摩訶薩若試問時，是菩薩若如是答：『菩薩摩訶薩但應觀空，但應觀無相、無作、無起、無生、無所有；是菩薩摩訶薩不應學空、無相、無作、無起、無生、無所有，不應學是助道法。』須菩提！當知是菩薩諸佛未授阿耨多羅三藐三菩提記。何以故？是人不能說阿鞞跋致菩薩所學相，不能示、不能答。若是菩薩摩訶薩能說、能示、能答阿鞞跋致所學相，當知是菩薩摩訶薩已習學菩薩道入薄地，如餘阿鞞跋致菩薩摩訶薩阿鞞跋致相。」</p>
+</div>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 問答 · 未授記能答否</span>
+<p>須菩提白佛言：「世尊！頗有未得阿鞞跋致菩薩能如是答不？」<br/>
+  佛言：「有。須菩提！是菩薩摩訶薩，六波羅蜜若聞、若不聞，能如是答如阿鞞跋致菩薩摩訶薩。」<br/>
+  須菩提言：「世尊！多有菩薩求佛道，少有菩薩能如是答如阿鞞跋致菩薩摩訶薩學道、無學道中。」<br/>
+  佛語須菩提：「如是！如是！是菩薩甚少！何以故？菩薩摩訶薩少有如是得授記行阿鞞跋致慧地；若有得授記，是人能如是答。是人善根明了，諸天世人所不能壞。」</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>以上經文部分到此結束。從第三章起，我們進入龍樹菩薩的釋論部分；第三章首先回答須菩提的第一道追問——「學」與「入」差別何在？並由此引出本品的第一個方法論主軸：<em>深入空與不專心的兩重操作</em>。</p>
+</div>
+</div>
+</section><section class=&quot;chapter&quot; id=&quot;chapter-3&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第三章</div>
+<div class=&quot;ch-name&quot;>龍樹釋論：學空與入空的動態幾何</div>
+<div class=&quot;ch-sub&quot;>Module 1 · 學入差別、深入與不專心的兩重操作</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章主軸</div>
+<p>須菩提開頭的八重追問藏著兩個結構性的「學 / 入」「學 / 修」對照。龍樹菩薩在〈論〉部首段給出的答案，是整品最重要的方法論起點：<strong>學空與入空，是同一過程的兩個階段、兩個面向</strong>。掌握這套階段論，後續所有譬喻和心法才有立足點。</p>
+</div>
+<h2>第一節　學空與入空的階段與差別</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>論</span>
+<p>問曰：學空、入空有何差別？<br/>
+  答曰：初名學空，後是入空；因是學空，果是入空；方便名學空，得名入空。如是等二道。無相、無作、三十七品亦如是。</p>
+</div>
+<p>龍樹一句話定義出三組階段配對：</p>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;><h5>時間軸</h5>初 → 後<br/><small>學空在前，入空在後</small></div>
+<div class=&quot;col&quot;><h5>因果軸</h5>因 → 果<br/><small>學空為因，入空為果</small></div>
+<div class=&quot;col&quot;><h5>方法軸</h5>方便 → 得<br/><small>學是「怎麼做」、入是「做到了」</small></div>
+</div>
+<p>這個區分非常關鍵——<strong>佛要菩薩走的不是「終局態」，而是「過程態」</strong>。聲聞、辟支佛取的是涅槃道的「終局」（入空、證空），菩薩取的是「過程」（學空、行空），故同行一道而異趣其果。</p>
+<div class=&quot;commentary&quot;>
+<p>三解脫門、三十七品本是聲聞、辟支佛涅槃道，佛卻勅菩薩亦行此道。這正是須菩提所疑：<em>「此是涅槃道，云何菩薩行是道法而不取涅槃證？」</em>佛的回答是：<strong>「菩薩觀色等一切法空。是菩薩以深入禪定，心不可亂，得利智慧力故，不見是空法；以不見故無所證。」</strong></p>
+</div>
+<h2>第二節　深入空與不專心的兩重操作</h2>
+<p>佛在經中先說「不令心亂」，又說「不專攝心繫在緣中」——這兩句驟看相反，是龍樹菩薩特別設一道問答辨明的關鍵。</p>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;>上言「深入禪定，不令心亂」，今云何言「不專心」？</div>
+<div class=&quot;a&quot;>今言「不專心」，是初入時，為不能自出故；上言「深入」者，入已深，知空亦空，不令心在餘事，故言不亂。</div>
+</div>
+<div class=&quot;spectrum&quot;>
+<div class=&quot;sp-end left&quot;><h5>初心過患</h5>專心攝念入禪、繫在空緣中<br/><small>把「空」當實體對象守護<br/>→ 心柔軟而不能自出<br/>→ 滑落聲聞涅槃</small></div>
+<div class=&quot;sp-mid&quot;><h5>中道操作</h5>不專心 + 不亂<small>初入不專繫於空緣，<br/>深入後知空亦空，<br/>無所執著，故真正不亂。</small></div>
+<div class=&quot;sp-end right&quot;><h5>終局智慧</h5>知空亦空、涅槃亦空<br/><small>心不在餘事而非死守一處<br/>方為「不令心亂」之真義</small></div>
+</div>
+<p>論文〈空性的認知幾何學〉把這個張力命名為「<strong>學者的危機：為何『專心』反成障礙？</strong>」——這是修行者最容易踩中的陷阱。「專心」是入門功課，到了見地深處反而變成<em>陷溺</em>的條件。對禪修者來說，這一節是極具實操意義的方法論。</p>
+<h2>第三節　深入則無所證</h2>
+<p>聲聞、辟支佛斷吾我、捨愛著，是「<em>對象消滅式</em>」的解脫——把「我」這個對象斷掉。菩薩善學自相空，是「<em>無對象式</em>」的智慧——根本沒有可斷可證的實體。</p>
+<div class=&quot;four-grid&quot;>
+<div class=&quot;cell&quot;><h5>無自性 → 無對象</h5>No Inherent Existence → No Substantive Object to Attain<br/><small>諸法無自相，故無一個叫「空」的對象供你獲得。</small></div>
+<div class=&quot;cell&quot;><h5>無對象 → 無能證</h5>No Substantive Object → No Realization to Finalize<br/><small>沒有所證，自然沒有能證的最終動作；證不是被克制，而是邏輯與物理上「無處可證」。</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>論文核心命題</div>
+<p>「不證」並非菩薩刻意壓抑證悟的衝動，而是透徹空性之後，<strong>在邏輯與物理上發現「無處可證」的必然結果</strong>。是故經文說「<em>證法、證者皆不可見</em>」——能證之心、所證之法皆無，何處安立一個「證」？</p>
+</div>
+<h2>第四節　菅草之喻：鬆握的智慧</h2>
+<p>龍樹補充了一個極傳神的比喻——<strong>執菅草</strong>。菅草邊緣鋒利，捉得太緩反而傷手；唯有捉得不鬆不緊，才不至於被它割傷。</p>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>論 · 鬆握之喻</span>
+<p>譬如執菅草，捉緩則傷手，若急捉則無傷；菩薩亦如是，深入空故，知空亦空，涅槃亦空，故無所證。</p>
+</div>
+<div class=&quot;flow flow-v&quot;>
+<div class=&quot;flow-step&quot;><strong>緊握</strong>（深入空） — 知空亦空，無所執處<br/><small>反而不被空所傷</small></div>
+<div class=&quot;flow-arrow&quot;>↕</div>
+<div class=&quot;flow-step&quot;><strong>鬆握</strong>（半信半疑） — 把空當實體對象<br/><small>反而被空所縛 → 證涅槃</small></div>
+</div>
+<p>這個邏輯非常反直覺：<em>緊抓反而不傷，鬆握反而傷手</em>。同理，深入空者反而不被空所擒，淺入空者反而被空所縛。<strong>「深」是不取證的真正前置條件</strong>。</p>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>第三章把「為什麼能不證」的內在邏輯講透了——關鍵在於「深入」「鬆握」「不專繫於空緣」這三套操作互相配套。但讀者可能要問：這些操作具體在「行動層面」長什麼樣？第四章便進入經文中三大譬喻——壯夫、飛鳥、善射——以拓樸結構解析菩薩行空的「動態幾何」。</p>
+</div>
+</div>
+</section><section class=&quot;chapter&quot; id=&quot;chapter-4&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第四章</div>
+<div class=&quot;ch-name&quot;>三大譬喻的拓樸結構解析</div>
+<div class=&quot;ch-sub&quot;>Module 2 · 壯夫 · 飛鳥 · 善射 · 三層運作模型</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章主軸</div>
+<p>佛在本品連用三個譬喻——壯夫、飛鳥、善射——回答菩薩行空不證的具體形態。論文〈空性的認知幾何學〉指出，這三個譬喻並非並列重複，而是依「<strong>位置 → 介質 → 動態</strong>」三層遞進的拓樸結構，將「行空不證」描繪成一套可被視覺化的力學系統。</p>
+</div>
+<h2>第一節　壯夫喻：在空間拓樸上護送眾生</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 壯夫喻 · 重點</span>
+<p>「譬如壯夫，勁勇猛健，善於兵法、六十四能，堅持器仗，安立不動 …… 扶將老弱，過諸險難恐怖之處 …… 還歸本處，不遇賊害，歡喜安樂。菩薩摩訶薩亦如是 …… 安立不動，於畢竟空中，以四無量心運致眾生，不於空中作證。」</p>
+</div>
+<p>龍樹給此喻做了精準的對譯——這是一張「角色映射表」：</p>
+<table class=&quot;compare-table&quot;>
+<tr><th>譬喻角色</th><th>所喻法義</th></tr>
+<tr><td>壯夫</td><td>菩薩</td></tr>
+<tr><td>父母親族 / 老弱</td><td>可度眾生</td></tr>
+<tr><td>險道</td><td>三界生死</td></tr>
+<tr><td>惡賊 / 怨賊</td><td>魔民及諸煩惱</td></tr>
+<tr><td>器仗</td><td>菩薩五神通等種種方便力</td></tr>
+<tr><td>還歸本處</td><td>菩薩所行道</td></tr>
+<tr><td>安立不動</td><td>菩薩住畢竟空</td></tr>
+<tr><td>運致致安</td><td>以四無量心，運致眾生著涅槃安樂處</td></tr>
+</table>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>拓樸結構：位置（State of Being）</div>
+<p>壯夫喻給出菩薩在空間上的<strong>定位姿態</strong>——「安立不動」是住於畢竟空，但這個「住」不是被困住，而是<em>站穩腳跟</em>，由此才能護送老弱穿越險道。位置一錯，角色就崩——所以「住空」必須是「不證空」式的住，這便為下面的「介質喻」鋪路。</p>
+</div>
+<h2>第二節　飛鳥喻：虛空為介質非終點</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 飛鳥喻</span>
+<p>「譬如有翼之鳥，飛騰虛空而不墮墜，雖在空中，亦不住空。」</p>
+</div>
+<p>論文用三個關鍵詞解析此喻：</p>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;><h5>① 飛行</h5>鳥之雙翼 — 不墮地<br/><small>菩薩學空、無相、無作三解脫門</small></div>
+<div class=&quot;col&quot;><h5>② 介質非終點</h5>虛空是飛行的介質<br/><small>不是用來停靠的終點 — 故「不住空」</small></div>
+<div class=&quot;col&quot;><h5>③ 動態浮力</h5>佛十力未具前的懸浮態<br/><small>既不執著世俗有，亦不住二乘空</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>拓樸結構：介質（Medium, not Goal）</div>
+<p>壯夫喻處理「位置」，飛鳥喻處理「介質」。空對菩薩而言不是要抵達的終點，而是要穿過的場域；正如鳥在空中飛、不可能在空中停下築巢。<strong>「介質非終點」這個概念在大乘修證中極關鍵</strong>——把它當終點，就是聲聞涅槃；把它當介質，便是菩薩行。</p>
+</div>
+<div class=&quot;commentary&quot;>
+<p>龍樹補充說：「<em>是菩薩未具足道法、未至佛道，於其中間而不作證；如鳥未到所至，終不中住。</em>」這就把「不證」的時間性點出來了——不是永遠不證，而是「<strong>未具足前不證</strong>」；如同鳥未到目的地不會中途降落，菩薩未圓滿佛道前不會中途取證。</p>
+</div>
+<h2>第三節　善射喻：兩箭相拄的動態浮力</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 善射喻</span>
+<p>「譬如健人，學諸射法，善於射術，仰射空中，復以後箭射於前箭，箭箭相拄，不令箭墮，隨意自在；若欲令墮，便止後箭爾乃墮地。」</p>
+</div>
+<p>龍樹的對譯把這個視覺化的力學畫面變成一張「機制圖」：</p>
+<table class=&quot;compare-table&quot;>
+<tr><th>射喻元素</th><th>所喻法義</th></tr>
+<tr><td>弓</td><td>菩薩禪定</td></tr>
+<tr><td>箭</td><td>智慧</td></tr>
+<tr><td>虛空</td><td>三解脫門</td></tr>
+<tr><td>地</td><td>涅槃</td></tr>
+<tr><td>第一箭（前箭）</td><td>智慧射入三解脫門</td></tr>
+<tr><td>第二箭（後箭，方便之力）</td><td>大悲本願，從下方頂住前箭</td></tr>
+<tr><td>箭箭相拄、不令墮地</td><td>以方便力故，未善根成就前不取實際證</td></tr>
+</table>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>拓樸結構：動態（Dynamic Suspension）</div>
+<p>壯夫喻是「靜態位置」，飛鳥喻是「動態介質」，善射喻則是<strong>主動制衡的動態浮力學</strong>——前箭代表智慧射向涅槃，後箭代表方便力從下頂住，使智慧之箭不至於墜入涅槃地。這是三喻中最精細、也最能說明「不證」並非被動而是<em>主動制衡</em>的一個圖像。</p>
+</div>
+<h2>第四節　三層運作模型：智慧與方便的制衡</h2>
+<p>論文把三大譬喻匯整為一張「三層運作模型」——這是本品最核心的視覺骨架：</p>
+<div class=&quot;triangle-diagram&quot;>
+<div class=&quot;tri-node&quot;><h5>① 位置層</h5>State of Being<br/>壯夫 · 安立不動<br/><small>住畢竟空，扶老弱過險道</small></div>
+<div class=&quot;tri-node&quot;><h5>② 介質層</h5>Medium not Goal<br/>飛鳥 · 雖在空中不住空<br/><small>三解脫門是穿越場、不是停靠點</small></div>
+<div class=&quot;tri-node&quot;><h5>③ 動態層</h5>System Tension<br/>善射 · 兩箭相拄<br/><small>智慧 ↔ 方便的動態對接與制衡</small></div>
+<div class=&quot;tri-conclusion&quot;>三層合構：菩薩於畢竟空中行而不證、修而不取、動中有定 — 是大乘最精微的中道力學</div>
+</div>
+<p>從這張結構圖可以看出：「不證」不是<em>單一</em>動作，而是<strong>三層機制同時運作</strong>的結果——位置安立、介質清楚、動態制衡，缺一不可。這也解釋了為什麼經文要用三個譬喻而不是一個——任何一層被簡化，整套機制就會崩塌。</p>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>三大譬喻把「為什麼能不證、怎麼樣不證」的力學描寫透了。但譬喻屬於形象描述，要真正落實到菩薩心識的具體操作上，還需要「<strong>本願防護機制</strong>」這一條心理層的支柱——也就是經文反覆強調的「我今是學時，非是證時」。第五章便進入這條心法。</p>
+</div>
+</div>
+</section><section class=&quot;chapter&quot; id=&quot;chapter-5&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第五章</div>
+<div class=&quot;ch-name&quot;>本願防護與大悲反向拉扯</div>
+<div class=&quot;ch-sub&quot;>Module 3 · 自我宣告 · 防虛無 · 動態平衡 · 破四顛倒</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章主軸</div>
+<p>從第三章「深入鬆握」到第四章「三層力學」，講的都是<em>外在動作</em>。本章轉入<em>內在心理機制</em>——菩薩在禪定中如何透過自我宣告、本願拉扯、大悲反向力，使自己在最深的空觀中保持「不證」的張力。論文〈空性的認知幾何學〉把這層稱為「<strong>前行防護 + 反向動態平衡</strong>」。</p>
+</div>
+<h2>第一節　本願的自我宣告：「我今是學時，非是證時」</h2>
+<p>佛在經文中反覆使用一句口訣式的內語：</p>
+<div class=&quot;verse&quot;>「我今是學時，非是證時。」<br/><small style=&quot;display:block;margin-top:8px;color:var(--text-muted)&quot;>— 須菩提！菩薩摩訶薩應如是念</small></div>
+<p>注意佛同時羅列了一連串的「學」——學檀波羅蜜、尸羅、羼提、毘梨耶、禪波羅蜜，乃至四念處、八聖道分——<strong>所有道法都套同一個句式</strong>：「學…時，非是證時。」這是一個<em>邏輯防護式</em>的內語結構：</p>
+<div class=&quot;four-grid&quot;>
+<div class=&quot;cell&quot;><h5>① 硬體檢查（Hardware Check）</h5>「我未具備三十二相、佛十力、四無所畏」<br/><small>承認自己「尚未成佛」</small></div>
+<div class=&quot;cell&quot;><h5>② 軟體聲明（Software Mode）</h5>「故我有餘習（薄地）以教化眾生」<br/><small>確認自己「正在學位」</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>系統功能</div>
+<p>透過理性的自我審計，建立<strong>邏輯屏障</strong>，防止在禪定中不自覺滑入涅槃。這不是壓抑式的「不要證」，而是<em>事實式</em>的「現在不該證」——<strong>因為條件未滿足</strong>。本願的力量不在於意志對抗，而在於對自身狀態的清楚認識。</p>
+</div>
+<h2>第二節　前置條件：防止滑入虛無</h2>
+<p>單有自我宣告還不夠，還必須有<em>前置條件</em>把空觀框在「不退不墮」的軌道上。否則修空者最容易掉進兩個極端——一邊是不證而證（落聲聞），另一邊是不證而虛（落虛無主義）。</p>
+<div class=&quot;refutation-grid&quot;>
+<div class=&quot;ref-cell&quot;><h5>過墮一：落聲聞</h5>修空 → 證空 → 取漏盡 → 墮聲聞辟支佛地<br/><small>失大乘菩提之果</small></div>
+<div class=&quot;ref-cell&quot;><h5>過墮二：落虛無</h5>修空 → 觀空 → 一切無 → 不求道、不度生<br/><small>失因果善法之根</small></div>
+</div>
+<p>佛在經中強調本願力——「眾生沒在無所有法中，我應當度」——正是用大悲心做<strong>反向錨定</strong>：眾生苦是真的、不可放下的「事相緣」，這個緣讓菩薩無法跌入虛無；同時又因「眾生本空」而不取執實的證。<em>大悲是唯一的反虛無錨</em>。</p>
+<h2>第三節　大悲反向拉扯與動態平衡</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 本願力</span>
+<p>「是菩薩摩訶薩不捨一切眾生故，作如是願。若菩薩摩訶薩作是念：『我不應捨一切眾生！眾生沒在無所有法中，我應當度！』爾時，即入空解脫門、無相解脫門、無作解脫門。當知是菩薩摩訶薩成就方便力，未得一切種智，行是解脫門，亦不中道取實際證。」</p>
+</div>
+<p>論文把這套機制稱為「<strong>動態平衡</strong>（Dynamic Equilibrium）」——它的特殊處在於：「<em>大悲願</em>」正好與「<em>取證的引力</em>」反向。空觀越深、取證的吸力越強；但大悲願越深、不證的拉力也越強。兩力對拉，菩薩剛好懸在中道上。</p>
+<div class=&quot;triangle-diagram&quot;>
+<div class=&quot;tri-node&quot;><h5>取證引力 →</h5>深空之吸<br/><small>觀空越透，越靠近涅槃地</small></div>
+<div class=&quot;tri-node&quot;><h5>← 不捨拉力</h5>大悲本願<br/><small>眾生沒苦，我應當度</small></div>
+<div class=&quot;tri-node&quot;><h5>動態平衡</h5>菩薩懸於中道<br/><small>即入解脫門 · 亦不取證</small></div>
+<div class=&quot;tri-conclusion&quot;>大悲是反虛無、反取證的「雙向錨」 — 沒有大悲，菩薩不是落聲聞便是落虛無</div>
+</div>
+<h2>第四節　破四顛倒而不執法</h2>
+<p>本章最後處理一組「<strong>進階操作</strong>」——當菩薩已能不取證後，下一步是要面對「破執而不再執法」的更細問題。經文在「破四顛倒」「破得法」「破男女諸相」三段中，反覆使用同一句式：</p>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 破四顛倒（典型句式）</span>
+<p>「眾生長夜著四顛倒：常想、樂想、我想、淨想；為是眾生故，求薩婆若。我得阿耨多羅三藐三菩提時，為說無常法、苦、不淨、無我法。是菩薩成就是心，以方便力行般若波羅蜜，不得佛三昧 …… 亦不實際作證。爾時，菩薩修無作解脫門。」</p>
+</div>
+<div class=&quot;flow flow-v&quot;>
+<div class=&quot;flow-step&quot;><strong>第一步</strong>　明確眾生病相<br/><small>常、樂、我、淨四顛倒</small></div>
+<div class=&quot;flow-arrow&quot;>↓</div>
+<div class=&quot;flow-step&quot;><strong>第二步</strong>　立度生本願<br/><small>「為是眾生故，求薩婆若」</small></div>
+<div class=&quot;flow-arrow&quot;>↓</div>
+<div class=&quot;flow-step&quot;><strong>第三步</strong>　修對應解脫門<br/><small>破常 → 修無常 → 修無作三昧<br/>破得 → 修空三昧<br/>破相 → 修無相三昧</small></div>
+<div class=&quot;flow-arrow&quot;>↓</div>
+<div class=&quot;flow-step&quot;><strong>第四步</strong>　以方便力故，未具佛十力之前不取實際證</div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>進階操作的關鍵</div>
+<p>這套句式表明：菩薩不是「為破而破」，而是「<strong>為度而破</strong>」——破顛倒是方法，度眾生是本願。如果失了度生本願，破顛倒便淪為哲學辯論，與大乘無關；正是「為是眾生故」這一句，把整套破執的修行<em>錨定</em>在大悲根上。</p>
+</div>
+<div class=&quot;commentary&quot;>
+<p>龍樹補充：「破四顛倒義，亦如上說。」「義皆同觀空而不取證。」三組破執——四顛倒、得法、諸相——其實是同一個操作模式的三次重現，只不過破的對象從「<strong>價值錯認</strong>」（顛倒）→「<strong>存在執著</strong>」（得法）→「<strong>分別形相</strong>」（男女相）逐層深入。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>第三、四、五章合構了菩薩「行空不證」的完整內外機制：第三章談階段論與深入空，第四章談三層譬喻力學，第五章談本願防護與大悲拉扯。但本品還有最後一個關鍵問題——<strong>怎麼從外部辨識某位菩薩是否已得這套修行的真意？</strong>第六章便進入阿鞞跋致辨識邏輯與佛陀授記法則。</p>
+</div>
+</div>
+</section><section class=&quot;chapter&quot; id=&quot;chapter-6&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第六章</div>
+<div class=&quot;ch-name&quot;>阿鞞跋致的辨識邏輯與授記法則</div>
+<div class=&quot;ch-sub&quot;>Module 4 · 錯誤盲區 · 正確答相 · 諸佛懸記 · 慧與方便</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章主軸</div>
+<p>本品最後段佛陀提供了一套「<strong>試問鑑別法</strong>」——以一個關鍵問題去測試菩薩，看其答案是否落入「空見執著」的盲區。能正答者即是已具阿鞞跋致（不退轉）特徵；錯答者則諸佛尚未授記。論文〈空性的認知幾何學〉把這層解析為「錯誤盲區 → 正確答相 → 佛陀授記 → 慧與方便的中道結構」四節。</p>
+</div>
+<h2>第一節　錯誤解答的盲區：空見執著</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 錯誤答相</span>
+<p>「若諸菩薩摩訶薩若試問時，是菩薩若如是答：『菩薩摩訶薩但應觀空，但應觀無相、無作、無起、無生、無所有；是菩薩摩訶薩不應學空、無相、無作、無起、無生、無所有，不應學是助道法。』須菩提！當知是菩薩諸佛未授阿耨多羅三藐三菩提記。」</p>
+</div>
+<p>這是一個極其關鍵的鑑別陷阱。錯答者的話聽起來「<em>很高明、很空</em>」——說「但應觀空，不應學助道法」——但這正是<strong>大乘行者最容易踩的雷</strong>：把「空」當實體去守、把「不學」當高境界去誇耀，<em>邏輯完全等同聲聞乘</em>，僅僅在語言上裝點了大乘色彩。</p>
+<div class=&quot;refutation-grid&quot;>
+<div class=&quot;ref-cell&quot;><h5>盲區一：偏空執</h5>「但應觀空」<br/><small>把空變成唯一所緣，違背「不專心繫在緣中」</small></div>
+<div class=&quot;ref-cell&quot;><h5>盲區二：廢學執</h5>「不應學助道法」<br/><small>否定學位，混淆學與證、初心與終局</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>系統診斷</div>
+<p>諸佛未授記。為什麼？因為這位菩薩「<strong>不能說阿鞞跋致菩薩所學相，不能示、不能答</strong>」。注意佛強調的是「<em>能說 / 能示 / 能答</em>」三個動詞——必須能<strong>系統性地表述出來</strong>，才證明真正具備這套見地，而不只是嘴上說得漂亮。</p>
+</div>
+<h2>第二節　正確答相：阿鞞跋致的辨識特徵</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 正確答相</span>
+<p>「若是菩薩摩訶薩能說、能示、能答阿鞞跋致所學相，當知是菩薩摩訶薩已習學菩薩道入薄地，如餘阿鞞跋致菩薩摩訶薩阿鞞跋致相。」</p>
+</div>
+<div class=&quot;commentary&quot;>
+<p>龍樹補充說：「<em>學習名先學知空。薄地名阿鞞跋致地中諸煩惱薄。</em>」這就把鑑別標準點出來了——所謂「阿鞞跋致」（Avinivartaniya，不退轉）有兩個內涵：</p>
+</div>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;><h5>① 已學知空</h5>不是停留在「觀空」<br/><small>而是「學知空之為法」<br/>掌握空的方法論</small></div>
+<div class=&quot;col&quot;><h5>② 入於薄地</h5>諸煩惱薄<br/><small>非「斷盡」（聲聞之果）<br/>而是「轉薄」（菩薩之中）</small></div>
+<div class=&quot;col&quot;><h5>③ 能說能示能答</h5>系統性地表述出來<br/><small>能在試問下保持<br/>「空與助道法」的完整相容</small></div>
+</div>
+<h2>第三節　佛陀授記：諸佛為何能懸記？</h2>
+<div class=&quot;classical-text&quot;>
+<span class=&quot;text-label&quot;>經 · 須菩提疑問</span>
+<p>須菩提白佛言：「世尊！頗有未得阿鞞跋致菩薩能如是答不？」<br/>
+  佛言：「有。是菩薩摩訶薩，六波羅蜜若聞、若不聞，能如是答如阿鞞跋致菩薩摩訶薩。」</p>
+</div>
+<div class=&quot;commentary&quot;>
+<p>龍樹解釋這個微妙處：「<em>若聞者，但從師聞，自未具足菩薩地；若不聞者，自思惟、正憶念，雖未得無生忍，能求諸法相，如阿鞞跋致菩薩答。</em>」這意味著——<strong>能正確回答的人未必都已是阿鞞跋致</strong>，但他必有一顆「能契入諸法實相」的善根；佛能於此預知其未來必證。</p>
+</div>
+<p>論文用三個時間階段呈現此授記邏輯：</p>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;><h5>① 現在（Present）</h5>能正答試問<br/><small>顯示其善根明了</small></div>
+<div class=&quot;col&quot;><h5>② 授記（Vyākaraṇa）</h5>諸佛懸記<br/><small>預認其未來成就</small></div>
+<div class=&quot;col&quot;><h5>③ 未來（Buddhahood）</h5>必成佛道<br/><small>諸天世人所不能壞</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>授記的形上邏輯</div>
+<p>諸法實相唯佛能遍知。佛預見此人「<strong>善根明了</strong>」，內建了正確的中道直覺；這顆種子堅不可摧，故能跨越階位給出精準解答。授記不是<em>給予</em>未來，而是<em>看見</em>未來——看見此心已具備不退轉的內在結構。</p>
+</div>
+<h2>第四節　慧與方便的中道結構</h2>
+<p>把整套阿鞞跋致辨識邏輯抽象出來，本品最終呈現的是大乘菩薩心法的<strong>中道結構</strong>——智慧（般若）與方便（大悲）兩者的動態平衡：</p>
+<div class=&quot;triangle-diagram&quot;>
+<div class=&quot;tri-node&quot;><h5>智慧 (Wisdom)</h5>觀空、知空亦空<br/><small>超越世俗的有<br/>不墮生死之河</small></div>
+<div class=&quot;tri-node&quot;><h5>方便 (Upāya)</h5>大悲本願度生<br/><small>不捨世俗之有<br/>視空為工具方便</small></div>
+<div class=&quot;tri-node&quot;><h5>中道 (Middle Way)</h5>行空而不證空<br/><small>大乘中觀核心命題</small></div>
+<div class=&quot;tri-conclusion&quot;>阿鞞跋致 = 智慧與方便兼具、能說能示能答 — 「行空而不證」即此中道之實踐</div>
+</div>
+<div class=&quot;commentary&quot;>
+<p>須菩提最後感歎：「<em>多有人求佛道，少能如是答如阿鞞跋致菩薩學地、無學地中。</em>」（學地：未得無生法忍；無學地：得無生法忍。）佛回答：「<em>少。何以故？少有菩薩從諸佛受記。已從諸佛受記者，能如是答。</em>」——本品結尾於此，留給讀者一個深長的迴響：<strong>多者修，少者真，受記者更稀，不退者最稀</strong>。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>本品至此完成了從「核心命題提出」到「阿鞞跋致辨識」的完整論述。第七章作為終章，將回到全品最初的命題上，做一次<strong>整體重構</strong>——「行空而不證空」的兩重意涵、智慧與大悲的張力統一、以及這套心法在大乘整體架構中的地位。</p>
+</div>
+</div>
+</section><section class=&quot;chapter&quot; id=&quot;chapter-7&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 釋學空不證品第六十 · 第七章</div>
+<div class=&quot;ch-name&quot;>核心命題重構：行空而不證空</div>
+<div class=&quot;ch-sub&quot;>Module 5 · 觀空（智）+ 不證（悲）= 大乘菩薩心法的底層架構</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章主軸</div>
+<p>本品的所有討論，最終都收攏到一個核心命題：「<strong>行空而不證空</strong>」。論文〈空性的認知幾何學〉以此為終章——把整品的力學、心法、辨識邏輯歸攝為一句話的「兩重意涵」與「張力統一」。本章作為閱讀本卷的收束，回到此命題上做最後解析。</p>
+</div>
+<h2>第一節　觀空：超越世間的極致智慧</h2>
+<div class=&quot;verse&quot;>觀空，是超越世間的極致智慧。<br/>(Wisdom)</div>
+<p>「觀空」是般若的根本作業——透徹諸法無自性、能所皆空、證者證法皆不可見。這份觀照是極致的：它不只看到「眾生空」「法空」，更看到「<strong>空亦空</strong>」「涅槃亦空」。</p>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>觀空的極致</div>
+<p>論文用一句精準語言概括：<em>「在邏輯與物理上發現『無處可證』的必然結果。」</em>——這是觀空的終局態。並不是「我選擇不證」，而是「<strong>根本沒有可以被證的東西</strong>」。這層智慧即是大乘的般若波羅蜜，超越世間一切有為造作。</p>
+</div>
+<h2>第二節　不證：重返世間的極致慈悲</h2>
+<div class=&quot;verse&quot;>不證，是重返世間的極致慈悲。<br/>(Compassion)</div>
+<p>但若「觀空」便畢竟成證，菩薩就會墮入聲聞涅槃，無法繼續度眾。所以本品的另一極致是「<strong>不證</strong>」——不取證涅槃，而以方便力與大悲願重返世間，繼續扶將老弱、運致眾生著涅槃安樂處。</p>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>不證的極致</div>
+<p>論文用對偶句呈現：<em>「不證，並非能力不足，而是最深刻的自由。」</em>——這是極關鍵的一句。「不證」不是被卡住、不是退轉，而是<strong>對「證 / 不證」這兩端都不被綁住的真自由</strong>。這份自由唯大悲能成就——沒有大悲，要嘛取證、要嘛虛無，沒有第三條路。</p>
+</div>
+<h2>第三節　兩者的張力與統一</h2>
+<p>「觀空」朝向<em>超越</em>，「不證」朝向<em>重返</em>；一者向上、一者向下，看似衝突的兩股力，卻正是大乘菩薩道的<strong>底層張力結構</strong>。本品全部的譬喻、心法、辨識邏輯，都是這套張力的具體展開。</p>
+<div class=&quot;spectrum&quot;>
+<div class=&quot;sp-end left&quot;><h5>觀空（智慧）</h5>朝向超越<br/><small>透徹諸法無自性<br/>連「空」與「涅槃」皆空</small></div>
+<div class=&quot;sp-mid&quot;><h5>行空而不證空</h5>大乘中觀心法<small>智慧 + 大悲，兩力對拉<br/>菩薩懸於中道<br/>不退不墮，動中有定</small></div>
+<div class=&quot;sp-end right&quot;><h5>不證（慈悲）</h5>朝向重返<br/><small>大悲本願不捨眾生<br/>方便力故不取漏盡證</small></div>
+</div>
+<div class=&quot;commentary&quot;>
+<p>三大譬喻各為這套張力提供一個視角——壯夫喻顯<em>位置張力</em>（住空而不困於空），飛鳥喻顯<em>介質張力</em>（在空而不住於空），善射喻顯<em>動態張力</em>（向涅槃而不墮於涅槃）。三力同構，便是「行空而不證空」的具體圖像。</p>
+</div>
+<h2>第四節　大乘菩薩心法的底層架構</h2>
+<p>讓我們把整品的論理重新組織成一張結構圖，作為閱讀本卷的最終總結：</p>
+<div class=&quot;four-grid&quot;>
+<div class=&quot;cell&quot;><h5>① 階段論</h5>學空 → 入空（因 / 果、初 / 後、方便 / 得）<br/><small>大乘行於「過程態」、不取「終局態」</small></div>
+<div class=&quot;cell&quot;><h5>② 操作論</h5>深入而鬆握、不專心而不亂<br/><small>知空亦空，無所執處 → 反而真不執</small></div>
+<div class=&quot;cell&quot;><h5>③ 力學論</h5>三層拓樸：位置 · 介質 · 動態<br/><small>壯夫 · 飛鳥 · 善射 三喻同構</small></div>
+<div class=&quot;cell&quot;><h5>④ 心法論</h5>本願宣告 + 大悲反向拉扯<br/><small>「我今是學時，非是證時」</small></div>
+<div class=&quot;cell&quot;><h5>⑤ 進階操作</h5>破四顛倒 / 得法 / 諸相<br/><small>為度而破，非為破而破</small></div>
+<div class=&quot;cell&quot;><h5>⑥ 鑑別法</h5>試問 → 阿鞞跋致 → 諸佛授記<br/><small>能說能示能答，方為已習薄地</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>最終總持</div>
+<p>「<strong>兩者的張力與統一，構成了大乘菩薩心法的底層架構。</strong>」——本品的所有分析最終歸結於此一句。觀空與不證，不是兩件事的相加，而是<em>同一件事的兩面</em>；正如鳥之雙翼、箭之兩段、壯夫之器仗與安立，缺一不可。<strong>這即是「行空而不證空」的真義，也是大乘中觀的核心命題。</strong></p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>本品結語</div>
+<p>大智度論卷七十六〈釋學空不證品第六十〉以八重追問起、以「諸佛授記」結。本品所揭示的，不是一條容易走的路——它要求修行者同時具備極深的智慧（透徹空性到「空亦空」）與極深的慈悲（在最深空觀中仍不捨眾生）。本卷論文〈空性的認知幾何學〉之所以稱此為「<em>認知幾何學</em>」，正是因為這套心法在心識空間中所撐開的，正是一個由智慧與大悲共構的精密幾何結構——任一向度抽掉，整個結構就會塌陷。願讀此卷者，於日用中時常憶念本品要旨：<strong>「我今是學時，非是證時」</strong>——以此為心法，行而不取、證而不住，是大乘菩薩道的底層真實。</p>
+</div>
+</div>
+</section>
+
+
+
+
+<script>
+(function(){
+  var blk=function(e){e.preventDefault();return false;};
+  ['contextmenu','copy','cut','selectstart','dragstart','mousedown'].forEach(function(ev){
+    document.addEventListener(ev,function(e){
+      if(ev==='mousedown' &amp;&amp; e.button!==2) return;
+      blk(e);
+    },true);
+  });
+  document.addEventListener('keydown',function(e){
+    var k=e.key;
+    if(e.ctrlKey&amp;&amp;(k==='c'||k==='C'||k==='a'||k==='A'||k==='s'||k==='S'||k==='p'||k==='P'||k==='u'||k==='U'||k==='x'||k==='X')){blk(e);}
+    if(k==='F12')blk(e);
+    if(e.ctrlKey&amp;&amp;e.shiftKey&amp;&amp;(k==='I'||k==='J'||k==='C'||k==='K')){blk(e);}
+  },true);
+  setInterval(function(){
+    if(window.getSelection) try{window.getSelection().removeAllRanges();}catch(e){}
+  },300);
+})();
+
+
+(function(){
+  if(!window.frameElement) return;
+  document.addEventListener('click',function(e){
+    var a=e.target;
+    while(a&amp;&amp;a.tagName!=='A') a=a.parentElement;
+    if(!a) return;
+    var h=a.getAttribute('href');
+    if(!h||h.charAt(0)!=='#'||h.length<2) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var id=h.substring(1);
+    var el=document.getElementById(id);
+    if(!el) return;
+    try{
+      var rect=el.getBoundingClientRect();
+      var fr=window.frameElement;
+      var frRect=fr.getBoundingClientRect();
+      var targetY=window.parent.scrollY+frRect.top+rect.top-60;
+      window.parent.scrollTo({top:targetY,behavior:'smooth'});
+    }catch(ex){}
+  },true);
+})();
+</script></body></html>" loading="lazy"></iframe>
+      <div class="bridge bridge-outro">
+        <div class="bridge-label"><span class="wy-c" data-c="kfCS17W607jpitK7">…</span></div>
+        <p><span class="wy-c" data-c="keWB16Oz05rEiteN0Ybxi+ngkMPPnoSI1Iq7xdvmj7e7yuDsVQ5LiOT0yY+s14mukNz5CxlPRIr97Jf695yLsNSPo8vbzIWqlMjK7I7C2I33+8mPttq5hJ75xdKqhZ/Hz4TN/pPBgNeWsNKQ44bFoN6A84DuxpDZxpqtvteuqcrs64iPu8T66IHR/IrN/86yvd2KspPfyNKzm5zwxonF45HvkdeAqNCx3IjjidOk943X+53G75qts9aunMjz2ISBhcj/xY/f14nJ/MWurNWsqZ7gxd+ghJLo5YTd7pjFodWpj9OJ34j2s9KS1I/A1pDh2J2Wl9iRq8nL84OLusjeyo3U2Int/ci9vdSxpJPi19CyjJzb/In005/asNCkstS59ovUvNKV+o367Zbu/5yJkNSKm8nO4oSav8jp6Yrs/Ij53MWjp9eNl5HE5wtUE5zCy4rNwpH1qtSYqwoCFFGDi7rK7tmM6d6H1/zIlpLVrZWV7+3Tj7CTyOyF2PqTw6bRsLPTu/KI85LegOKO/PWdxvedlbvVlpHFzdeLgKzCxuSO7s+H9+DKu7fRtqGT6tvStLSdwdOK9cmS5pfVlLzVrfeK4YzTneCO9caQ69KfgJHUj7vO9uKLrbLL0smO3/+L68nIiobdiqGQ4PzTiLae0OmJyduS16HUpYbRt/KGxaDegPON9dyQ8uGarbA=">…</span></p>
+      </div>
+      <a class="next-link" href="#chapter-2"><span class="wy-c" data-c="kvCg146y0YHai9a70777SKvbVYfw8siWktaOgJLX4d+bpJ/76IvZwpL8gNe9s9KV9k+OsaQ=">…</span></a>
+    </div>
+  </section>
+
+
+  <section class="chapter" id="chapter-2">
+    <div class="ch-head">
+      <div class="ch-num"><span class="wy-c" data-c="kvSa1oix06D3iumaFu/NSI7A2YrN9cihsQ==">…</span></div>
+      <h2 class="ch-name"><span class="wy-c" data-c="nv6m15SQ0pXbi9S63oDzjfrtksLbnKif1b+3yc7v">…</span></h2>
+      <div class="ch-sub"><span class="wy-c" data-c="kt2P1oif34Thh8G+Fu/NSID0yofp58WFu9qxmZH16NOOgJLP6YrfzJHBgdWbqw==">…</span></div>
+    </div>
+    <div class="ch-body">
+      <div class="bridge bridge-intro">
+        <div class="bridge-label"><span class="wy-c" data-c="keWB16Oz3ov3ifuf">…</span></div>
+        <p><span class="wy-c" data-c="kfCS1oi40pX2iv+21a3yjcTUksfNnZW/2J+/zvbmir62yMHSjsf+ie39y6G91ouxk9Dv0YW4ldThidPsk8S414C20YPbgNC+0pTxjdfgmtL7n7Ge1aG3xcvmibKTERhWj8bXiM/Vy7631J60SkAOCdmR8o3P7pHT4p6xudmvgMLK5o+3tMnH84D19YvH9MSSuNq5hJDg/NKYjpLCw1AXUJL8htuQt9OJ1IvUmt+1xYH38p3Z/JGqhtepjhFZDVLYiqWfzMuIzeOfy4fWir7SlO6L1L7RuPaL6e2QytWRi7nUj63F3MWKhKPO+umMyNeG0fLJj6vVuZOTy8vQk7Of4vKP9e+S3Y/WiJ/RrMuG95TSlfeP/OOW7vaQjKrVrr3I6vCLs5fJwuGP79SH9urOsrHXko+S18HfnL6c0+yJ6d6Q9KnVsZnVrfeKw5HRrNGN5sOT1fKarbPYtYXF3M+EnaXI8POA7daH6ufJiIrdiqSZ0+DSsKCc58SL0dRLGxPWia/fjfOK0pnRmcqBxPiR1PxFAlAO3Yqln8L436GkksL6if/1kdWX0bCz34Dih8ad04PFjfjRlu72kICm1ry+y/7/iIqtyOrlgfXqjff4xJ+k2pi3n+7M3q2PnNv8j/Xvk8S227e/0LvGisKt0ZPTi+ngkvLokKyS2amUzvbij7e3xdzCgdPki+H9yq2V2pu1mdPl2IqhnPTpi8Dsk8KI0bC+0pPrid+i0pX3jNfxkdTNmq2/1qaAy+vwiqGKyP/Fj9/Xicn8xa6s0basktfl0rusntDqhfT9kuqs0bCz04v0jOy20J7vjunLlu72nIKU2aitz+LvjqO2yOHIju7Pis/wyYqm2p2VktL30Kyrn9b3itjKlPmh1IOn1a37h+y706rAi+nukOvfnL6z16aHyPvui5yWy93jj+Tli9n1y6eE1aypSg1S046Aks/pit/MkcGB16yC07HgU0NVCMLG5Iz83ojr1cSZpNqdu5Xv7dOOpJ/MzoXc+Z/UpNS8tdCF74zsttGNzo7a+ZPL2p63tteHo8jG4ouiusTj+Irs9Iv6yMSomtSqsp/C+NOMppzj74TSzZT5rNWsrdOs8Ybtl9+22Ivp7Zz17pyRp9ahuMXb5oW2pc766Y7Z4IvH9MW1mtaJjJHX0d+XhZno6IT96ZLGrtSDp9CF6IjYp9Wt+A==">…</span></p>
+      </div>
+      <iframe class="ch-frame" srcdoc="<!DOCTYPE html><html lang='zh-Hant'><head><meta charset='UTF-8'><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&amp;family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap'><style>
+:root{
+  --bg:#f7f3ec;--text:#2c2416;--text2:#5a4e3a;--text-muted:#6B5B4B;
+  --accent:#8b5e3c;--accentL:#c4956a;--accent-red:#8B2500;
+  --gold:#b8860b;--goldL:#d4a84b;--gold-light:#C9A84C;
+  --border:#d4c4a8;--border-light:#EDE8E0;--card:#fffdf7;
+  --verseBg:#f0e8d8;--verseBd:#c4956a;
+  --sbW:76px;--sbBg:#1e1a14;--sbText:#d4c4a8;
+  --headGrad:linear-gradient(135deg,#2a2218 0%,#3d3225 50%,#2a2218 100%);
+  --r:8px;--shadow:rgba(91,58,41,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{
+  scrollbar-width:none;-ms-overflow-style:none;
+  -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+  -webkit-touch-callout:none;
+}
+html::-webkit-scrollbar,body::-webkit-scrollbar,*::-webkit-scrollbar{display:none;width:0;height:0;}
+body{
+  font-family:&quot;Noto Serif TC&quot;,&quot;Source Han Serif TC&quot;,&quot;Songti TC&quot;,Georgia,serif;
+  background:var(--bg);color:var(--text);line-height:1.85;
+  font-size:20px;letter-spacing:.02em;
+  margin:0;padding:0;
+}
+img{-webkit-user-drag:none;pointer-events:none;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{color:var(--gold);}
+
+/* === Sidebar === */
+#sb{position:fixed;left:0;top:0;width:var(--sbW);height:100vh;
+  background:var(--sbBg);color:var(--sbText);z-index:100;
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 0 16px;overflow-y:auto;scrollbar-width:none;}
+.sb-brand{position:sticky;top:0;width:100%;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:11px;letter-spacing:2px;
+  color:var(--gold);text-align:center;line-height:1.5;
+  background:linear-gradient(to bottom,var(--sbBg) 78%,rgba(30,26,20,0));
+  padding:14px 4px 12px;margin-bottom:6px;z-index:5;
+  text-decoration:none;cursor:pointer;
+  transition:color .25s,background .25s;display:block;
+  border-bottom:1px solid rgba(184,134,11,.25);}
+.sb-brand:hover{color:var(--goldL);}
+.sb-brand .sb-brand-line1{display:block;font-size:11px;letter-spacing:1.5px;opacity:.78;}
+.sb-brand .sb-brand-line2{display:block;font-size:13px;font-weight:700;letter-spacing:2.2px;color:var(--goldL);margin-top:2px;}
+.sb-brand .sb-brand-arrow{display:block;font-size:10px;opacity:.55;margin-top:2px;}
+.sb-nav{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;padding:0 4px;}
+.sb-item{display:flex;flex-direction:column;align-items:center;gap:3px;
+  padding:5px 4px;border-radius:8px;cursor:pointer;width:100%;
+  transition:background .25s,box-shadow .25s;text-decoration:none;color:var(--sbText);}
+.sb-item:hover{background:rgba(184,134,11,.12);}
+.sb-item.active{background:linear-gradient(135deg,rgba(184,134,11,.28),rgba(212,168,75,.22));
+  box-shadow:0 0 12px rgba(184,134,11,.35);color:var(--goldL);}
+.sb-circle{width:34px;height:34px;border-radius:50%;
+  background:rgba(184,134,11,.18);
+  display:flex;align-items:center;justify-content:center;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:15px;font-weight:700;
+  color:var(--gold);border:1px solid rgba(184,134,11,.35);}
+.sb-item.active .sb-circle{background:var(--gold);color:#fff;}
+.sb-label{font-size:11.5px;letter-spacing:1px;color:var(--sbText);
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;writing-mode:vertical-rl;
+  text-orientation:upright;line-height:1.1;margin-top:2px;}
+#sbToggle{display:none;position:fixed;top:14px;left:14px;z-index:200;
+  width:42px;height:42px;border-radius:8px;border:0;
+  background:rgba(30,26,20,.92);color:var(--gold);font-size:20px;cursor:pointer;}
+
+/* === Main === */
+.main{margin-left:var(--sbW);min-height:100vh;}
+
+/* === Hero === */
+.site-hero{
+  position:relative;background:linear-gradient(135deg,#1e1a14 0%,#2a2218 50%,#3d3225 100%);
+  color:#f5e8c8;padding:88px 32px 64px;text-align:center;overflow:hidden;
+}
+.site-hero::before{
+  content:&quot;般若&quot;;position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-size:380px;color:rgba(212,168,75,.04);font-weight:900;
+  letter-spacing:.08em;font-family:&quot;Noto Serif TC&quot;,serif;
+  pointer-events:none;z-index:0;
+}
+.hero-inner{position:relative;z-index:1;max-width:920px;margin:0 auto;}
+.hero-eyebrow{font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:14px;
+  letter-spacing:6px;color:var(--goldL);margin-bottom:16px;}
+.hero-title{font-size:56px;font-weight:900;letter-spacing:.06em;
+  background:linear-gradient(180deg,#f5e8c8 0%,var(--goldL) 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;margin-bottom:20px;line-height:1.25;}
+.hero-subtitle{font-size:20px;color:#e6d4a3;letter-spacing:.04em;margin-bottom:14px;font-weight:500;}
+.hero-meta{font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:18px;
+  color:#cdb87a;letter-spacing:3px;margin-top:18px;line-height:1.8;}
+.hero-range{font-size:17px;color:#a89564;margin-top:12px;letter-spacing:2px;}
+.hero-divider{width:80px;height:2px;background:var(--goldL);margin:24px auto;opacity:.7;}
+
+/* === Preface === */
+.preface{max-width:880px;margin:48px auto;padding:0 32px;}
+.preface-title{font-size:30px;color:var(--accent);text-align:center;
+  letter-spacing:6px;margin-bottom:20px;font-weight:600;}
+.preface-divider{width:60px;height:2px;background:var(--gold);margin:0 auto 24px;}
+.preface p{font-size:19px;line-height:2.1;color:var(--text2);
+  text-indent:2em;margin-bottom:14px;}
+
+/* === TOC === */
+.toc-section{max-width:1100px;margin:60px auto 50px;padding:0 32px;}
+.toc-title{font-size:34px;text-align:center;color:var(--accent);
+  letter-spacing:8px;margin-bottom:10px;font-weight:600;}
+.toc-desc{font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:17px;
+  color:var(--text-muted);text-align:center;letter-spacing:3px;margin-bottom:30px;}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;}
+.toc-card{display:flex;align-items:center;gap:14px;padding:16px 20px;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r);cursor:pointer;text-decoration:none;
+  transition:transform .2s,box-shadow .2s,border-color .2s;}
+.toc-card:hover{transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(91,58,41,.12);border-color:var(--gold);}
+.toc-num{flex:0 0 auto;width:36px;height:36px;border-radius:50%;
+  background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:17px;font-weight:700;}
+.toc-name{flex:1;font-size:19.5px;line-height:1.7;color:var(--text);font-weight:500;}
+
+/* === Chapter === */
+.chapter{margin:0 0 40px;scroll-margin-top:24px;}
+.ch-head{background:var(--headGrad);color:#f5e8c8;
+  padding:48px 32px 40px;text-align:center;position:relative;overflow:hidden;}
+.ch-head::after{content:&quot;&quot;;position:absolute;left:50%;bottom:18px;
+  transform:translateX(-50%);width:80px;height:2px;background:var(--goldL);opacity:.6;}
+.ch-num{font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:18px;
+  color:var(--goldL);letter-spacing:6px;margin-bottom:14px;}
+.ch-name{font-size:34px;font-weight:700;letter-spacing:.06em;
+  margin-bottom:14px;color:#f5e8c8;line-height:1.35;}
+.ch-sub{font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:17px;
+  color:#cdb87a;letter-spacing:3px;line-height:1.7;margin-top:6px;}
+
+.ch-body{max-width:980px;margin:0 auto;padding:36px 32px 24px;
+  background:var(--bg);}
+.ch-body p{font-size:20px;line-height:1.95;color:var(--text);
+  margin:0 0 14px;text-indent:2em;}
+.ch-body p.no-indent{text-indent:0;}
+
+.bridge{
+  background:linear-gradient(135deg,#fffdf5,#f5ecd8);
+  border:1px solid var(--border);border-left:5px solid var(--gold);
+  border-radius:10px;padding:22px 26px;margin:0 0 28px;
+  box-shadow:0 2px 10px rgba(91,58,41,.06);
+}
+.bridge-outro{
+  border-left-color:var(--accentL);
+  background:linear-gradient(135deg,#fdf8e8,#f2e6c8);
+  margin-top:30px;margin-bottom:14px;
+}
+.bridge-label{display:inline-block;font-family:&quot;Noto Sans TC&quot;,sans-serif;
+  font-size:12.5px;background:var(--gold);color:#fff;
+  padding:3px 14px;border-radius:12px;letter-spacing:2.2px;margin-bottom:12px;}
+.bridge-outro .bridge-label{background:var(--accent);}
+.bridge p{margin:0 0 8px;color:var(--text2);line-height:2.1;font-size:18.5px;text-indent:2em;}
+.bridge p:last-child{margin-bottom:0;}
+
+/* === H tags === */
+.ch-body h2{font-size:30px;color:var(--text);margin:32px 0 14px;
+  padding:10px 0 10px 20px;border-left:4px solid var(--gold);
+  background:linear-gradient(90deg,rgba(212,168,75,.16),transparent 90%);
+  letter-spacing:.04em;font-weight:600;line-height:1.45;}
+.ch-body h3{font-size:23.5px;color:var(--accent);margin:24px 0 10px;
+  padding-bottom:8px;border-bottom:1px solid var(--border);font-weight:600;}
+.ch-body h4{font-size:20px;color:var(--text2);margin:18px 0 8px;font-weight:600;}
+.ch-body h5{font-size:18.5px;color:var(--accent);margin:14px 0 6px;font-weight:600;}
+
+/* === Verse / classical === */
+.verse,.gatha,blockquote.verse,.classical{
+  background:var(--verseBg);border-left:4px solid var(--verseBd);
+  padding:18px 26px;margin:18px 0;line-height:2.1;
+  white-space:normal;font-size:22px;color:var(--text);
+  border-radius:0 6px 6px 0;
+}
+.classical-text{
+  background:#FFFDF5;border:1px solid #E8E0D0;border-radius:10px;
+  padding:22px 26px;line-height:2.05;font-size:20px;
+  margin:14px 0;position:relative;
+}
+.text-label{display:inline-block;font-family:&quot;Noto Sans TC&quot;,sans-serif;
+  background:#3d3225;color:#fff;padding:4px 14px;border-radius:14px;
+  font-size:13.5px;letter-spacing:2.5px;margin-bottom:12px;}
+.classical-text p{margin:0 0 10px;text-indent:2em;font-size:19.5px;line-height:2;}
+.classical-text p:last-child{margin-bottom:0;}
+
+/* === Card === */
+.card,.insight,.commentary,.note{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:18px 24px;margin:16px 0;box-shadow:0 1px 4px rgba(0,0,0,.05);
+}
+.card-title,.insight-title{font-size:21.5px;color:var(--accent);
+  font-weight:600;margin-bottom:10px;letter-spacing:1px;}
+.card-content,.insight-content,.commentary p{font-size:20px;line-height:1.95;color:var(--text);margin:0 0 8px;}
+.commentary{border-left:4px solid var(--accent);}
+.insight{border-left:4px solid var(--gold);background:linear-gradient(135deg,#fffdf7,#fdf6e3);}
+
+/* === QA === */
+.qa{margin:18px 0;}
+.qa .q,.qa .a{padding:12px 20px;border-radius:8px;margin-bottom:8px;
+  font-size:20px;line-height:1.95;}
+.qa .q{background:#e8eef5;border-left:4px solid #4a6b8a;color:#1c2840;}
+.qa .a{background:#fdf6e3;border-left:4px solid var(--accent);color:var(--text);}
+.qa-label{display:inline-block;font-family:&quot;Noto Sans TC&quot;,sans-serif;
+  font-size:12.5px;font-weight:700;letter-spacing:2px;margin-right:10px;
+  padding:2px 8px;border-radius:4px;}
+.qa .q .qa-label{background:#4a6b8a;color:#fff;}
+.qa .a .qa-label{background:var(--accent);color:#fff;}
+
+/* === Two/Three columns === */
+.two-col,.three-col{display:grid;gap:14px;margin:18px 0;}
+.two-col{grid-template-columns:1fr 1fr;}
+.three-col{grid-template-columns:1fr 1fr 1fr;}
+.col,.col-card{background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:16px 20px;}
+.col-title{font-size:21.5px;color:var(--accent);font-weight:600;margin-bottom:8px;}
+.col-content{font-size:19px;line-height:1.9;color:var(--text);}
+
+/* === Four-grid === */
+.four-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+.four-grid .cell{background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:16px 20px;font-size:19px;line-height:1.85;}
+.four-grid .cell-num{display:inline-block;width:28px;height:28px;border-radius:50%;
+  background:var(--gold);color:#fff;text-align:center;line-height:28px;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:15px;font-weight:700;margin-right:10px;}
+.four-grid .cell-term{font-weight:700;color:var(--accent);font-size:20px;}
+.four-grid .cell-desc{color:var(--text2);font-size:18px;margin-top:4px;}
+
+/* === Flow === */
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:12px;margin:22px 0;padding:14px 18px;background:var(--card);
+  border:1px solid var(--border);border-radius:10px;}
+.flow.flow-v{flex-direction:column;}
+.flow-box,.flow-step{background:linear-gradient(135deg,var(--card),#fdf6e3);
+  border:2px solid var(--gold);border-radius:8px;
+  padding:12px 18px;min-width:180px;max-width:260px;text-align:center;
+  font-size:17.5px;line-height:1.5;color:var(--text);font-weight:500;}
+.flow-step small{display:block;font-size:13.5px;color:var(--text-muted);margin-top:4px;font-weight:400;}
+.flow-arrow{font-size:24px;color:var(--gold);font-weight:700;}
+
+/* === Domino chain === */
+.domino-chain{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:6px;margin:18px 0;}
+.domino{background:var(--card);border:1.5px solid var(--accentL);
+  border-radius:6px;padding:8px 14px;font-size:17.5px;color:var(--text);font-weight:500;}
+.chain-arrow{color:var(--gold);font-size:20px;}
+
+/* === Spectrum === */
+.spectrum{display:flex;align-items:center;gap:10px;margin:22px 0;
+  padding:18px 22px;background:linear-gradient(90deg,#e8eef5 0%,#fdf6e3 50%,#fce8d8 100%);
+  border-radius:10px;border:1px solid var(--border);}
+.sp-node{flex:1;text-align:center;font-size:15.5px;line-height:1.5;color:var(--text);}
+.sp-node b{display:block;font-size:17px;color:var(--accent);font-weight:700;margin-bottom:4px;}
+.sp-mid{flex:1.2;text-align:center;padding:14px 12px;
+  background:linear-gradient(135deg,var(--gold),var(--goldL));
+  color:#fff!important;border-radius:8px;font-weight:700;font-size:17.5px;line-height:1.5;
+  text-shadow:0 1px 3px rgba(0,0,0,.35);}
+.sp-mid *{color:#fff!important;}
+.sp-mid small{color:rgba(255,255,255,.92)!important;font-size:13.5px;display:block;margin-top:3px;}
+.sp-arrow{color:var(--gold);font-size:20px;}
+
+/* === Triangle / Roadmap / Refutation === */
+.triangle-diagram{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;
+  margin:24px 0;padding:20px;background:var(--card);
+  border:1px solid var(--border);border-radius:10px;text-align:center;}
+.tri-node{padding:14px 16px;background:linear-gradient(135deg,#fdf6e3,var(--card));
+  border-radius:8px;border:1.5px solid var(--gold);font-size:17px;line-height:1.5;}
+.tri-node b{display:block;font-size:18.5px;color:var(--accent);margin-bottom:4px;}
+.tri-summary{grid-column:1 / -1;padding:14px 18px;background:linear-gradient(135deg,var(--gold),var(--goldL));
+  color:#fff;border-radius:8px;font-size:18px;font-weight:600;line-height:1.7;}
+
+.roadmap{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0;
+  padding:18px;background:var(--card);border:1px solid var(--border);border-radius:10px;}
+.rm-step{flex:1;min-width:180px;background:linear-gradient(135deg,#fdf6e3,var(--card));
+  border:1.5px solid var(--gold);border-radius:8px;padding:14px 16px;font-size:17px;line-height:1.5;}
+.rm-step b{display:block;font-size:19px;color:var(--accent);margin-bottom:4px;}
+.rm-icon{display:inline-block;width:30px;height:30px;border-radius:50%;
+  background:var(--gold);color:#fff;text-align:center;line-height:30px;font-weight:700;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;margin-right:8px;font-size:15px;}
+
+.refutation-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0;}
+.ref-cell{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--accent-red);
+  border-radius:8px;padding:16px 20px;font-size:17.5px;line-height:1.7;}
+.ref-cell::before{content:&quot;✘ &quot;;color:var(--accent-red);font-weight:700;font-size:19px;}
+.ref-cell b{display:block;color:var(--accent);font-size:19px;margin-bottom:6px;}
+
+/* === Compare table === */
+.compare-table{width:100%;border-collapse:collapse;margin:22px 0;
+  background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;font-size:18px;}
+.compare-table th,.compare-table td{padding:14px 18px;text-align:left;
+  border-bottom:1px solid var(--border-light);line-height:1.7;}
+.compare-table thead th{background:var(--headGrad);color:#f5e8c8;
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-weight:600;letter-spacing:1.5px;
+  font-size:18.5px;}
+.compare-table tbody tr:last-child td{border-bottom:0;}
+.compare-table tbody th{background:rgba(212,168,75,.15);color:var(--accent);
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-weight:700;font-size:18px;width:30%;}
+.compare-table .col-good{background:rgba(184,134,11,.08);}
+.compare-table .col-bad{background:rgba(139,37,0,.06);}
+
+/* === Phase badge === */
+.phase-badge{display:inline-block;padding:5px 14px;border-radius:14px;
+  background:var(--gold);color:#fff;font-family:&quot;Noto Sans TC&quot;,sans-serif;
+  font-size:14px;letter-spacing:2px;font-weight:600;margin-right:8px;
+  text-shadow:0 1px 2px rgba(0,0,0,.25);}
+.phase-badge.danger{background:var(--accent-red);}
+.phase-badge.safe{background:#3d6644;}
+.phase-badge.warning{background:#a87a1f;}
+
+/* === Quote callout === */
+.quote-call{background:linear-gradient(135deg,#fdf6e3,#f0e8d8);
+  border-left:5px solid var(--gold);border-radius:8px;padding:18px 24px;margin:18px 0;
+  font-size:21px;color:var(--text);line-height:1.9;font-style:italic;text-align:center;
+  position:relative;}
+.quote-call::before{content:&quot;「&quot;;color:var(--gold);font-size:36px;
+  position:absolute;left:8px;top:0;line-height:1;font-style:normal;}
+.quote-call::after{content:&quot;」&quot;;color:var(--gold);font-size:36px;
+  position:absolute;right:8px;bottom:-10px;line-height:1;font-style:normal;}
+
+/* === Read progress === */
+.read-progress{
+  position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+  z-index:120;background:rgba(30,26,20,.92);color:var(--gold);
+  padding:9px 24px;border-radius:30px;
+  border:1px solid rgba(184,134,11,.5);
+  box-shadow:0 4px 18px rgba(0,0,0,.25);
+  font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:14px;letter-spacing:2px;
+  display:flex;align-items:center;gap:12px;
+  pointer-events:none;user-select:none;backdrop-filter:blur(6px);
+}
+.rp-bar{width:148px;height:4px;background:rgba(212,196,168,.18);
+  border-radius:2px;overflow:hidden;position:relative;}
+.rp-fill{position:absolute;top:0;left:0;bottom:0;
+  background:linear-gradient(90deg,var(--gold),var(--goldL));width:0%;transition:width .3s;}
+.rp-pct{font-weight:600;min-width:38px;text-align:right;font-size:13px;}
+.rp-label{font-size:12px;opacity:.75;letter-spacing:3px;}
+
+#backTop{position:fixed;right:24px;bottom:78px;width:46px;height:46px;
+  border-radius:50%;background:rgba(30,26,20,.92);color:var(--gold);
+  border:1px solid rgba(184,134,11,.5);
+  font-size:22px;cursor:pointer;display:none;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.2);z-index:120;}
+#backTop:hover{color:var(--goldL);}
+
+.next-link{display:inline-block;margin-top:16px;padding:10px 24px;
+  background:linear-gradient(135deg,var(--accent),var(--accentL));color:#fff;
+  border-radius:24px;font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:17px;letter-spacing:2px;
+  text-decoration:none;transition:transform .25s,box-shadow .25s;}
+.next-link:hover{transform:translateX(4px);
+  box-shadow:0 6px 18px rgba(91,58,41,.25);color:#fff;}
+
+/* === Footer === */
+.site-footer{background:#1e1a14;color:#a89564;text-align:center;
+  padding:40px 24px;font-family:&quot;Noto Sans TC&quot;,sans-serif;font-size:15px;
+  letter-spacing:2px;line-height:2;}
+.site-footer h4{color:var(--goldL);font-size:18px;letter-spacing:4px;margin-bottom:10px;font-weight:600;}
+.site-footer p{margin:6px 0;font-size:15px;}
+
+/* === Responsive === */
+@media (max-width:900px){
+  #sb{transform:translateX(-100%);transition:transform .3s;}
+  #sb.open{transform:translateX(0);}
+  #sbToggle{display:flex;align-items:center;justify-content:center;}
+  .main{margin-left:0;}
+  .ch-head{padding:36px 20px 30px;}
+  .ch-name{font-size:26px;}
+  .ch-body{padding:24px 18px;}
+  .hero-title{font-size:36px;}
+  .two-col,.three-col,.four-grid,.refutation-grid,.triangle-diagram{grid-template-columns:1fr;}
+  .compare-table{font-size:15.5px;}
+  .compare-table th,.compare-table td{padding:10px 12px;}
+}
+@media (max-width:600px){
+  body{font-size:17px;}
+  .hero-title{font-size:28px;}
+  .toc-title{font-size:24px;}
+}
+
+
+html,body{margin:0!important;padding:0!important;background:transparent!important;
+  min-height:0!important;height:auto!important;
+  overflow:hidden!important;
+  scrollbar-width:none!important;-ms-overflow-style:none!important;
+  -webkit-user-select:none!important;-moz-user-select:none!important;
+  -ms-user-select:none!important;user-select:none!important;
+  -webkit-touch-callout:none!important;}
+html::-webkit-scrollbar,body::-webkit-scrollbar,
+*::-webkit-scrollbar{display:none!important;width:0!important;height:0!important;}
+*{-webkit-user-select:none!important;-moz-user-select:none!important;
+  -ms-user-select:none!important;user-select:none!important;
+  -webkit-user-drag:none!important;
+  scrollbar-width:none!important;}
+body{padding:0 8px;}
+.main,main,#main{min-height:0!important;height:auto!important;
+  padding-bottom:0!important;margin-bottom:0!important;margin-left:0!important;}
+section:last-of-type,.chapter:last-of-type,.chapter:last-child,
+section.chapter:last-child,.ch-body:last-child{
+  margin-bottom:0!important;padding-bottom:0!important;}
+#sb,#sbToggle,#backTop,aside.sb,.read-progress{display:none!important;}
+img{-webkit-user-drag:none!important;pointer-events:none;}
+
+
+/* 1.2x inner boost · iframe srcdoc 內部 */
+.ch-body,.chapter,.section,article,main{font-size:20px!important;line-height:1.9!important;}
+.ch-body p,.chapter p,.section p,article p,p,li,td,th{font-size:20px!important;line-height:1.9!important;}
+h1{font-size:38px!important;}
+h2{font-size:30px!important;}
+h3{font-size:23.5px!important;}
+h4{font-size:20px!important;}
+h5{font-size:18.5px!important;}
+.verse,.gatha,blockquote,.classical-text{font-size:22px!important;line-height:2.2!important;}
+.toc-title{font-size:30px!important;}
+.toc-desc{font-size:17px!important;}
+.toc-num{font-size:18px!important;}
+.toc-name{font-size:20px!important;line-height:1.7!important;}
+.ch-num{font-size:18px!important;}
+.ch-name{font-size:32px!important;}
+.ch-sub{font-size:17px!important;}
+.card-content,.col-content,.section-content,.card-desc,.insight-content,.commentary p{font-size:20px!important;line-height:1.9!important;}
+.card-title,.col-title,.section-title,.insight-title{font-size:21.5px!important;}
+.text-label{font-size:13.5px!important;}
+.flow-box,.flow-step,.flow-chart .flow-step,.domino{font-size:17.5px!important;}
+.qa .q,.qa .a{font-size:20px!important;line-height:1.9!important;}
+.four-grid .cell,.two-col .col,.three-col .col{font-size:19px!important;}
+.grid-4 .cell{font-size:19px!important;}
+.debate .q-side,.debate .a-side{font-size:19px!important;}
+.spectrum .sp-node{font-size:15.5px!important;}
+.refutation-grid .ref-cell{font-size:17.5px!important;}
+.roadmap .rm-step{font-size:17px!important;}
+.triangle-diagram .tri-node{font-size:17px!important;}
+.checklist li{font-size:20px!important;}
+.phase-badge{font-size:14px!important;}
+
+/* 金底 h5 防疊色 */
+.sp-mid,.sp-mid *{color:#fff!important;}
+.sp-mid h5{color:#fff!important;font-weight:700!important;text-shadow:0 1px 3px rgba(0,0,0,.35);}
+.sp-mid small{color:rgba(255,255,255,.92)!important;}
+</style></head><body oncontextmenu='return false' oncopy='return false' oncut='return false' onselectstart='return false' ondragstart='return false'>
+<a aria-hidden=&quot;true&quot; id=&quot;top&quot; style=&quot;position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;&quot;></a>
+
+
+
+
+
+
+
+<div class=&quot;preface&quot;>
+<h2 class=&quot;preface-title&quot;>編 者 前 言</h2>
+<div class=&quot;preface-divider&quot;></div>
+<p>本品在《大智度論》解釋《摩訶般若波羅蜜經》系列中佔據一個極特別的位置——它前承〈阿鞞跋致品〉的「學空不證」，後啟「防辨魔事」的細微魔境，正是修行者跨越「具備空性基礎、卻尚未入正位」這片<b>模糊地帶</b>的驗證關卡。</p>
+<p>論主在此採用三條測試路徑：第一，<b>夢的潛意識測試</b>——白晝行空若已內化，夜夢中即不貪三界、不取二乘；第二，<b>境界的中觀防禦</b>——夢見父母喪亡、自身被殺，能不驚不怖、反發大悲；第三，<b>誓願力的物理干涉</b>——夢中能以誓滅地獄火、覺後實火亦滅。三項皆通，方為阿鞞跋致相。</p>
+<p>但更值得修學者警覺的是論主對<b>「魔事」的精細拆解</b>：魔不是面目可怖的他者，而是化作微妙的肯定——授記、宿命、頭陀、遠離法——專鉤未入正位菩薩的<b>名相之執</b>。中觀的破解術唯一：「不知色等五眾和合邊更有名字相」——回到性空，魔網即破。</p>
+<p>全卷收束於「依法不依人」的終極判準：六波羅蜜、三十七道品、如、法性、實際——這些「法」本身就是善知識，因為三世諸佛皆從此出。本 HTML 將原典 65 段（經 + 論）與 25 頁視覺化分析依「卷--&amp;gt;品--&amp;gt;章--&amp;gt;節」四級體系彙整為十章二十六節，俾便研究者建立完整的<b>阿鞞跋致地圖</b>。</p>
+</div>
+
+<div class=&quot;toc-section&quot;>
+<h2 class=&quot;toc-title&quot;>目 次</h2>
+<div class=&quot;toc-desc&quot;>卷七十六 · 夢中不證品第六十一 · 全十章 · 共二十六節</div>
+<div class=&quot;toc-grid&quot;>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-1&quot;><span class=&quot;toc-num&quot;>1</span><span class=&quot;toc-name&quot;>第一章 · 全品定位與三軸結構</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-2&quot;><span class=&quot;toc-num&quot;>2</span><span class=&quot;toc-name&quot;>第二章 · 卷七十六〈夢中不證品〉原典</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-3&quot;><span class=&quot;toc-num&quot;>3</span><span class=&quot;toc-name&quot;>第三章 · 夢的中觀本體論</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-4&quot;><span class=&quot;toc-num&quot;>4</span><span class=&quot;toc-name&quot;>第四章 · 阿鞞跋致的三大驗證指標</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-5&quot;><span class=&quot;toc-num&quot;>5</span><span class=&quot;toc-name&quot;>第五章 · 驗證的例外 · 破法業的絕對界限</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-6&quot;><span class=&quot;toc-num&quot;>6</span><span class=&quot;toc-name&quot;>第六章 · 危險期與魔事拆解</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-7&quot;><span class=&quot;toc-num&quot;>7</span><span class=&quot;toc-name&quot;>第七章 · 真假遠離 · 破除形跡的傲慢</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-8&quot;><span class=&quot;toc-num&quot;>8</span><span class=&quot;toc-name&quot;>第八章 · 證道的雙引擎 · 善知識的中觀重定義</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-9&quot;><span class=&quot;toc-num&quot;>9</span><span class=&quot;toc-name&quot;>第九章 · 中觀防禦總表與絕對自信</span></a>
+<a class=&quot;toc-card&quot; href=&quot;#chapter-10&quot;><span class=&quot;toc-num&quot;>10</span><span class=&quot;toc-name&quot;>第十章 · 總結 · 中觀心法的核心樞紐</span></a>
+</div>
+</div>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-1&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第一章</div>
+<h2 class=&quot;ch-name&quot;>全 品 定 位 與 三 軸 結 構</h2>
+<div class=&quot;ch-sub&quot;>前置·本篇·後續｜三段式經論邏輯定位</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>欲讀懂〈夢中不證品〉，須先把它放回《大智度論》的整體脈絡：它<b>不是一篇獨立的修行手冊</b>，而是「學空不證」這條修證大軸上的<b>檢測站</b>。前承〈阿鞞跋致品〉廣說諸不退轉之相，後啟「魔事辨識」的細微魔境，本品專處理一塊修行者最容易被忽略也最危險的<b>模糊地帶</b>──當菩薩已然具備空性基礎，卻尚未入正位（未得無生法忍）時，如何知道自己「真的不退轉了」？論主給的答案是：交給夢來測試。</p>
+</div>
+<h2 id=&quot;ch1-s1&quot;>第一節　前置 · 本篇 · 後續的三段邏輯</h2>
+<p>從《大智度論》整部論的結構看，本品恰處於三條軸線的交會點。前面〈阿鞞跋致品〉教<b>「學空不證」</b>——亦即操作心法、如何射箭；本品教<b>「夢中驗證」</b>——亦即檢驗指標、如何看靶；後續〈魔事品〉等諸品則處理<b>「防辨魔事」</b>——亦即真偽防護、如何防走入魔。</p>
+<div class=&quot;flow&quot;>
+<div class=&quot;flow-box&quot;><b>前置 · 學空不證</b><br/><small>操作心法 / 如何射箭<br/>〈阿鞞跋致品〉</small></div>
+<div class=&quot;flow-arrow&quot;>→</div>
+<div class=&quot;flow-box&quot; style=&quot;border-color:var(--accent);background:linear-gradient(135deg,#fdf6e3,#f0e8d8);&quot;><b>本篇 · 夢中驗證</b><br/><small>檢驗指標 / 如何看靶<br/>〈夢中不證品 · 61〉</small></div>
+<div class=&quot;flow-arrow&quot;>→</div>
+<div class=&quot;flow-box&quot;><b>後續 · 防辨魔事</b><br/><small>真偽防護 / 防走入魔<br/>〈魔事品〉等諸品</small></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>論主邏輯</div>
+<div class=&quot;insight-content&quot;>論主先在前文<b>正面教法</b>（如何學空、如何不證），於本品<b>反過來建立檢測標準</b>，再於後文<b>提示反向陷阱</b>（魔事如何冒充修證之果）。三段邏輯互為表裡，缺一則修學鏈條斷裂。</div>
+</div>
+<h2 id=&quot;ch1-s2&quot;>第二節　阿鞞跋致的「模糊地帶」矩陣</h2>
+<p>論主在開章便面對一個尖銳問題：「<b>〈阿鞞跋致品〉中已廣說阿鞞跋致相，今何以更說？</b>」此問若只看表面，似乎重複；論主給出的回答揭露了一個極精細的分類：阿鞞跋致並非單一狀態，而是依「<b>是否已得授記</b>」與「<b>授記因緣是否具足</b>」交叉成四格。</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th></th><th>已 得 記（Prophesied）</th><th>未 得 記（Un-prophesied）</th></tr>
+</thead>
+<tbody>
+<tr><th>具 足 六 度（Fully Endowed）</th><td>標準大菩薩</td><td>即將受記</td></tr>
+<tr><th>未 具 足 六 度（Partially Endowed）</th><td>特殊授記</td><td><b style=&quot;color:var(--accent-red);&quot;>本品目標受眾：未現前得記且未具足六度</b></td></tr>
+</tbody>
+</table>
+<div class=&quot;quote-call&quot;>「不具足授記因緣者，但知諸法實相，得般若波羅蜜分，餘波羅蜜未具足。」</div>
+<p>論主把焦點精確聚在<b>右下角</b>：那些已知諸法實相、得般若波羅蜜分、卻其餘五度未具足的修學者。佛陀慈悲，並未以「未具足」為由否定其退轉資格——只要在夢的潛意識測試中通過，<b>「雖未具足阿鞞跋致法，亦名阿鞞跋致」</b>。這是論主為修學者建立的<b>自我檢測表</b>。</p>
+<h2 id=&quot;ch1-s3&quot;>第三節　本品為何重要——學空之後的驗證關卡</h2>
+<p>諸法既已知為空，何以還需驗證？因為「<b>知</b>」與「<b>不退轉</b>」之間隔著一條意識深淺的距離。聞慧、思慧階段的「知空」可能只浮在意識層面；夢境是潛意識的試金石，能直接照出修者究竟是「<b>把空性內化為自動反應</b>」還是「<b>意識上知、潛意識仍貪</b>」。</p>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>關卡定位</div>
+<div class=&quot;col-content&quot;>學空已成、未入正位之間的修證跨欄。這條跨欄不通過，前面的學空白費；通過了，後面的魔事自然有抗體。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>論主用意</div>
+<div class=&quot;col-content&quot;>為修學者「建立可操作的自我檢測表」——不必等佛陀現前授記，自己也能依夢相、誓力、無懼三項指標自驗。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>本品鋪陳</div>
+<div class=&quot;col-content&quot;>先列三大正面指標（不貪 / 無懼 / 誓力），再給一個例外（破法業不可救），然後反過來示範魔事四種冒充法。</div>
+</div>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>第一章已將本品的座標釘在「學空 → 夢中驗證 → 防辨魔事」三段式邏輯的中段。下一章我們直接進入原典——先讀<b>經文</b>佛陀對須菩提所說的八項夢相、九項魔事、善知識教言，再讀龍樹菩薩在<b>論主問答</b>中對每段經文的層層拆解。原典是分析的根本依據，凡後續所有圖表、矩陣、流程，都從這 65 段經文與論議發芽。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-2&quot;>前往第二章 · 原典 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-2&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第二章</div>
+<h2 class=&quot;ch-name&quot;>卷 七 十 六〈夢 中 不 證 品〉原 典</h2>
+<div class=&quot;ch-sub&quot;>經文八相九事 · 論主問答十六辯</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>本章保存原典全貌。<b>第一節經文</b>輯佛陀對須菩提所說的<b>八種夢中阿鞞跋致相</b>（夢不貪二乘三界、夢見佛說法、夢見佛現大神力、夢中災難不畏、願國土無三惡道、夢中誓滅地獄火、實火可滅、至誠誓力遣非人）以及<b>九種微細魔事</b>（魔藉誓力欺、魔說宿命、魔授成佛名號、魔讚遠離法、佛重新定義「真遠離」、親近善知識）。<b>第二節論主問答</b>輯龍樹菩薩對每一段經文的問答式解析，含「何以更說」「夢覺無異」「魔事細微」「小乘亦能作善知識」「別說三十七品如法性」「不隨他教」等十六辯。</p>
+</div>
+<h2 id=&quot;ch2-s1&quot;>第一節　經文 · 佛說阿鞞跋致夢相九類</h2>
+<p class=&quot;no-indent&quot;><span class=&quot;text-label&quot;>經 · 須菩提白佛緣起</span></p>
+<div class=&quot;classical-text&quot;>
+<p>佛告須菩提：「若菩薩摩訶薩乃至夢中不貪聲聞、辟支佛地，亦不貪三界，觀諸法如夢、如幻、如嚮、如焰、如化，亦不作證。須菩提！當知是阿鞞跋致菩薩摩訶薩阿鞞跋致相。</p>
+<p>「復次，須菩提！菩薩摩訶薩夢中見佛與無數百千萬億比丘、比丘尼、優婆塞、優婆夷、天、龍、鬼神、甄陀羅等說法；從佛聞法，即解中義、隨法行。須菩提！當知是阿鞞跋致菩薩摩訶薩阿鞞跋致相。</p>
+<p>「復次，須菩提！菩薩摩訶薩夢中見佛三十二相、八十隨形好、大光明，踊在虛空，於大比丘僧中說法；現大神力，化作化人，到他國土施作佛事。須菩提！當知是阿鞞跋致菩薩摩訶薩阿鞞跋致相。</p>
+<p>「復次，須菩提！若菩薩摩訶薩夢中見兵起若破聚落、若破城邑，若失火時，若見虎、狼、師子猛害之獸，若見欲來級其頭者，若見父母喪亡，兄弟、姊妹及諸親友知識死者。見如是等種種愁苦之事，不驚、不怖，亦不憂惱；從夢覺已，即時思惟：『三界虛妄，皆如夢耳！我得阿耨多羅三藐三菩提時，亦當為眾生說三界如夢。』須菩提！當知是阿鞞跋致菩薩摩訶薩阿鞞跋致相。</p>
+<p>「復次，須菩提！云何當知是阿鞞跋致菩薩摩訶薩得阿耨多羅三藐三菩提時，國中無三惡道？須菩提！菩薩摩訶薩若夢中見地獄、畜生、餓鬼，作是念：『我當勤精進，得阿耨多羅三藐三菩提時，令我國中無一切三惡道。』何以故？是夢及諸法，無二無別。須菩提！當知是阿鞞跋致菩薩摩訶薩阿鞞跋致相。</p>
+<p>「復次，須菩提！菩薩摩訶薩夢中見地獄火燒眾生，作是誓：『若我實是阿鞞跋致者，是火當滅！』是火即滅。若地獄火滅，即是阿鞞跋致相。</p>
+<p>「復次，若菩薩晝日見城郭火起，作是念：『我夢中見阿鞞跋致行、類、相貌，我今實有是者，自立誓言：是火當滅！』若火滅者，當知是菩薩得受阿耨多羅三藐三菩提記，住阿鞞跋致地。若火不滅，燒一家、置一家，燒一里、置一里。須菩提！當知被燒家破法業因緣厚集，以是故，燒一家、置一家，是諸眾生今世受破法餘殃故被燒。須菩提！以是因緣故，當知是阿鞞跋致菩薩摩訶薩阿鞞跋致相。」</p>
+</div>
+<p class=&quot;no-indent&quot;><span class=&quot;text-label&quot;>經 · 至誠誓力遣非人</span></p>
+<div class=&quot;classical-text&quot;>
+<p>佛告須菩提：「今當更為汝說阿鞞跋致行、類、相貌。須菩提！若男子、若女人為非人所持，是時，菩薩摩訶薩作是念：『若我為過去諸佛所授記，我心清淨求阿耨多羅三藐三菩提，行清淨正道，遠離聲聞、辟支佛心，遠離聲聞、辟支佛念，應當成阿耨多羅三藐三菩提。我必得阿耨多羅三藐三菩提，非不得；十方國土中現在無量諸佛無所不知、無所不見、無所不解、無所不證。諸佛知我深心，審定必當得阿耨多羅三藐三菩提。』以是至誠誓故，是男子……</p>
+</div>
+<p class=&quot;no-indent&quot;><span class=&quot;text-label&quot;>經 · 魔事四相 · 細微誤導</span></p>
+<div class=&quot;classical-text&quot;>
+<p>「復次，須菩提！菩薩摩訶薩遠離六波羅蜜及方便力，不久行四念處，乃至不久行空、無相、無作三昧，未入菩薩位，是菩薩為惡魔所嬈。菩薩作是誓：『若我實從諸佛受記者，是非人當去。』是時惡魔即作方便，勅非人令去。惡魔有威力，勝諸非人故，非人即去。是時，菩薩作是念：『以我誓力故，非人去。』不知是惡魔力；恃是證故，輕弄毀蔑諸餘菩薩，作是言：『我已從諸佛受記，汝等未得。』用是空誓，無方便力故，生增上慢。以是事故，遠……</p>
+<p>「須菩提！云何菩薩摩訶薩不久行六波羅蜜，乃至未入菩薩位，為惡魔所嬈？須菩提！惡魔變化作種種身，語菩薩言：『汝於諸佛所得受阿耨多羅三藐三菩提記：汝字某，汝父字某，汝母字某，汝兄弟、姊妹字某，汝七世父母名字如是；汝在某方、某國、某城、某聚落中生。』若見菩薩性行和柔，語菩薩言：『汝先世亦復柔和。』若見急性卒暴，便言：『汝先世亦爾。』若見菩薩修阿蘭若行，語言：『汝先世亦修阿蘭若行。』若見菩薩乞食、納衣、中……</p>
+<p>「復次，須菩提！菩薩摩訶薩不久行六波羅蜜，不知名字相，不知色相，不知受、想、行、識相。惡魔來語言：『汝當來世得阿耨多羅三藐三菩提時，有如是名字。』隨其本念，說其名號。是無智、無方便菩薩作是念：『我先亦有是成佛名號念，是人如我所念說，是人所說合我本念，我必為諸佛所授記。』須菩提！我所說阿鞞跋致行、類、相貌，是人永無，但以空名字輕弄毀蔑餘人；以是事故，遠離阿耨多羅三藐三菩提。是菩薩摩訶薩遠離般若波羅蜜……</p>
+<p>「復次，須菩提！菩薩在空閑山澤曠遠之處，魔來到菩薩所，讚歎遠離法，作是言：『善男子！汝所行，是佛所稱譽遠離法。』須菩提！我不讚是遠離，所謂但在空閑山澤曠遠之處。」</p>
+</div>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;><span class=&quot;qa-label&quot;>須菩提</span>「世尊！若空閑山澤曠遠之處非遠離法者，云何更有異遠離？」</div>
+<div class=&quot;a&quot;><span class=&quot;qa-label&quot;>佛 言</span>「須菩提！若菩薩摩訶薩遠離聲聞、辟支佛心，住空閑山澤曠遠之處，是佛所許遠離法。須菩提！如是遠離法，菩薩摩訶薩應所修行，晝夜行是遠離法，是名遠離行菩薩。須菩提！若惡魔所說遠離法，空閑山澤曠遠之處；是菩薩心在憒閙，所謂不遠離聲聞、辟支佛心，不勤修般若波羅蜜，是菩薩摩訶薩不能具足一切種智。是菩薩行惡魔所說遠離法，心不清淨，而輕餘菩薩城傍心清淨，無聲聞、辟支佛憒閙心，亦無諸餘雜惡心，具足禪定、解脫、……」</div>
+</div>
+<p class=&quot;no-indent&quot;><span class=&quot;text-label&quot;>經 · 善知識的中觀重定義</span></p>
+<div class=&quot;classical-text&quot;>
+<p>「復次，須菩提！菩薩摩訶薩深心，欲得阿耨多羅三藐三菩提者，當親近恭敬供養善知識。」</p>
+</div>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;><span class=&quot;qa-label&quot;>須菩提</span>「世尊！何等是菩薩摩訶薩善知識？」</div>
+<div class=&quot;a&quot;><span class=&quot;qa-label&quot;>佛 言</span>「諸佛是菩薩摩訶薩善知識，諸菩薩摩訶薩亦是菩薩善知識。須菩提！阿羅漢亦是菩薩善知識，是為菩薩摩訶薩善知識。<br/>「復次，須菩提！六波羅蜜亦是菩薩善知識，四念處乃至十八不共法亦是菩薩善知識。須菩提！如、實際、法性亦是菩薩善知識。須菩提！六波羅蜜是世尊，六波羅蜜是道，六波羅蜜是大明，六波羅蜜是炬，六波羅蜜是智，六波羅蜜是慧，六波羅蜜是救，六波羅蜜是歸，六波羅蜜是洲，六波羅蜜是究竟道，六波羅蜜是父是母。四念處乃至一切種智，亦如是。何以故？六波羅蜜、三十七道法亦是過去諸佛父母，六波羅蜜、三十七道法亦是未來、現在十方……</div>
+</div>
+<h2 id=&quot;ch2-s2&quot;>第二節　論主問答 · 龍樹菩薩十六辯</h2>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;><span class=&quot;qa-label&quot;>問 一</span>〈阿鞞跋致品〉中已廣說阿鞞跋致相，今何以更說？</div>
+<div class=&quot;a&quot;><span class=&quot;qa-label&quot;>答</span>所說般若波羅蜜義皆是阿鞞跋致相，但〈阿鞞跋致品〉中多說其事，餘品中亦處處有說阿鞞跋致相，但不次第。<br/>有人言：為後來眾生異語說阿鞞跋致相。<br/>有人言：有二種阿鞞跋致：一者、已得記，二者、未得記。得授記有二種：一者、現前授記，二者、不現前授記。不現前授記有二種：一者、具足授記因緣，二者、未具足授記因緣。<br/>具足授記因緣者，知諸法實相，具足六波羅蜜；不具足授記因緣者，但知諸法實相，得般若波羅蜜分，餘波羅蜜未具足。「是菩薩能如阿鞞跋致菩薩答」，此是前品末所說阿鞞跋致，是故次第說：「夢中不貪二地，雖未具足阿鞞跋致法，亦名阿鞞跋致。」欲說如是等阿鞞跋致相故，此品中次第說。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<p>是菩薩晝日常習行空故，夜夢中亦不貪三界。是人常行慈悲心於眾生、深樂佛法故，不貪二乘。若夢、若覺，觀一切法如夢、如幻等。是菩薩雖未得現前授記，餘法未具足，亦名阿鞞跋致相。何以故？菩薩於二處退轉：一者、著世間樂故轉，二者、取二乘故轉。是菩薩堅心，深入空及慈悲心故，乃至夢中亦不貪三界、二乘，何況覺時！</p>
+<p>復次，若菩薩夢見佛在人天大眾中說法，所謂諸法實相義；菩薩知是義，心與法合。</p>
+<p>復次，諸佛祕密法，菩薩夢中得見，所謂見佛身無量，過須彌山，色如閻浮檀金，三十二相、八十種隨形好以自莊嚴，放無量光明；梵音聲說法，及身毛孔出無量化佛至十方，種種方便力施作佛事，度脫眾生。爾時，是菩薩見是佛神通力故，深心清淨問佛法，得諸法實相，是名阿鞞跋致。</p>
+<p>是菩薩常行畢竟空故，我、我所等諸煩惱折薄，乃至自身不惜，何況餘親！是因緣故，若夢中見：若自身，若父母等，若殺、若死因緣，及聚落破等，不憂惱怖畏。覺已，思惟：「如夢中，不死而見死、不畏而見畏，一切三界皆爾，何但夢中！我作佛時，當為眾生說諸法畢竟空、皆如夢。」</p>
+<p>復次，有菩薩種清淨國土因緣時，作是願：「我爾許時積集淨國土行，是心修習故，夢中若見三惡道眾生，即時得是心：『我作佛時，令我國土乃至無三惡道名。』」</p>
+<p>復次，是菩薩常修慈悲心故，夢中見地獄火燒眾生，作誓，火即滅。</p>
+<p>覺已，取是相，若見實火燒城郭，作是念：「我夢中能滅火，此火亦當可滅！」所以者何？佛說夢、覺無異故。是菩薩於無量劫修集福德，得諸法實相故，鬼神、龍王等助滅是火。其中有不滅，燒一家、置一家者，是眾生重罪故，菩薩福德、智慧力不能滅重罪者，所謂破法業。法者，般若波羅蜜；諸餘法利益無及般若波羅蜜者，是故破者罪重。以菩薩誓力故，不次第燒，惟罪重者不救，不妨是阿鞞跋致相。</p>
+<p>非人所持，亦如呪火。<br/>有菩薩未得無生法忍，聞是阿鞞跋致呪故鬼去，便作呪。是菩薩自未有力，魔來遣鬼神故，自恃為己力。有如是失故，佛示令覺知。</p>
+<p>復次，菩薩未入正位，魔作種種形，隨其念而示語：「汝已得授記，汝有是相，但以肉眼故不知。」以是因緣故，生增上慢，輕蔑餘人。</p>
+<p>復次，菩薩不得諸法實相，不知色等五眾和合邊更有名字相。<br/>魔來與授記：「汝當作佛，字名某甲。」<br/>是菩薩思惟：「我本有是名字念，今所說者，同我所願，必是諸佛授記。」是故心生憍慢，輕餘大菩薩。以是因緣故，遠離無上道；受罪畢，墮於二乘。<br/>若即此身悔，當久久償罪畢，還依止般若波羅蜜，得作佛。所以者何？若轉身乃悔，則罪重叵滅，不得作佛。是心著是空名字，得重罪故，佛說四重禁喻：破是重禁，現身不得四道果。所以者何？是四禁中，妄語稱「我是阿羅漢」。此中著是受莂名字，自言「我當作佛」，是故重於四禁。過五逆罪者，如〈地獄品〉中破般若波羅蜜罪說。微細魔事者，細名不逆其意，隨其本念，助成其心。是菩薩未得阿鞞跋致法，魔誑言已得。是微細魔事，利根菩薩應……</p>
+<p>復次，菩薩在遠離處，魔來讚歎：「汝能遠離親族、同學，獨在深山林中，為佛道故，是為真菩薩道行。」是菩薩用是故，生憍慢心，輕餘在眾中住菩薩。以是事故，遠離佛道，墮於二乘。佛種種因緣，訶是菩薩是賊、是旃陀羅等，如經中說，不應親近。佛所說遠離，心離二乘、三界，是名真遠離。如經中廣說如是等細微魔事，應當覺而遠離。</p>
+<p>「復次，菩薩欲深心得無上道」——深心名一心、重心，深愛佛道，出於一切世間所樂。<br/>當親近善知識。所以者何？有二因緣故得無上道：一者、內，二者、外。內名正憶念，思惟、籌量諸法；外名諸善知識。<br/>佛餘處種種說善知識相，是故須菩提問佛：「世尊！何等是菩薩善知識？」<br/>佛答：「諸佛、大菩薩及聲聞是菩薩善知識。六波羅蜜乃至一切種智、如、法性、實際等諸法亦是善知識。」法能成辦其事，故說六波羅蜜等諸法名善知識。<br/>三種聖人以此六波羅蜜法令菩薩奉行，得作佛；是故法及人通名「善知識」。</p>
+</div>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;><span class=&quot;qa-label&quot;>問 二</span>佛及菩薩、六波羅蜜能成菩薩故，應是善知識；小乘道異，云何能與作善知識？</div>
+<div class=&quot;a&quot;><span class=&quot;qa-label&quot;>答</span>有小乘人先世求佛道故利根，雖是小乘，有憐愍心，觀應成大乘者為說大乘法，知報佛恩故，令佛種不斷。如舍利弗六十劫求佛道，雖退轉作阿羅漢，亦利根智慧，能為諸菩薩說大乘。須菩提常行無諍三昧，常有慈悲心於眾生故，亦能教化菩薩大乘法。如摩訶迦葉以神通力持此身至彌勒出世，於九足山中出，與大眾作得道因緣。如是等甚多。</div>
+</div>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;><span class=&quot;qa-label&quot;>問 三</span>六波羅蜜攝一切法，今何以別說三十七品至如、法性、實際？</div>
+<div class=&quot;a&quot;><span class=&quot;qa-label&quot;>答</span>六波羅蜜是略說；四念處等是廣說，解六波羅蜜。六波羅蜜是菩薩初道，小遠；三十七品是近因緣。於六波羅蜜中，禪波羅蜜、般若波羅蜜最大；譬如雖有星宿，日、月最勝。是二波羅蜜中，四念處、佛十力等法最妙，能大利益，現世令人得道故；持戒、布施等不如故。別說如等無為法，實、不虛誑故，能成菩薩事；行四念處等法，得如是等法，令菩薩得出虛誑法，故名善知識。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<p>復次，是六波羅蜜等法如佛無異，佛現在亦以是法度人，是故言：「世尊！如世尊所說不可壞，六波羅蜜等所說亦不可壞。」是故言：「六波羅蜜是世尊。」</p>
+<p>是道者，行是道，徑入無量佛法中。<br/>六波羅蜜中所說，人籌量、思惟、分別、常修行，令人得大智慧，破諸世間無明，是故說「六波羅蜜是大明」。<br/>是大炬、是智、是慧、是救、是歸、是洲、是究竟道，如上說。<br/>般若波羅蜜是母，五波羅蜜是父，和合說故言「六波羅蜜是父母」。如六波羅蜜說，四念處等亦如是。<br/>是中說因緣：「六波羅蜜等法亦是三世十方佛父母。」<br/>是六波羅蜜等是自利法，行者欲以六波羅蜜教化眾生、淨佛世界，應以四攝法攝取眾生。四攝法義，如先說。如是自利、利他故，佛說「六波羅蜜、三十七品等諸法是世尊、是道」等。<br/>是故菩薩若欲不隨他教——不隨他教名自知諸法實相，乃至變作佛身來說異於法相，亦不信不隨。<br/>自得菩薩道，漸漸具足諸佛法，淨佛世界、成就眾生。得佛道，能斷一切眾生疑。若欲得是者，當學般若。般若波羅蜜中，世間出世間、若大若小，無事不說。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>原典已展開全貌：經文中佛陀以八項夢相、九項魔事為基底，論主以十六辯逐節拆解。下一章我們從<b>本體論</b>切入，問一個最根本的問題——「<b>為什麼是夢？</b>」為何論主把驗證關卡放在潛意識而非清醒意識？這一問將揭開中觀「夢覺一如」的核心基底，也是後面所有指標、矩陣、防禦機制能成立的形上學前提。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-3&quot;>前往第三章 · 夢的中觀本體論 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-3&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第三章</div>
+<h2 class=&quot;ch-name&quot;>夢 的 中 觀 本 體 論</h2>
+<div class=&quot;ch-sub&quot;>夢覺一如的空性基底｜潛意識的終極測試</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>論主將<b>「夢」</b>抬升為阿鞞跋致的測試場，背後有一個極深的中觀預設——<b>夢與覺在實相層面完全沒有差別</b>。若實相之夢覺真有差別，夢中表現便不能驗證覺時境界；正因「夢及諸法，無二無別」，潛意識中的反應才是修證內化程度的絕對指標。本章先論「為什麼是夢」（潛意識的選擇邏輯），再論「夢覺如何一如」（中觀本體論基底）。</p>
+</div>
+<h2 id=&quot;ch3-s1&quot;>第一節　潛意識的終極測試 · 為何是「夢」？</h2>
+<p>本節要解的問題是：明明清醒時也可以觀察修者是否「貪三界、取二乘」，何必跑到夢裡去？論主的回答出自一條<b>心法觀察</b>：「日有所思，夜有所夢」——夢中意識防備最低，最能映照真實的我執程度。若白天修空只是停留在意識層面、未深入潛意識，夢中將原形畢露，依然會貪戀三界享樂、退求二乘果位。<b>夢境，是檢驗空性是否內化的絕對指標</b>。</p>
+<div class=&quot;spectrum&quot;>
+<div class=&quot;sp-node&quot;><b>晝日 · 顯意識</b>畫日常習行空<br/>聞慧 / 思慧階段<br/>有意識的對治</div>
+<div class=&quot;sp-arrow&quot;>↓</div>
+<div class=&quot;sp-mid&quot;>夢境 · 潛意識切片<br/><small>意識防備最低處</small><br/><small>真實修證程度的鏡子</small></div>
+<div class=&quot;sp-arrow&quot;>↓</div>
+<div class=&quot;sp-node&quot;><b>夜夢 · 自動反應</b>夜夢中亦不貪<br/>修慧 / 證慧階段<br/>無對治而自然不貪</div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>心法本質</div>
+<div class=&quot;insight-content&quot;>「日有所思，夜有所夢」——夢即是心習氣的反射。若白天觀空只停在「對治」層面，夢中境界一旦出現，貪心、瞋心、求二乘心就會自動冒頭；若空性已經<b>習氣化</b>，夢境中也會自動以空性回應一切現象。修者問自己「我有沒有阿鞞跋致？」最誠實的鏡子，不在打坐時，而在夢中。</div>
+</div>
+<p>論主明文：「<b>是菩薩晝日常習行空故，夜夢中亦不貪三界。是人常行慈悲心於眾生、深樂佛法故，不貪二乘。</b>」——「常」字是關鍵：白天的修空若只是偶一為之的觀照，無法穿透意識層；唯有<b>常習</b>（不間斷的滲透），才能下沉到夢的層面。本品的整套指標，皆建立在這條心理生理學基礎上。</p>
+<h2 id=&quot;ch3-s2&quot;>第二節　中觀核心基底 · 夢覺一如</h2>
+<p>夢能作為驗證關卡的<b>形上學前提</b>是：夢與實相在本體論層面相通。若夢純粹虛妄、覺純粹真實，夢中表現便與覺時無關；正因論主主張「<b>夢覺一如</b>」，夢中的修證表現才能等同於覺時的修證程度。</p>
+<div class=&quot;quote-call&quot;>如夢亦如幻，如摩訶衍那 · 夢及諸法，無二無別</div>
+<div class=&quot;two-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>本體論視角</div>
+<div class=&quot;col-content&quot;>夢中所見的火、佛、災難、地獄，與覺時所見的火、佛、災難、地獄——二者同樣是<b>因緣和合，無自性</b>。覺時所見並未比夢中更「真」，夢中所見也並未比覺時更「假」。差別只在因緣強弱，不在本體實相。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>實相機制</div>
+<div class=&quot;col-content&quot;>夢中滅火與現實滅火，其物理與心智邏輯在實相層面完全平行。因為「<b>法</b>」本身如夢，故「夢」與「法」無二無別。論主以此為據，將夢中誓力延伸到覺時的物理干涉。</div>
+</div>
+</div>
+<h3>「如夢」、「如幻」、「如嚮」、「如焰」、「如化」</h3>
+<p>佛陀在經文中連用五個比喻——<b>夢、幻、嚮（迴音）、焰（陽焰）、化</b>——刻畫諸法緣起無自性的本質。這五個比喻不是隨意排列：</p>
+<div class=&quot;four-grid&quot;>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>1</span><span class=&quot;cell-term&quot;>如夢</span><div class=&quot;cell-desc&quot;>心識所現，醒覺即無——對治對「外境實有」的執著。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>2</span><span class=&quot;cell-term&quot;>如幻</span><div class=&quot;cell-desc&quot;>幻師所作，假合而生——對治對「主體實有」的執著。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>3</span><span class=&quot;cell-term&quot;>如嚮</span><div class=&quot;cell-desc&quot;>山谷迴音，因聲假立——對治對「言說實義」的執著。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>4</span><span class=&quot;cell-term&quot;>如焰</span><div class=&quot;cell-desc&quot;>陽焰似水，渴鹿妄趣——對治對「感官知見」的執著。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>5</span><span class=&quot;cell-term&quot;>如化</span><div class=&quot;cell-desc&quot;>變化所現，乍有還無——對治對「可成可壞」的執著。</div></div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>本體論結論</div>
+<p>三世十方諸佛皆從此「夢覺一如」之實相而生。若離此實相，便無佛可證、無菩薩可名、無阿鞞跋致可立。本品所有指標、所有矩陣、所有防禦機制，最終都要回到這條本體基底——<b>「夢即法，法即夢，無二無別」</b>。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>夢的本體論基底既已穩固，論主便進入<b>具體驗證指標</b>：什麼樣的夢相，可以判斷為阿鞞跋致？下一章將拆解三大正面指標——<b>不貪、無懼、誓力</b>。每一項指標都對應一種修證內化的證據，三者層層遞進：第一項驗證「<b>方向</b>」（不退轉），第二項驗證「<b>力度</b>」（生死無懼），第三項驗證「<b>能量</b>」（誓願能干涉物質界）。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-4&quot;>前往第四章 · 三大驗證指標 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-4&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第四章</div>
+<h2 class=&quot;ch-name&quot;>阿 鞞 跋 致 的 三 大 驗 證 指 標</h2>
+<div class=&quot;ch-sub&quot;>不貪 · 無懼 · 誓力 · 三層內化的證據鏈</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>論主把夢中阿鞞跋致相歸納為三層遞進的驗證指標：<b>不貪</b>（測試方向）、<b>無懼</b>（測試力度）、<b>誓力</b>（測試能量）。這三項一條比一條深入——不貪是<b>方向正確</b>的證明，無懼是<b>空性已能對治情緒衝擊</b>的證明，誓力則是<b>修證已強到能反向干涉物質現實</b>的證明。三項皆通，方為完整的阿鞞跋致相。</p>
+</div>
+<h2 id=&quot;ch4-s1&quot;>第一節　指標一 · 不貪三界與二乘</h2>
+<p>退轉的兩大致命陷阱：第一是<b>著世間樂</b>而退（沉迷三界享樂），第二是<b>取二乘果</b>而退（求自度速成的小乘解脫）。論主說「菩薩於二處退轉」，即此二處。本指標的驗證標準是：<b>夢中亦不貪</b>——意識防備最低時，仍能不被這兩條退轉因緣拉走。</p>
+<div class=&quot;refutation-grid&quot;>
+<div class=&quot;ref-cell&quot;><b>退轉一 · 著世間樂</b>夢中見華屋寶物、見眷屬團聚、見名聞利養——若心動則屬退轉因緣未斷。</div>
+<div class=&quot;ref-cell&quot;><b>退轉二 · 取二乘果</b>夢中見阿羅漢入涅槃、見辟支佛獨樂寂靜——若羨慕則屬退轉因緣未斷。</div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>驗證標準</div>
+<div class=&quot;insight-content&quot;>夢中不貪，證明「<b>大乘菩提心</b>」與「<b>空性見</b>」已成為不可逆的潛意識直覺。論主強調：「<b>是菩薩堅心，深入空及慈悲心故，乃至夢中亦不貪三界、二乘，何況覺時！</b>」——夢中既不退，覺時自然更穩。</div>
+</div>
+<h2 id=&quot;ch4-s2&quot;>第二節　指標二 · 生死無懼的中觀防禦</h2>
+<p>第二項指標把測試強度推到極限：夢見<b>父母喪亡、自身被斬首、聚落被破、城邑失火、虎狼來襲</b>——這是潛意識層面最強的恐懼源。一般人遇此夢必驚怖憂惱；阿鞞跋致菩薩卻<b>不驚、不怖、亦不憂惱</b>，反而從夢覺起，發大悲願：「我得阿耨多羅三藐三菩提時，當為眾生說三界如夢。」</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th>面向</th><th>The Phenomenon · 現象反應</th><th>The Madhyamaka Mind · 中觀心法</th></tr>
+</thead>
+<tbody>
+<tr><th>所見內容</th><td>父母喪亡、自身被斬首、聚落破滅</td><td>同上（內容相同，回應方式完全不同）</td></tr>
+<tr><th>情緒反應</th><td>驚、怖、憂、惱</td><td class=&quot;col-good&quot;>不驚、不怖、亦不憂惱</td></tr>
+<tr><th>覺後發願</th><td>恐懼蔓延、避凶趨吉</td><td class=&quot;col-good&quot;>當為眾生說三界皆如夢</td></tr>
+<tr><th>深層邏輯</th><td>把夢境當實境，認「我」「我所」</td><td class=&quot;col-good&quot;>不死而見死、不畏而見畏，三界皆爾</td></tr>
+</tbody>
+</table>
+<div class=&quot;quote-call&quot;>深知「我」不可得，斬首猶如斬斷虛空</div>
+<div class=&quot;commentary&quot;>
+<p>論主指出深層機制：「<b>是菩薩常行畢竟空故，我、我所等諸煩惱折薄，乃至自身不惜，何況餘親！</b>」——「自身不惜」一語極重，意謂主體實有之執已破；既然連自我尚且不執為實，他者的存亡更無從成為真正的恐懼源。從惡夢覺醒非但無懼，反發大悲誓願——這是中觀防禦機制最完整的呈現：<b>空性不破，大悲不立</b>。</p>
+</div>
+<h2 id=&quot;ch4-s3&quot;>第三節　指標三 · 誓願力的物理干涉</h2>
+<p>第三項指標把難度再推一層——已不只是內在心境，而是<b>對外境的反向作用</b>。修者夢中見地獄火燒眾生，能以誓滅火；覺後若見實火燒城郭，可借同一誓力滅實火。這是潛意識誓願能<b>外溢至物質界</b>的證據。</p>
+<div class=&quot;flow&quot;>
+<div class=&quot;flow-box&quot;><b>修證基底</b><br/><small>修集福德<br/>得諸法實相</small></div>
+<div class=&quot;flow-arrow&quot;>→</div>
+<div class=&quot;flow-box&quot; style=&quot;border-color:var(--accent);background:linear-gradient(135deg,#fdf6e3,#f0e8d8);&quot;><b>潛意識誓願</b><br/><small>夢中發誓<br/>滅地獄火</small></div>
+<div class=&quot;flow-arrow&quot;>→</div>
+<div class=&quot;flow-box&quot;><b>物質界反向干涉</b><br/><small>龍神助陣<br/>現實滅城郭火</small></div>
+</div>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>從潛意識到物質界</div>
+<div class=&quot;col-content&quot;>夢中能以誓力滅火，醒來見城郭真實火災亦能以誓言滅之。這條從心到物的因果鏈，需要修證強度跨越「夢覺一如」的本體門檻。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>成立條件</div>
+<div class=&quot;col-content&quot;>此「奇蹟」並非無因無緣，而是建立在<b>無量劫修集福德</b>與<b>得諸法實相</b>的基礎上。鬼神龍王皆來助滅，這是中觀體系內合法的「神通」描述。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>誓力本質</div>
+<div class=&quot;col-content&quot;>誓力不是「魔法」，而是因緣聚合：菩薩的福德、智慧、慈悲心，與被救眾生的因緣業力，共同成就此一外溢效應。其機制完全合於緣起空性。</div>
+</div>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>三大正面指標既立，論主立刻給出<b>一條極重要的反向限制</b>——指標三的誓力並非萬能。下一章將處理<b>「燒一家、置一家」</b>的反常現象：為何菩薩的誓力對某些火災失效？這個例外暴露了中觀體系對<b>「因果律」</b>的絕對尊重——空性不壞因果，福德不能強行抵銷重罪。這是阿鞞跋致最容易誤判的一個界限。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-5&quot;>前往第五章 · 驗證的例外 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-5&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第五章</div>
+<h2 class=&quot;ch-name&quot;>驗 證 的 例 外 · 破 法 業 的 絕 對 界 限</h2>
+<div class=&quot;ch-sub&quot;>燒一家置一家｜空性不壞因果的中觀邊界</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>第三項指標雖能驗證菩薩的修證強度，但論主立刻拋出一個反例：當菩薩以誓力滅火時，<b>火並未完全熄滅，而是燒一家、置一家</b>。何以如此？論主說：「<b>被燒家破法業因緣厚集</b>」——那些被燒的家庭，因前世毀謗般若波羅蜜的重罪，業力已成熟到菩薩的福德智慧也無法強行抵銷。這個反常現象表面像是失敗，<b>反而體現了中觀體系最深的洞察——空性不壞因果，緣起律對一切修證皆絕對尊重</b>。</p>
+</div>
+<h2 id=&quot;ch5-s1&quot;>第一節　燒一家、置一家的反常現象</h2>
+<p>經文所示：「<b>若火不滅，燒一家、置一家，燒一里、置一里。</b>」——火不是普遍熄滅，也不是普遍未滅，而是呈現一種<b>選擇性失效</b>。論主立即說明：被燒之家「<b>今世受破法餘殃故被燒</b>」——它們的業力已凝固到菩薩的福德與龍神的助力都無法干涉。</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th>觀察點</th><th>表 面 現 象</th><th>深 層 緣 起 邏 輯</th></tr>
+</thead>
+<tbody>
+<tr><th>火的分布</th><td>燒一家、置一家、燒一里、置一里</td><td>依眾生「破法業」輕重而選擇性作用</td></tr>
+<tr><th>菩薩誓力是否失效</th><td>看似部分失效</td><td class=&quot;col-good&quot;>並未失效——「不次第燒、惟罪重者不救」</td></tr>
+<tr><th>不能滅之原因</th><td>菩薩功力不足？</td><td class=&quot;col-bad&quot;>非也——是被救者「破法業因緣厚集」</td></tr>
+<tr><th>是否影響阿鞞跋致相</th><td>看似動搖</td><td class=&quot;col-good&quot;>不妨是阿鞞跋致相</td></tr>
+</tbody>
+</table>
+<h2 id=&quot;ch5-s2&quot;>第二節　空性不壞因果 · 中觀對緣起的絕對尊重</h2>
+<p>本節是全章最深的關鍵。在某些表面式的「空性論」中，常生誤解：以為「一切皆空」就等於「<b>一切皆可被取消</b>」——若菩薩功德夠大，就能讓任何業障消失。論主在此堅決駁斥這條歧路：<b>空性不壞因果</b>。</p>
+<div class=&quot;quote-call&quot;>法者，般若波羅蜜——破法業，現身受報、業力極重</div>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>破法業何以重？</div>
+<div class=&quot;col-content&quot;>「法者，般若波羅蜜；諸餘法利益無及般若波羅蜜者。」<br/>毀謗般若就是切斷一切眾生最大的解脫因緣。罪重於四重禁、過於五逆——重得連菩薩誓力與鬼神助力也無法強行抵銷。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>中觀體系的內在尊嚴</div>
+<div class=&quot;col-content&quot;>這個例外不是中觀體系的<b>漏洞</b>，反而是它的<b>體證</b>。空性若能取消因果，緣起就形同虛設；正因空性即緣起，故菩薩的誓力遵守「業力對應」的內部規律。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>給修學者的提醒</div>
+<div class=&quot;col-content&quot;>不要把阿鞞跋致誤認為「無所不能」。誓力的有效範圍依舊在因果律之內。這條認知本身就是修證的一部分——學者若認為自己能凌駕緣起，反而暴露我執未斷。</div>
+</div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>專家洞察</div>
+<div class=&quot;insight-content&quot;>這「不妨礙」菩薩的阿鞞跋致相，反而體現了中觀體系對「因果律（緣起）」的絕對尊重——<b>空性不壞因果</b>。一個誤解空性的修學者會在燒一家置一家的現象前動搖；一個真正契入中觀的菩薩，反而從這裡看見緣起的莊嚴秩序，更深一層信解佛法。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>與〈地獄品〉互參</div>
+<p>論主在此自己備註：「<b>過五逆罪者，如〈地獄品〉中破般若波羅蜜罪說。</b>」破法業的果報細節，原典已在前面〈地獄品〉中廣說，本品只取其結論作為「驗證例外」的說明。研究者可循此交叉互參，掌握「般若不可毀謗」這條教義在《大智度論》的整體語法位置。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>三大正面指標 + 一條反向界限，已將「<b>真</b>」的阿鞞跋致相勾勒完整。然而論主仍未停筆——他緊接著告訴須菩提，<b>還有更危險的場景</b>：當菩薩具備了空性基礎、卻尚未入正位時，<b>魔軍會精準擊中這段空窗</b>。下一章我們進入「魔事拆解」——魔不是青面獠牙的他者，而是化作微妙的肯定（授記、宿命、頭陀、遠離法），專鉤未入正位菩薩的<b>名相之執</b>。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-6&quot;>前往第六章 · 危險期與魔事拆解 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-6&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第六章</div>
+<h2 class=&quot;ch-name&quot;>危 險 期 與 魔 事 拆 解</h2>
+<div class=&quot;ch-sub&quot;>魔軍入侵的節點｜虛榮的鉤子｜佛記 vs 魔記</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>論主在這一段忽然轉筆——不再正面說阿鞞跋致相，而是反向揭露<b>魔軍如何冒充阿鞞跋致</b>。他指出一個極精細的時機學：<b>菩薩在「不久行六波羅蜜」與「入正位／無生法忍」之間有一段空窗期，正是魔軍最容易切入的節點</b>。本章把這一空窗的攻防戰拆成四節：第一節定位攻擊節點，第二節拆解魔的四種鉤子（誓力、名字、宿命、頭陀），第三節給出「佛記 vs 魔記」的診斷矩陣，第四節揭示中觀的破解術——<b>名字相性空</b>。</p>
+</div>
+<h2 id=&quot;ch6-s1&quot;>第一節　vulnerability gap · 魔軍入侵的節點</h2>
+<p>論主把菩薩道的修證歷程分為三段，魔軍精準切入<b>中段</b>：</p>
+<div class=&quot;spectrum&quot;>
+<div class=&quot;sp-node&quot;><b>早期 · Initial</b>不久行六波羅蜜<br/>修證初啟<br/>魔事不易發動</div>
+<div class=&quot;sp-arrow&quot;>→</div>
+<div class=&quot;sp-mid&quot;>中期 · Vulnerability Gap<br/><small>魔軍入侵的節點</small><br/><small>有空性聞見、未證實相</small></div>
+<div class=&quot;sp-arrow&quot;>→</div>
+<div class=&quot;sp-node&quot;><b>後期 · Stabilized</b>入正位 / 無生法忍<br/>修證穩固<br/>魔事無從可乘</div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>危險期的本質</div>
+<div class=&quot;insight-content&quot;>何時最易走火入魔？<b>當菩薩「未得無生法忍」，卻初見法力或感應時。</b>修者已能聞空、思空，卻尚未證空；已能感受到一些殊勝境界，卻沒有<b>無方便力</b>能辨識真偽。此時魔最容易進入。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>駭客機制</div>
+<p>魔利用菩薩微細的<b>「法執」</b>與隱藏的<b>「我執」</b>，派遣鬼神製造神異（如非人所持、如呪火），讓菩薩誤以為是自身修證的力量，進而自恃己力。論主原典記：「<b>是時惡魔即作方便，勅非人令去……是菩薩作是念：『以我誓力故，非人去。』不知是惡魔力</b>」——這是中段菩薩最典型的失敗模式。</p>
+</div>
+<h2 id=&quot;ch6-s2&quot;>第二節　虛榮的鉤子 · 名字、宿命、頭陀</h2>
+<p>魔的攻擊不採正面對抗，而採<b>「精準肯定」</b>。它變化身形，把菩薩的<b>潛在虛榮</b>逐一勾出來——名字、七世父母、宿世性格、頭陀苦行。每一個都是修者「自我認同」最容易膨脹的點。</p>
+<div class=&quot;four-grid&quot;>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>1</span><span class=&quot;cell-term&quot;>名字 · Names / Lineage</span><div class=&quot;cell-desc&quot;>「汝將成佛，名某甲，汝父字某，汝七世父母如是。」精準說出修者潛意識早已暗中希望的成佛名號與血脈。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>2</span><span class=&quot;cell-term&quot;>宿命 · Past Lives</span><div class=&quot;cell-desc&quot;>「汝先世亦復柔和」「汝先世亦修阿蘭若行」——把現世性格描繪為宿世延續，讓修者覺得「我本就是」。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>3</span><span class=&quot;cell-term&quot;>頭陀 · Ascetic Merits</span><div class=&quot;cell-desc&quot;>「汝能少食、露地住、納衣乞食，是真菩薩道行。」極力讚歎修者的苦行細節，強化形跡的優越感。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>4</span><span class=&quot;cell-term&quot;>遠離 · Solitude</span><div class=&quot;cell-desc&quot;>「汝獨在深山林中為佛道故，是真菩薩道行。」用空間性的遠離冒充心性的遠離。</div></div>
+</div>
+<div class=&quot;quote-call&quot;>魔將「空性」偷換為「名相」，引發修行者的精神傲慢</div>
+<p>四種鉤子的共同戰術目的是：誘發菩薩的<b>歡喜慢、慢慢心</b>，進而<b>「輕弄毀蔑餘人」</b>。一旦修者把這幾條讚歎信以為真，便會生增上慢；一生慢，便已遠離般若波羅蜜，<b>受罪畢，墮於二乘</b>。</p>
+<h2 id=&quot;ch6-s3&quot;>第三節　佛記 vs 魔記 · 診斷矩陣</h2>
+<p>論主慈悲，給出一張<b>診斷矩陣</b>，讓修者能在「授記」當下做四項自查：來源、依據、心態結果、最終下場。任何一項偏離，便是魔記不是佛記。</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th>診斷面向</th><th class=&quot;col-good&quot;>真實授記（佛記）</th><th class=&quot;col-bad&quot;>虛假授記（魔記）</th></tr>
+</thead>
+<tbody>
+<tr><th>授記來源 (Source)</th><td>十方諸佛</td><td>魔化作比丘、父母、甚至佛身</td></tr>
+<tr><th>授記依據 (Basis)</th><td>諸法實相 / 畢竟空</td><td>名字相 / 色相 / 苦行相</td></tr>
+<tr><th>心態結果 (Outcome)</th><td>深入空性 / 大悲無我</td><td>生增上慢 / 輕蔑餘人</td></tr>
+<tr><th>最終下場 (Result)</th><td>入阿鞞跋致位</td><td>遠離菩提 / 墮二乘地</td></tr>
+</tbody>
+</table>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>核心法則</div>
+<div class=&quot;insight-content&quot;>真正的授記基於<b>「實相」</b>，魔的假記基於<b>「名相」</b>。前者讓人更謙卑、更入無我；後者讓人更高傲、更輕視他人。修者只需檢查：聽到授記之後，<b>我變得更謙卑了，還是更傲慢了？</b>——這一句自問，便能穿透 99% 的細微魔事。</div>
+</div>
+<h2 id=&quot;ch6-s4&quot;>第四節　中觀防護罩 · 名字相性空</h2>
+<p>魔事的破解術，論主一針見血——「<b>不知色等五眾和合邊更有名字相</b>」。意思是：魔說「汝當作佛字名某甲」這句話，<b>真正的破口在「名字相」</b>。一個具備中觀智慧的菩薩，知道「色受想行識」五蘊和合之外並無一個獨立的「名字」可以指實；既然名字無自性，魔所授之記便如空中閣樓，立刻散去。</p>
+<div class=&quot;flow flow-v&quot;>
+<div class=&quot;flow-step&quot;><b>「汝當作佛，字名某甲」</b><small>魔以名字相發動攻擊</small></div>
+<div class=&quot;flow-arrow&quot;>↓</div>
+<div class=&quot;flow-step&quot; style=&quot;border-color:var(--accent);&quot;><b>智者透鏡（中觀）</b><small>不知色等五眾和合邊更有名字相</small></div>
+<div class=&quot;flow-arrow&quot;>↓</div>
+<div class=&quot;flow-step&quot;><b>五蘊和合 · 無自性</b><small>名字相當下被破，魔網崩解</small></div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>破局心法</div>
+<p>「不知色等五眾和合邊更有名字相」——這一句是論主給菩薩的<b>防禦機制</b>。當魔用「假名」授記時，未得實相者會覺得「正合我願」；具備中觀智慧的菩薩深知名字無自性，聞名生喜即是落入魔網。</p>
+</div>
+<div class=&quot;card&quot; style=&quot;border-left:4px solid var(--accent-red);&quot;>
+<div class=&quot;card-title&quot; style=&quot;color:var(--accent-red);&quot;>終極警告</div>
+<div class=&quot;card-content&quot;>著空名字、輕蔑他人，其罪重於比丘<b>四重禁與五逆罪</b>！論主以四重禁為喻：四禁中的「妄語稱我是阿羅漢」就已是現身不得四道果的重罪；本品所說「自言我當作佛」是更深一層的著空名字，是故重於四禁。修者不可不警。</div>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>魔事四鉤之中，「<b>遠離法</b>」這條鉤特別微妙——魔不是反對遠離，而是肯定<b>形跡上的遠離</b>，引誘菩薩驕傲。下一章將處理這條鉤子，並借此揭示中觀對「<b>真遠離</b>」的重新定義——遠離不是物理上的山林獨處，而是心性上的離二乘三界。論主把這條判準展開為一張<b>真假遠離矩陣</b>。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-7&quot;>前往第七章 · 真假遠離 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-7&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第七章</div>
+<h2 class=&quot;ch-name&quot;>真 假 遠 離 · 破 除 形 跡 的 傲 慢</h2>
+<div class=&quot;ch-sub&quot;>物理位置 × 心理狀態｜中觀對遠離的重新定義</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>第六章已揭露魔最微妙的鉤子之一是<b>「讚歎遠離法」</b>。本章將佛陀對須菩提的問答展開為一張<b>真假遠離矩陣</b>——以「物理位置」與「心理狀態」交叉成四格，揭示<b>真遠離的判準從來不在身在何處，而在心是否離二乘三界憒鬧</b>。這張矩陣同時破除一個常見錯覺：以為深山獨修就一定比城市修行更勝。</p>
+</div>
+<h2 id=&quot;ch7-s1&quot;>第一節　真假遠離矩陣</h2>
+<p>魔讚歎菩薩「身遠離」（住空閑山澤曠遠之處），用形跡上的優越感燃菩薩驕氣。佛的判準完全不同：真遠離是<b>遠離聲聞、辟支佛心</b>，不是遠離地理意義上的城市。本節將四格矩陣攤開：</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th>矩陣 / 心理 × 物理</th><th>身在城 (City)</th><th>身遠離 (Deep Forest)</th></tr>
+</thead>
+<tbody>
+<tr><th>心 憒 鬧（Clinging）</th><td>凡夫流俗（無修證可言）</td><td class=&quot;col-bad&quot;><b>魔所讚歎之賊</b><br/>（深山林中，心想名利／輕視他人）</td></tr>
+<tr><th>心 遠 離（Detached）</th><td class=&quot;col-good&quot;><b>真遠離</b><br/>（城市之中，清淨無雜惡心）</td><td>佛所許之遠離<br/>（深山林中，心離二乘三界）</td></tr>
+</tbody>
+</table>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>中觀標準</div>
+<div class=&quot;insight-content&quot;>魔會讚歎「身遠離」來煽動菩薩的優越感。佛的標準是：<b>遠離聲聞、辟支佛心，才是真遠離。心不在空，身在百由旬外曠野，亦是「憒鬧」</b>。論主在問答後總結：城傍心清淨、無聲聞辟支佛憒鬧心、無雜惡心、具足禪定解脫者，反而是真菩薩；獨居深山卻心懷名利、輕視在家修者，才是「魔所讚歎之賊」。</div>
+</div>
+<h2 id=&quot;ch7-s2&quot;>第二節　心離二乘三界才是真遠離</h2>
+<p>本節進一步追問：何以佛陀如此堅持「心」的判準勝過「身」的判準？因為<b>形跡可以模仿，心性無所遁形</b>。魔可以教菩薩擺出阿蘭若的姿態，卻無法教他斷除二乘心；菩薩可以走入深山，卻可能把名利、輕慢、求速成的念頭一起帶進去——那麼山林反而成為傲慢的溫床。</p>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>遠離的真實內涵</div>
+<div class=&quot;col-content&quot;>「遠離聲聞、辟支佛心」——不被「自度速成」的念頭拉走；「遠離三界憒鬧」——不被「五欲世間樂」的念頭拉走。二者皆是心性層次的遠離。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>魔所教遠離</div>
+<div class=&quot;col-content&quot;>魔讚歎的「但在空閑山澤曠遠之處」是<b>形跡層面的遠離</b>，與心性層次無關。一旦菩薩把這兩層混淆，便落入魔網——以身代心，以形跡代修證。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>論主的結語</div>
+<div class=&quot;col-content&quot;>「<b>佛種種因緣，訶是菩薩是賊、是旃陀羅等，如經中說，不應親近</b>」——對著形跡修行而生傲慢者，論主用了極重的字眼：賊、旃陀羅。可見破除形跡傲慢，是修證裡的硬關卡。</div>
+</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>論主直斷</div>
+<p>「<b>佛所說遠離，心離二乘、三界，是名真遠離。如經中廣說如是等細微魔事，應當覺而遠離。</b>」修者要對自己誠實——若離了城市卻還在心裡盤算名聲、計較同學功勳，便不是真遠離；若身仍處鬧市，但心對二乘三界已經淡然無所貪，便已是佛所許的遠離法。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>真遠離的判準既已釐清，論主接著轉到一個更根本的問題：菩薩走在這條道路上，<b>究竟靠什麼力量才能不退轉</b>？答案是「<b>內正憶念與外善知識</b>」——內外兩條因緣相互合擊。下一章將處理這對「<b>證道的雙引擎</b>」，並在中觀體系中徹底擴大「善知識」的定義——不只是諸佛菩薩、阿羅漢，<b>連六波羅蜜、三十七道品、如、法性、實際本身都是善知識</b>。這是中觀體系最具創造性的轉折之一。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-8&quot;>前往第八章 · 證道的雙引擎 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-8&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第八章</div>
+<h2 class=&quot;ch-name&quot;>證 道 的 雙 引 擎 · 善 知 識 的 中 觀 重 定 義</h2>
+<div class=&quot;ch-sub&quot;>內正憶念 × 外善知識｜法即是人 · 依法不依人</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>魔事既已警覺，論主轉入正面建設——菩薩要不退轉，必須<b>內外因緣具足</b>：內名「<b>正憶念</b>」（思惟、籌量諸法），外名「<b>諸善知識</b>」。但本章最具開創性的是論主對「善知識」的<b>中觀重定義</b>——不只是諸佛、菩薩、阿羅漢，<b>連六波羅蜜、三十七道品、如、法性、實際等「法」本身都是善知識</b>。這條重定義最終導向「<b>法即是人</b>」「<b>依法不依人</b>」的中觀終極判準。本章共七節，依論主原典展開。</p>
+</div>
+<h2 id=&quot;ch8-s1&quot;>第一節　內正憶念與外善知識</h2>
+<p>論主說：「<b>有二因緣故得無上道：一者、內，二者、外。內名正憶念，思惟、籌量諸法；外名諸善知識。</b>」內外兩條因緣，缺一則不足以證道。修者不能僅靠閉門造車，也不能僅靠外緣加持。</p>
+<div class=&quot;two-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>內 · 正憶念（The Inner Engine）</div>
+<div class=&quot;col-content&quot;>「思惟、籌量諸法」——不斷在心中思辨諸法實相，把空性、緣起、因果反覆對照、消化、印證。這條動力是修者自身的智慧運轉。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>外 · 諸善知識（The Outer Engine）</div>
+<div class=&quot;col-content&quot;>三種聖人（諸佛、菩薩、阿羅漢）以六波羅蜜法令菩薩奉行得作佛——這是傳統意義的善知識。但中觀架構下，定義即將被極大地擴展與顛覆。</div>
+</div>
+</div>
+<div class=&quot;quote-call&quot;>深心名一心、重心，深愛佛道，出於一切世間所樂</div>
+<h2 id=&quot;ch8-s2&quot;>第二節　打破人際與乘別的邊界 · 聲聞亦能作大乘導師</h2>
+<p>論主在此面對一個尖銳問題：佛及菩薩、六波羅蜜能成菩薩故應是善知識，但<b>小乘道異</b>，云何能與作善知識？答案是：別把「乘別」當成絕對界線。</p>
+<div class=&quot;qa&quot;>
+<div class=&quot;q&quot;><span class=&quot;qa-label&quot;>問</span>佛及菩薩、六波羅蜜能成菩薩故，應是善知識；小乘道異，云何能與作善知識？</div>
+<div class=&quot;a&quot;><span class=&quot;qa-label&quot;>答</span>有小乘人先世求佛道故利根，雖是小乘，有憐愍心，觀應成大乘者為說大乘法，知報佛恩故，令佛種不斷。</div>
+</div>
+<div class=&quot;four-grid&quot;>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>1</span><span class=&quot;cell-term&quot;>舍利弗</span><div class=&quot;cell-desc&quot;>六十劫求佛道，雖退轉作阿羅漢，亦利根智慧，能為諸菩薩說大乘。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>2</span><span class=&quot;cell-term&quot;>須菩提</span><div class=&quot;cell-desc&quot;>常行無諍三昧，常有慈悲心於眾生故，亦能教化菩薩大乘法。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>3</span><span class=&quot;cell-term&quot;>摩訶迦葉</span><div class=&quot;cell-desc&quot;>以神通力持此身至彌勒出世，於九足山中出，與大眾作得道因緣。</div></div>
+<div class=&quot;cell&quot;><span class=&quot;cell-num&quot;>4</span><span class=&quot;cell-term&quot;>如是等甚多</span><div class=&quot;cell-desc&quot;>論主以「如是等甚多」收結，意謂這條打破乘別的橋樑在實踐中是普遍的。</div></div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>中觀解答</div>
+<div class=&quot;insight-content&quot;>不執著「聲聞」的假名定型，見其法緣與悲心。判斷一個人是否能作大乘善知識，標準不在乘別、不在地位、不在現世果位，而在他<b>是否有大乘因緣與報恩悲心</b>。這條判準將「善知識」的範圍從教派對立中解放出來。</div>
+</div>
+<h2 id=&quot;ch8-s3&quot;>第三節　終極翻轉 · 法即是人（依法不依人）</h2>
+<p>論主把「善知識」的定義<b>從「人」擴展到「法」</b>——這是中觀體系最關鍵的一步。</p>
+<div class=&quot;flow&quot;>
+<div class=&quot;flow-box&quot;><b>法 · The Dharma</b><br/><small>六波羅蜜<br/>三十七道品<br/>如·法性·實際</small></div>
+<div class=&quot;flow-arrow&quot;>→</div>
+<div class=&quot;flow-box&quot; style=&quot;border-color:var(--accent);&quot;><b>人 · The Guide</b><br/><small>三世十方諸佛<br/>由此「法」而生</small></div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>本體論邏輯</div>
+<p>三世十方諸佛皆由此「法」而生，法能成辦成佛之事，故<b>「法」本身就是善知識</b>。這體現了中觀體系對絕對的<b>「依法不依人」</b>。真正的善知識不僅是「人」，更是「法」。核心清單：六波羅蜜、三十七道品、如、法性、實際。</p>
+</div>
+<h2 id=&quot;ch8-s4&quot;>第四節　架構對稱 · 六度與三十七道品</h2>
+<p>論主在此回應另一質疑：「<b>六波羅蜜攝一切法，今何以別說三十七品至如、法性、實際？</b>」答覆有極精細的層次：</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th></th><th>六 波 羅 蜜（廣說）</th><th>三 十 七 道 品（近說）</th></tr>
+</thead>
+<tbody>
+<tr><th>視角定位</th><td>菩薩初道，小遠</td><td>近因緣（直接利益現世得道）</td></tr>
+<tr><th>譬喻</th><td>「如日、月，最勝」</td><td>「如四念處、佛十力」</td></tr>
+<tr><th>側重</th><td>禪、般若兩波羅蜜最大</td><td>四念處、佛十力等法最妙</td></tr>
+<tr><th>結論</th><td>廣略相攝，一體兩面，不一不異</td><td>能直接利益現世得道</td></tr>
+</tbody>
+</table>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>中觀解答</div>
+<div class=&quot;insight-content&quot;><b>廣略與遠近之分。</b>六波羅蜜如「日、月」，涵蓋整體；而三十七品與佛十力則是其最妙、最實用的操作技術，能直接利益現世得道。<b>一體兩面，不一不異。</b></div>
+</div>
+<h2 id=&quot;ch8-s5&quot;>第五節　「如」與「法性」的實相錨點</h2>
+<p>為何論主在六波羅蜜、三十七道品之外，還單列「<b>如、法性、實際</b>」這三個無為法為善知識？答案是：菩薩修持四念處等技術，<b>最終目的是為了穿透虛妄、觸碰到「實、不虛誑」的無為法（如、法性、實際）</b>。</p>
+<div class=&quot;quote-call&quot;>在一切如夢幻泡影的現象中，「如、法性、實際」是唯一真實的錨點與依靠</div>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>虛誑法 (Deceptive)</div>
+<div class=&quot;col-content&quot;>世間諸法皆是<b>虛誑</b>——緣起無自性，看似真實，實如夢幻。修證若停留在虛誑法層面，永無出路。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>實 / 如 / 法性 (Reality)</div>
+<div class=&quot;col-content&quot;>「如」是諸法本然的樣態，「法性」是諸法的本質，「實際」是真實的究竟。三者皆<b>實、不虛誑</b>，是修者唯一可錨定的依靠。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>何以是善知識</div>
+<div class=&quot;col-content&quot;>行四念處等法，得如是等法，<b>令菩薩得出虛誑法</b>，故名善知識。「如、法性、實際」雖是無為法，卻能成辦菩薩事，故與「人」一同入善知識之列。</div>
+</div>
+</div>
+<h2 id=&quot;ch8-s6&quot;>第六節　擬人化的極致 · 六度即世尊</h2>
+<p>論主把「法即是人」推到極致：直接將六波羅蜜<b>擬人化為世尊本身</b>。原典列出十大稱號：</p>
+<div class=&quot;roadmap&quot;>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>1</span><b>世 尊</b>六波羅蜜如佛無異，佛現在亦以是法度人。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>2</span><b>道</b>行是道，徑入無量佛法中。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>3</span><b>大 明</b>令人得大智慧，破諸世間無明。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>4</span><b>炬</b>照亮黑暗的明燈。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>5</span><b>智 / 慧</b>能斷一切疑惑。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>6</span><b>救 / 歸 / 洲</b>苦海中的救度與依歸。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>7</span><b>究 竟 道</b>通往最終果地的道路。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>8</span><b>父 / 母</b>般若為母，五度為父，孕育法身。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>中觀底蘊</div>
+<p>「<b>般若為母，五度為父</b>」——理性與實踐的和合，孕育成佛的法身。論主進一步說：「<b>如世尊所說不可壞，六波羅蜜等所說亦不可壞</b>」——此法常常在，<b>故六度等法即是佛現在在度人</b>。<b>見緣起即見佛，依法修行即是覲見世尊。</b></p>
+</div>
+<h2 id=&quot;ch8-s7&quot;>第七節　自利與利他的圓滿合擊</h2>
+<p>本章最後一節落在實踐層面：六波羅蜜是<b>自利法</b>，但菩薩不能僅停留在自修與遠離。論主明文：「<b>是六波羅蜜等是自利法，行者欲以六波羅蜜教化眾生、淨佛世界，應以四攝法攝取眾生。</b>」實踐法則 = 六度（內在智慧）× 四攝法（外在實踐）。</p>
+<div class=&quot;two-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>自利 · 行六波羅蜜</div>
+<div class=&quot;col-content&quot;>布施、持戒、忍辱、精進、禪定、般若。<b>自利法 / 破無明得大智慧。</b>六度是法身父母，孕育修者自身的解脫成就。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>利他 · 四攝法</div>
+<div class=&quot;col-content&quot;>布施、愛語、利益、同事。<b>利他法 / 攝取眾生、淨佛世界。</b>四攝法是把自利的智慧反向灌注到眾生身上。</div>
+</div>
+</div>
+<div class=&quot;quote-call&quot;>無智之悲為縛，無悲之智亦為縛</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>論主結論</div>
+<div class=&quot;insight-content&quot;>菩薩不能僅僅停留在自修與遠離。實踐法則是：<b>必須將法身父母（六度）的內在智慧，透過四攝法轉化為度化眾生的外在實踐，方能成就淨土。</b>無智之悲為縛，無悲之智亦為縛。本章七節最終匯流到此一實踐合擊，便是中觀對「自利利他」最完整的展開。</div>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>內外雙引擎 + 七層善知識重定義，已將阿鞞跋致的修證地圖鋪滿。下一章我們把全品所有指標、矩陣、防禦點濃縮成一張<b>「中觀防禦機制總表」</b>——把四種考驗境遇（夢中生死、非人作祟、魔偽授記、獨處傲慢）各自配上中觀防禦機制與所破執著。同時揭示阿鞞跋致最終的絕對自信：<b>「不隨他教」</b>——縱然魔變作佛身來說異於法相，菩薩亦不信不隨。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-9&quot;>前往第九章 · 防禦總表 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-9&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第九章</div>
+<h2 class=&quot;ch-name&quot;>中 觀 防 禦 機 制 總 表 與 絕 對 自 信</h2>
+<div class=&quot;ch-sub&quot;>The Madhyamaka Defense Matrix｜不隨他教</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>論主在本品中拋出的所有指標、矩陣、警告、提示，最終可以歸納成一張<b>中觀防禦機制總表</b>——四個考驗境遇 × 中觀防禦 × 所破執著的三欄對照。本章先呈這張總表（第一節），再以這張總表作為基底，揭示阿鞞跋致最終的<b>絕對自信</b>——「<b>不隨他教</b>」。當修者契入空性，連魔變作佛身來說異於法相，也能不信不隨。本章為整品總體系的閉環。</p>
+</div>
+<h2 id=&quot;ch9-s1&quot;>第一節　中觀防禦機制總表</h2>
+<p>本品所論諸項境遇可整理為四類，每一類各對應一種中觀防禦機制與所破執著。論主的精細之處在於：<b>每一條防禦並非外加的對治，而是空性內部運作的結果</b>。</p>
+<table class=&quot;compare-table&quot;>
+<thead>
+<tr><th>考驗境遇 (Threat Vector)</th><th>中觀防禦機制 (Madhyamaka Shield)</th><th>破除執著 (Targeted Ego)</th></tr>
+</thead>
+<tbody>
+<tr><td>夢見生死、被斬首恐怖</td><td class=&quot;col-good&quot;>觀三界如夢、無我（生死皆空）</td><td>破色身 / 生存執</td></tr>
+<tr><td>非人作祟、展現異象神異</td><td class=&quot;col-good&quot;>覺知魔事，不自恃己力（無生法忍）</td><td>破法力 / 感應執</td></tr>
+<tr><td>魔偽裝授記、盛讚名字前世</td><td class=&quot;col-good&quot;>知名字性空，不生增上慢（真遠離）</td><td>破虛榮 / 假名執</td></tr>
+<tr><td>獨處深林生傲慢輕蔑心</td><td class=&quot;col-good&quot;>心離三界二乘，身心皆空（真遠離）</td><td>破形式 / 形跡執</td></tr>
+</tbody>
+</table>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>總表洞察</div>
+<div class=&quot;insight-content&quot;>這四條防禦線恰好對應菩薩道上四種主要執著——<b>身執、法執、名執、形跡執</b>。每一條都以「空性」為共同基底，但<b>應用點各異</b>。修者讀本表時，可以對照自己當下最迫近的危險場景，立刻找到中觀的對治機制。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>為何稱為「機制」而非「方法」</div>
+<p>論主全篇用詞精細：這些是<b>機制 (mechanism)</b>，不是<b>方法 (method)</b>。方法是外加的工具，機制是內部運作的自動回應。修者一旦深入空性，遇到對應境遇時，<b>防禦自然啟動</b>——這正是「阿鞞跋致」之所以為「不退轉」的真實意義。</p>
+</div>
+<h2 id=&quot;ch9-s2&quot;>第二節　阿鞞跋致的絕對自信 · 不隨他教</h2>
+<p>論主把阿鞞跋致的最終境界濃縮為一句：「<b>不隨他教</b>」。這四字看似簡單，深意極大。其終極境界原典記為：「<b>欲不隨他人教住，欲斷一切眾生疑……當學般若。</b>」</p>
+<div class=&quot;quote-call&quot;>變作佛身來說異於法相，亦不信不隨</div>
+<div class=&quot;three-col&quot;>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>何謂不隨他教？</div>
+<div class=&quot;col-content&quot;>「不隨他教名自知諸法實相」——即使魔<b>變作佛身來說異於法相</b>，菩薩亦「不信不隨」。這不是一般的固執，而是基於對「空性」親證後的絕對獨立與不動搖。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>為何能如此堅定？</div>
+<div class=&quot;col-content&quot;>徹底自知諸法實相。修者親自證得「<b>諸法實相</b>」後，便有一條內在的判準線——任何外來教導，無論其權威多大、外貌多接近佛陀，只要違背實相，便能立刻識破。</div>
+</div>
+<div class=&quot;col&quot;>
+<div class=&quot;col-title&quot;>這不是世俗的傲慢</div>
+<div class=&quot;col-content&quot;>而是基於對<b>空性</b>親證後的絕對獨立與不動搖。修者反而是最謙卑的——他不依賴自己的判斷，而依賴實相本身。是真正的阿鞞跋致。</div>
+</div>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>與第六章「魔記診斷矩陣」呼應</div>
+<div class=&quot;insight-content&quot;>第六章告訴菩薩：聽到授記時要查四項——來源、依據、心態結果、最終下場。本章則更進一步：<b>連授記的「人」是不是佛，本身都不是判準</b>——只要說的「法」異於實相，就不信不隨。這條判準把判斷的根據徹底從「人」轉到「法」，與第八章「依法不依人」完全合流。</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>論主結語</div>
+<p>「<b>自得菩薩道，漸漸具足諸佛法，淨佛世界、成就眾生。得佛道，能斷一切眾生疑。若欲得是者，當學般若。般若波羅蜜中，世間出世間、若大若小，無事不說。</b>」——本品的整套指標、矩陣、防禦機制，最後都收束到「當學般若」一句。<b>般若波羅蜜，是阿鞞跋致最後的絕對依靠</b>。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>承先啟後</div>
+<p>九章已將本品的論證體系完整鋪陳——從前置定位（第一章）、原典（第二章）、本體基底（第三章）、三大指標（第四章）、例外界限（第五章）、魔事拆解（第六章）、真假遠離（第七章）、雙引擎重定義（第八章）、防禦總表（第九章）。最後一章將把全品所有線索<b>收束成一張中觀心法的核心樞紐圖</b>——夢覺一如三角，並指出本品在當代研究中的<b>三條深化方向</b>。</p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#chapter-10&quot;>前往第十章 · 心法樞紐 →</a>
+</div>
+</section>
+
+<section class=&quot;chapter&quot; id=&quot;chapter-10&quot;>
+<div class=&quot;ch-head&quot;>
+<div class=&quot;ch-num&quot;>卷七十六 · 夢中不證品 · 第十章</div>
+<h2 class=&quot;ch-name&quot;>總 結 · 中 觀 心 法 的 核 心 樞 紐</h2>
+<div class=&quot;ch-sub&quot;>夢覺一如三角｜學術深化方向</div>
+</div>
+<div class=&quot;ch-body&quot;>
+<div class=&quot;bridge bridge-intro&quot;>
+<div class=&quot;bridge-label&quot;>本章要旨</div>
+<p>本章為全品收束。第一節將前九章的所有指標、矩陣、防禦機制收攏為<b>「夢覺一如三角樞紐圖」</b>——以夢覺一如為頂點，向下放出三條防禦軸：<b>破偶像執（依止法）、破自我執（防魔）、破現象執（名字性空）</b>。第二節則指出本品在當代研究中的三條<b>學術深化方向</b>，作為進一步研究的羅盤。</p>
+</div>
+<h2 id=&quot;ch10-s1&quot;>第一節　夢覺一如三角樞紐</h2>
+<p>把全品濃縮成一張結構圖：<b>頂點是「夢覺一如」</b>（本體論基底），三條軸由此展開——一條向左破<b>偶像執</b>（魔變佛身亦不信，依止法不依人）、一條向右破<b>自我執</b>（防魔事細微誘惑，名字相性空）、一條向下破<b>現象執</b>（不取夢中境為實，亦不畏夢中災為真）。</p>
+<div class=&quot;triangle-diagram&quot;>
+<div class=&quot;tri-node&quot; style=&quot;grid-column:1 / -1;text-align:center;background:linear-gradient(135deg,var(--gold),var(--goldL));color:#fff;border-color:var(--gold);&quot;><b style=&quot;color:#fff;&quot;>夢 覺 一 如（Dream Equivalence）</b>實相錨點 · 中觀本體基底</div>
+<div class=&quot;tri-node&quot;><b>破 偶 像 執</b>依止法<br/>不依人<br/>（不隨他教）</div>
+<div class=&quot;tri-node&quot; style=&quot;background:linear-gradient(135deg,#fce8d8,#fdf6e3);&quot;><b>破 現 象 執</b>夢中災而不驚<br/>夢中順而不貪<br/>（中觀防護罩）</div>
+<div class=&quot;tri-node&quot;><b>破 自 我 執</b>誓力非己<br/>名字性空<br/>（防魔事）</div>
+<div class=&quot;tri-summary&quot;>三軸合擊 · 阿鞞跋致的完整心法 · 法身常住 · 名字性空 · 實境檢驗標準</div>
+</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>總結 · 中觀心法的核心樞紐</div>
+<p>透過〈夢中不證品〉的解構，我們看見《大智度論》如何將高深玄妙的<b>「空性」</b>，轉化為菩薩在夢境中、面對讚譽、面對修行形式時的<b>實境檢驗標準</b>。空性不是哲學玄談，而是<b>防範走火入魔的終極裝甲</b>。三條軸線各破一執，合起來便是阿鞞跋致心法的完整骨架。</p>
+</div>
+<div class=&quot;insight&quot;>
+<div class=&quot;insight-title&quot;>三軸對稱的修證意義</div>
+<div class=&quot;insight-content&quot;>注意三條軸線的對稱性：<b>「依止法 / 防魔 / 中觀防護」</b>不是三件事，而是同一空性在不同情境下的折射。修者不必在三者之間切換——只要把空性內化得夠深，遇境自然啟動相應一面。這正是「機制 (mechanism)」優於「方法 (method)」的真實意義。</div>
+</div>
+<h2 id=&quot;ch10-s2&quot;>第二節　學術深化方向 · Further Research Roadmap</h2>
+<p>本品在中觀文獻學與佛學心理學的交會點上有極大研究空間。結合 PDF 論文的提示，可循三條路徑展開深化：</p>
+<div class=&quot;roadmap&quot;>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>1</span><b>業力與空性</b><br/>對照《中論》〈觀作者品〉等章，深化對「破法業不滅」與「空性」並存之緣起邏輯的理解。本品「燒一家置一家」是中觀體系中緣起與空性張力最鮮活的案例。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>2</span><b>本體論基礎</b><br/>對照〈觀如來品〉，探討「法身即善知識」的哲學與本體論基礎。本品擬人化的「六度即世尊」極具研究價值，可與如來藏思想、法身常住論做對比。</div>
+<div class=&quot;rm-step&quot;><span class=&quot;rm-icon&quot;>3</span><b>跨學派比較</b><br/>將「夢中驗證」與瑜伽行派 (Yogācāra) 的「阿賴耶識」種子現行理論進行深度的潛意識跨學派比較。本品對潛意識的精細測試模型，是早期佛教心理學的重要文獻。</div>
+</div>
+<div class=&quot;quote-call&quot;>本智者透鏡解構至此，唯願法燈長明</div>
+<div class=&quot;commentary&quot;>
+<div class=&quot;card-title&quot;>研究者備註</div>
+<p>對於致力於跨學派比較研究者，本品提供一個極特殊的窗口——它把<b>修證的內化程度</b>（深度心理學議題）與<b>緣起空性</b>（本體論議題）拉到同一張地圖上，這在《中論》以理論論證為主的著作中並不常見，反映《大智度論》兼具<b>論與行</b>的雙重特質。本品由此值得在「教理 → 修行 → 心理」的三角中重新定位。</p>
+</div>
+<div class=&quot;bridge bridge-outro&quot;>
+<div class=&quot;bridge-label&quot;>全品總結</div>
+<p>《大智度論》卷七十六〈夢中不證品第六十一〉以一個極微妙的視角——<b>夢的潛意識測試</b>——把空性、緣起、慈悲、誓力、魔事、善知識、自利利他全部串聯起來。它不是一篇純理論的論議，而是修者跨越「學空已成、未入正位」這片模糊地帶最重要的<b>地圖</b>。本 HTML 將原典 65 段與 25 頁視覺化分析依「卷--&amp;gt;品--&amp;gt;章--&amp;gt;節」四級體系彙整為十章二十六節，俾便研究者建立完整地理解、實踐這條中觀道路。<b>願以此功德，普及於一切，我等與眾生，皆共成佛道。</b></p>
+</div>
+<a class=&quot;next-link&quot; href=&quot;#top&quot;>回到頁首 ↑</a>
+</div>
+</section>
+
+
+
+
+
+<script>
+(function(){
+  var blk=function(e){e.preventDefault();return false;};
+  ['contextmenu','copy','cut','selectstart','dragstart','mousedown'].forEach(function(ev){
+    document.addEventListener(ev,function(e){
+      if(ev==='mousedown' &amp;&amp; e.button!==2) return;
+      blk(e);
+    },true);
+  });
+  document.addEventListener('keydown',function(e){
+    var k=e.key;
+    if(e.ctrlKey&amp;&amp;(k==='c'||k==='C'||k==='a'||k==='A'||k==='s'||k==='S'||k==='p'||k==='P'||k==='u'||k==='U'||k==='x'||k==='X')){blk(e);}
+    if(k==='F12')blk(e);
+    if(e.ctrlKey&amp;&amp;e.shiftKey&amp;&amp;(k==='I'||k==='J'||k==='C'||k==='K')){blk(e);}
+  },true);
+  setInterval(function(){
+    if(window.getSelection) try{window.getSelection().removeAllRanges();}catch(e){}
+  },300);
+})();
+
+
+(function(){
+  if(!window.frameElement) return;
+  document.addEventListener('click',function(e){
+    var a=e.target;
+    while(a&amp;&amp;a.tagName!=='A') a=a.parentElement;
+    if(!a) return;
+    var h=a.getAttribute('href');
+    if(!h||h.charAt(0)!=='#'||h.length<2) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var id=h.substring(1);
+    var el=document.getElementById(id);
+    if(!el) return;
+    try{
+      var rect=el.getBoundingClientRect();
+      var fr=window.frameElement;
+      var frRect=fr.getBoundingClientRect();
+      var targetY=window.parent.scrollY+frRect.top+rect.top-60;
+      window.parent.scrollTo({top:targetY,behavior:'smooth'});
+    }catch(ex){}
+  },true);
+})();
+</script></body></html>" loading="lazy"></iframe>
+      <div class="bridge bridge-outro">
+        <div class="bridge-label"><span class="wy-c" data-c="kfCS17W607jpitK7">…</span></div>
+        <p><span class="wy-c" data-c="n/6e1J2W2ZH6jOy904ndjvDWkNTRkYak07K9yPvYiI+1yPfpjOnYiePIzrK815uVkcbW046gksXgj/XjmMWl1KO/0pDqgNC+06XKi+ngkMrVnZWf1Iq7xdvmj7e7wsbggMXihtrwwo653Yqhk9TW0ZGmn+/TiM3ukty6156+0LjCiPazCk9EgfHTnPDpkZq52LWCxdzihJq/xNH8jt/OUlgbE92MqNOk+4fsstGvwIDmxZ343pyxmteri8jSxoiImMXb5I/194j46cmMq9G2oZ7O4NGgkZ3B04T14pPBoNeSnNGEzIzsutG3/o3j95DDz5ySsdaBo8LK44mJusX67Yzl8on1w8W9mdqghJPzxNCrjJ/My4jNw5H2vdaOqdWt+orIld6LwIzR7JDI9Zqts9WdkMrt14iPu8rv2Irs+Int/cuunNuduZ/G+9+bpJno64nwx5LqrNe1g9O9+or3qdGA7ozT6pD++52VstWyvcjj4IWWus/u6Iv49VIVR8W9mdqghJPJ7tOLuJ/0wYnF9JHlh9eOpdGp14j4qNCe743W4ZDn+paRvtetk8T3/ISwnMjN2Yzbx4rP9MSysNqLpJnT8wsZT0SM0eeR1vecoIXVgrHKzOOEnKDE1/yN1v6GydHFn6jVrKmR29zSiIOTxf2J1+2YxaHUv6LRicyK47rTveuB8Nuc9saarbPZqoTFyMeFmqLJwOOG0PmG//7LrpzXu5qT0s7Rvr2Z6OWK2M2e5I/Wj5zejPpProAWycLFj8LAh97uxZ+5EvSaVorjutO964Hx3pLI0Zqtv9eossjY44qigsnFxoHB/If48cuQrdG2rw==">…</span></p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <p><span class="wy-c" data-c="lPmn15SV0LTMitaR3obsi+nnkOPAnZWx1b+3yPPCTPWBDZPv4onY1pDQl9aIv96A/4r/ttGB1o3swZDj9lnvhRDbsaaTy87TjoCe0OSE2OeS6qzVnJ7TqNuK4bbSlfpIq9tVh+zgyKGx14u0kPrY0aqBRgobQ0uM9+3PsqQS0LTMT66AFsv42kmuwk6e2LUS8oUWyNLNTPWBDZzb/EyR1OOcgKXXiovL+u6Di7rFyMOOxcqL2sHKm4rWjqCewuXfsZ6fzMuIzcOTwaDanbvRt/KKwrvQuM6M1sKdw/6csYLVrqANlO/41ba5">…</span></p>
+  </footer>
+
+<div data-wy-notice="v2" style="margin:0;padding:30px 20px;background:#1e1a14;
+  border-top:2px solid #b8860b;text-align:center;
+  font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+  font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;">
+  <div style="max-width:780px;margin:0 auto;"><span class="wy-c" data-c="fVkNEhDUqoGQ+evQtJef6OKIz9SQ2bnanrLTkO+J+YPZkfaOxM2d0fmRkLvXq4rKw/+LgJXCxvOB0fyJ7sXFmbvWibCR+vXeto6d3fmE/emTxLHasLffjc2G7aQ8DVpISVAUTh8LSFQNEF5ZAh8fDRkCDR8eQgwBAg1YUFUcVUIbQCx0XkgUDx4JHBkSFwJCX0FCXlRPGFZESh8cVE4qDBsYQ1kSEkRIGlJOWVlCCg0HCQdMfVkNEhASFg0FGxVbUxBYCwYAGhxNWkkGUQoCT00bCU9CAB4NCgMHDwMQQlwKXFlDE1QOWERJHxpEDhoaAxZACAFCTg0SABhDU0laSwtUTVhHGxZfUUBRRBhVXBcCXQJTS1J/TldZDRIQWkJZBhxWGBlaDR9HFRobAwxPVx5RWUBZLy9fU0MdHwwFAgsZVl1dQ0ZFEVkOUtS2r0YKG1J/TldZDQ5DQldDVhwYTlpIR0oKAxkBBUMOClIFUhtAVE4J34zijNLJk8PTnKet1YyBwsrjiq6YyPXij/rJis/5yLq33Yq2Sg0eCdCl64/E5Z3m8J6xjNemqcLK44utsMj/2Y/k5YrK4sSzo9G2r0pAH0dXQ0RiSUw=">…</span></div>
+</div>
+
+</main>
+<button id="backTop" aria-label="Top">↑</button>
+<script>
+// === sb-brand smooth scroll =================================================
+var sbBrand=document.getElementById('sbBrand');
+if(sbBrand){
+  sbBrand.addEventListener('click',function(e){
+    e.preventDefault();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+
+// === sidebar toggle =========================================================
+var sbToggle=document.getElementById('sbToggle');
+var sb=document.getElementById('sb');
+if(sbToggle){sbToggle.onclick=function(){sb.style.display=(sb.style.display==='flex')?'none':'flex';};}
+
+// === Active sidebar item ====================================================
+var chapters=document.querySelectorAll('.chapter');
+var sbItems=document.querySelectorAll('.sb-item');
+function updateActive(){
+  var winH=window.innerHeight;
+  var idx=0;
+  chapters.forEach(function(c,i){
+    var top=c.getBoundingClientRect().top;
+    if(top<winH*0.35) idx=i;
+  });
+  sbItems.forEach(function(it,i){
+    if(i===idx) it.classList.add('active'); else it.classList.remove('active');
+  });
+}
+window.addEventListener('scroll',updateActive,{passive:true});
+updateActive();
+
+// === Read progress ==========================================================
+var rpFill=document.getElementById('rpFill');
+var rpPct=document.getElementById('rpPct');
+function updateProgress(){
+  var sh=document.documentElement.scrollHeight-window.innerHeight;
+  var pct=sh>0?Math.min(100,Math.max(0,window.scrollY/sh*100)):0;
+  if(rpFill) rpFill.style.width=pct+'%';
+  if(rpPct) rpPct.textContent=Math.round(pct)+'%';
+}
+window.addEventListener('scroll',updateProgress,{passive:true});
+updateProgress();
+
+// === Back to top ============================================================
+var bt=document.getElementById('backTop');
+window.addEventListener('scroll',function(){
+  if(bt){if(window.scrollY>600) bt.classList.add('show'); else bt.classList.remove('show');}
+},{passive:true});
+if(bt){bt.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};}
+
+// === iframe auto-height (long-blank fix) ====================================
+function resizeFrame(f){
+  try{
+    var d=f.contentDocument||f.contentWindow.document;
+    if(!d||!d.body) return;
+    d.body.style.minHeight='0';
+    d.body.style.height='auto';
+    if(d.documentElement){
+      d.documentElement.style.minHeight='0';
+      d.documentElement.style.height='auto';
+    }
+    var h=d.body.scrollHeight;
+    if(h>100){
+      f.style.height=h+'px';
+      f.style.minHeight='0';
+    }
+  }catch(e){}
+}
+function resizeAllFrames(){
+  document.querySelectorAll('iframe.ch-frame').forEach(resizeFrame);
+  if(typeof updateProgress==='function') updateProgress();
+}
+function setupFrame(f){
+  var tries=0;
+  function tick(){
+    tries++;
+    resizeFrame(f);
+    if(tries<30) setTimeout(tick,200);
+  }
+  if(f.contentDocument&&f.contentDocument.readyState==='complete'){tick();}
+  else{f.addEventListener('load',tick);}
+}
+document.querySelectorAll('iframe.ch-frame').forEach(setupFrame);
+var rzT;
+window.addEventListener('resize',function(){
+  clearTimeout(rzT);
+  rzT=setTimeout(resizeAllFrames,200);
+});
+
+// === Anchor click — outer level ============================================
+document.addEventListener('click',function(e){
+  var a=e.target;
+  while(a&&a.tagName!=='A') a=a.parentElement;
+  if(!a) return;
+  var h=a.getAttribute('href');
+  if(!h||h.charAt(0)!=='#'||h.length<2) return;
+  var id=h.substring(1);
+  var el=document.getElementById(id);
+  if(!el) return;
+  e.preventDefault();
+  resizeAllFrames();
+  setTimeout(function(){
+    resizeAllFrames();
+    var rect=el.getBoundingClientRect();
+    var y=window.scrollY+rect.top-20;
+    window.scrollTo({top:y,behavior:'smooth'});
+  },60);
+},true);
+
+// === Periodic recalc for 15s ===============================================
+var _rt=0,_riv=setInterval(function(){
+  _rt++; resizeAllFrames();
+  if(_rt>50) clearInterval(_riv);
+},300);
+
+// === Anti-copy =============================================================
+(function(){
+  var blk=function(e){e.preventDefault();return false;};
+  ['contextmenu','copy','cut','selectstart','dragstart'].forEach(function(ev){
+    document.addEventListener(ev,blk,true);
+  });
+  document.addEventListener('keydown',function(e){
+    var k=e.key;
+    if(e.ctrlKey&&(k==='c'||k==='C'||k==='a'||k==='A'||k==='s'||k==='S'||k==='p'||k==='P'||k==='u'||k==='U'||k==='x'||k==='X')){blk(e);}
+    if(k==='F12') blk(e);
+    if(e.ctrlKey&&e.shiftKey&&(k==='I'||k==='J'||k==='C'||k==='K')){blk(e);}
+  },true);
+  setInterval(function(){
+    if(window.getSelection) try{window.getSelection().removeAllRanges();}catch(e){}
+  },300);
+})();
+</script>
+</body>
+</html>
